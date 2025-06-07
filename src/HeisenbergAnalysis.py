@@ -2,11 +2,12 @@ import os
 import json
 import matplotlib.pyplot as plt
 
-data_folders = [
-    '../data/Heisenberg/P1/Study1_ISO_Test_Varied_Distance',
-    '../data/Heisenberg/P1/Study1_ISO_Test_Varied_TargetSize'
+data_folders = [ 
+    '../data\Heisenberg\P1\ControllerTracking/Study1_ISO_Test_Varied_TargetSize'
+    
 ]
 
+# '../data/Heisenberg/P1/BareHandIntenSelect/Study1_ISO_Test_Varied_Distance',
 
 click_count = 0
 total_error_count = 0
