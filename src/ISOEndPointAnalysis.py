@@ -6,9 +6,9 @@ import math
 
 FOLDER_ABBREVIATIONS = {
     'ControllerTracking': 'DC',
-    'ControllerIntenSelect': 'BC',
-    'BareHandIntenSelect': 'BH',
-    'BareHandTracking': 'DH'
+    'ControllerIntenSelect': 'SC',
+    'BareHandTracking': 'DH',
+    'BareHandIntenSelect': 'SH'
 }
 ABBREV_TO_FULL = {v: k for k, v in FOLDER_ABBREVIATIONS.items()}
 
@@ -41,11 +41,9 @@ for data_folder in data_folders:
             with open(json_path, 'r') as f:
                 data = json.load(f)
 
-                        
             if target_radius != 0 and data['radius'] != target_radius:
                 continue;
                 
-
             print(f"\n-------    Experiment Data in {filename}   -------\n")
             for i, selection in enumerate(data['selectionSequence'], 1):
                 

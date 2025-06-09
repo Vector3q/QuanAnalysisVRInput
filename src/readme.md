@@ -18,7 +18,7 @@ python ISOEndPointAnalysis.py --folder <Technique to be analyzed> --radius <Radi
 ### --radius:
 
     0: no specific radius
-    0.05: 5 cm
+    0.075: 5 cm
     0.15: 15 cm
     0.25: 25 cm
 
