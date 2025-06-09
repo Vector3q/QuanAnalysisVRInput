@@ -1,13 +1,11 @@
 ## ISOEndPointAnalysis.py
 
-ISOEndPointAnalysis.py is a Python script, aiming to analyze the endpoint data in different input modalities and radius.
+_ISOEndPointAnalysis.py_ is a Python script, aiming to analyze the **endpoint data** in different input modalities and radius.
 
 ## Usage
 
 ```Bash
-
 python ISOEndPointAnalysis.py --folder <Technique to be analyzed> --radius <Radius to be analyzed>
-
 ```
 
 ### --folder:
@@ -29,6 +27,5 @@ python ISOEndPointAnalysis.py --folder <Technique to be analyzed> --radius <Radi
 Analyze the endpoint in “ControllerTracking” and 15cm:
 
 ```Bash
-
 python ISOEndPointAnalysis.py --folder ControllerTracking --radius 0.15
 ```
