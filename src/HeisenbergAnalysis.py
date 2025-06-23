@@ -1,3 +1,4 @@
+from audioop import avg
 import os
 import json
 import matplotlib.pyplot as plt
@@ -36,7 +37,7 @@ abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
 data_folders = [
     f'../data\Heisenberg\P3\{full_name}/Study1',
-    f'../data\Heisenberg\P2\{full_name}/Study1'
+    # f'../data\Heisenberg\P2\{full_name}/Study1'
 ]
 
 # '../data/Heisenberg/P1/BareHandIntenSelect/Study1_ISO_Test_Varied_Distance',
@@ -58,6 +59,8 @@ for data_folder in data_folders:
             radius = data['radius']
             spacing = data['spacing']
 
+            tech = data['inputtechnique']
+
             stats = radius_spacing_stats[radius][spacing]
             stats['click_count'] += len(data['selectionSequence'])
 
@@ -65,9 +68,31 @@ for data_folder in data_folders:
                 stats['total_duration'] += selection['clickDuration']
                 if not selection['isCorrect']:
                     stats['total_error'] += 1
-                    middle_index = len(selection['historyCaches']) // 2
-                    if selection['historyCaches'][middle_index]['intendedObjectID'] == selection['targetPointID']:
-                        stats['heisenberg_error'] += 1
+                    if tech == "ControllerIntenSelect" or tech == "ControllerTracking":
+                        intention_index = len(selection['historyCaches']) - 1
+                        while intention_index >= 0:
+                            if selection['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0:
+                                break
+                            intention_index -= 1
+                        if intention_index >= 0:
+                            intention_obj = selection['historyCaches'][intention_index]['intendedObjectID']
+                            target_obj = selection['targetPointID']
+                            if (intention_obj is not None and 
+                            target_obj is not None and 
+                            intention_obj == target_obj):
+                                stats['heisenberg_error'] += 1
+                    
+                    elif tech == "BareHandIntenSelect" or tech == "BareHandTracking":
+                        velocityDIs = [cache.get('velocityDI', 0) for cache in selection['historyCaches']]
+                        peak_index = velocityDIs.index(max(velocityDIs))
+                        stable_index = peak_index
+                        while stable_index >= 0 and velocityDIs[stable_index] >= 0.1:
+                            stable_index -= 1
+                        if stable_index >= 0:
+                            stable_obj = selection['historyCaches'][stable_index]['intendedObjectID']
+                            target_obj = selection['targetPointID']
+                            if (stable_obj == target_obj):
+                                stats['heisenberg_error'] += 1
             
 print("\nRadius vs Spacing Statistics:")
 print("Radius\tSpacing\tClicks\tError%\tH_Error%\tH_In_Error%")
@@ -90,6 +115,8 @@ for radius, spacing_dict in radius_spacing_stats.items():
         radius_stats[radius]['click_count'] += stats['click_count']
         radius_stats[radius]['total_error'] += stats['total_error']
         radius_stats[radius]['heisenberg_error'] += stats['heisenberg_error']
+        radius_stats[radius]['total_duration'] += stats['total_duration']
+
 
 # 初始化spacing_stats字典
 spacing_stats = {}
@@ -103,23 +130,25 @@ for radius, spacing_dict in radius_spacing_stats.items():
         spacing_stats[spacing]['click_count'] += stats['click_count']
         spacing_stats[spacing]['total_error'] += stats['total_error']
         spacing_stats[spacing]['heisenberg_error'] += stats['heisenberg_error']
+        spacing_stats[spacing]['total_duration'] += stats['total_duration']
+
 
 # 打印radius单变量统计
 print("\nRadius Statistics:")
-print("Radius | Click Count | Total Error % | Heisenberg Error % | Heisenberg/Total %")
+print("Radius | Click Count | Total Error % | Heisenberg Error % | Heisenberg/Total % | Avg Duration | e Score")
 for radius, stats in sorted(radius_stats.items()):
     total_error_pct = (stats['total_error'] / stats['click_count'] * 100) if stats['click_count'] > 0 else 0
     heisenberg_pct = (stats['heisenberg_error'] / stats['click_count'] * 100) if stats['click_count'] > 0 else 0
     heisenberg_of_total = (stats['heisenberg_error'] / stats['total_error'] * 100) if stats['total_error'] > 0 else 0
-    
-    print(f"{radius:6} | {stats['click_count']:10} | {total_error_pct:12.1f}% | {heisenberg_pct:17.1f}% | {heisenberg_of_total:19.1f}%")
+    avg_duration = stats['total_duration'] / stats['click_count']
+    print(f"{radius:6} | {stats['click_count']:11} | {total_error_pct:12.1f}% | {heisenberg_pct:17.1f}% | {heisenberg_of_total:17.1f}% | {avg_duration:12.3f} | {(1 / avg_duration) * (1 - stats['total_error'] / stats['click_count']):.3f}")
 
 # 打印spacing单变量统计
 print("\nSpacing Statistics:")
-print("Spacing | Click Count | Total Error % | Heisenberg Error % | Heisenberg/Total %")
+print("Spacing | Click Count | Total Error % | Heisenberg Error % | Heisenberg/Total % | Avg Duration | e Score")
 for spacing, stats in sorted(spacing_stats.items()):
     total_error_pct = (stats['total_error'] / stats['click_count'] * 100) if stats['click_count'] > 0 else 0
     heisenberg_pct = (stats['heisenberg_error'] / stats['click_count'] * 100) if stats['click_count'] > 0 else 0
     heisenberg_of_total = (stats['heisenberg_error'] / stats['total_error'] * 100) if stats['total_error'] > 0 else 0
-    
-    print(f"{spacing:7} | {stats['click_count']:10} | {total_error_pct:12.1f}% | {heisenberg_pct:17.1f}% | {heisenberg_of_total:19.1f}%")
+    avg_duration = stats['total_duration'] / stats['click_count']
+    print(f"{spacing:7} | {stats['click_count']:11} | {total_error_pct:12.1f}% | {heisenberg_pct:17.1f}% | {heisenberg_of_total:17.1f}% | {avg_duration:12.3f} | {(1 / avg_duration) * (1 - stats['total_error'] / stats['click_count']):.3f} ")
