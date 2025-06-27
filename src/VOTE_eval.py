@@ -4,7 +4,7 @@ import json
 import matplotlib.pyplot as plt
 import argparse
 import math
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 isprint = False
 
@@ -20,7 +20,7 @@ radius_spacing_stats = defaultdict(lambda: defaultdict(lambda: {
     'click_count': 0,
     'total_error': 0,
     'heisenberg_error': 0,
-    'total_duration': 0
+    'total_duration': 0,
 }))
 
 parser = argparse.ArgumentParser(description='analyze the distribution of endPoint')
@@ -36,15 +36,8 @@ full_name = ABBREV_TO_FULL.get(args.folder, args.folder)
 abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
 data_folders = [
-    f'../data\Heisenberg\FP1\{full_name}/Study1',
-    f'../data\Heisenberg\FP2\{full_name}/Study1',
-    f'../data\Heisenberg\FP3\{full_name}/Study1',
-    f'../data\Heisenberg\FP4\{full_name}/Study1',
-    # f'../data\Heisenberg\TEST2\{full_name}/Study1',
-    # f'../data\Heisenberg\P3\{full_name}/Study1',
-    # f'../data\Heisenberg\P4\{full_name}/Study1',
-    # f'../data\Heisenberg\P5\{full_name}/Study1'
-    # f'../data\Heisenberg\\test\{full_name}/Study1'
+    f'../data\Heisenberg\P3\{full_name}/Study1',
+    f'../data\Heisenberg\P4\{full_name}/Study1'
 ]
 
 # '../data/Heisenberg/P1/BareHandIntenSelect/Study1_ISO_Test_Varied_Distance',
@@ -54,7 +47,7 @@ total_error_count = 0
 heisenberg_error_count = 0
 
 for data_folder in data_folders:
-    # print(f"\nAnalyzing file folder: {data_folder}")
+    print(f"\nAnalyzing file folder: {data_folder}")
 
     for filename in os.listdir(data_folder):
         if filename.endswith('.json'):
@@ -72,13 +65,23 @@ for data_folder in data_folders:
             stats['click_count'] += len(data['selectionSequence'])
 
             for selection in data['selectionSequence']:
+                intended_objects = [cache['intendedObjectID'] for cache in selection['historyCaches'] 
+                   if 'intendedObjectID' in cache and cache['intendedObjectID'] != "null"]
+                
+                obj_counter = Counter(intended_objects)
+
+                most_common_obj, count = obj_counter.most_common(1)[0] if intended_objects else (None, 0)
+
+                if selection['targetPointID'] != most_common_obj:
+                    stats['total_error'] += 1
+
                 stats['total_duration'] += selection['clickDuration']
                 if not selection['isCorrect']:
-                    stats['total_error'] += 1
+                    # stats['total_error'] += 1
                     if tech == "ControllerIntenSelect" or tech == "ControllerTracking":
                         intention_index = len(selection['historyCaches']) - 1
                         while intention_index >= 0:
-                            if selection['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0 and selection['historyCaches'][intention_index]['intendedObjectID'] != "null":
+                            if selection['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0:
                                 break
                             intention_index -= 1
                         if intention_index >= 0:
@@ -93,9 +96,7 @@ for data_folder in data_folders:
                         velocityDIs = [cache.get('velocityDI', 0) for cache in selection['historyCaches']]
                         peak_index = velocityDIs.index(max(velocityDIs))
                         stable_index = peak_index
-                        while stable_index >= 0:
-                            if velocityDIs[stable_index] <= 0.1 and selection['historyCaches'][stable_index]['intendedObjectID'] != "null":
-                                break
+                        while stable_index >= 0 and velocityDIs[stable_index] >= 0.1:
                             stable_index -= 1
                         if stable_index >= 0:
                             stable_obj = selection['historyCaches'][stable_index]['intendedObjectID']
