@@ -40,6 +40,8 @@ data_folders = [
     f'../data\Heisenberg\FP2\{full_name}/Study1',
     f'../data\Heisenberg\FP3\{full_name}/Study1',
     f'../data\Heisenberg\FP4\{full_name}/Study1',
+    f'../data\Heisenberg\FP5\{full_name}/Study1',
+    f'../data\Heisenberg\TEST3\{full_name}/Study1',
     # f'../data\Heisenberg\TEST2\{full_name}/Study1',
     # f'../data\Heisenberg\P3\{full_name}/Study1',
     # f'../data\Heisenberg\P4\{full_name}/Study1',
@@ -161,3 +163,7 @@ for spacing, stats in sorted(spacing_stats.items()):
     heisenberg_of_total = (stats['heisenberg_error'] / stats['total_error'] * 100) if stats['total_error'] > 0 else 0
     avg_duration = stats['total_duration'] / stats['click_count']
     print(f"{spacing:7} | {stats['click_count']:11} | {total_error_pct:12.1f}% | {heisenberg_pct:17.1f}% | {heisenberg_of_total:17.1f}% | {avg_duration:12.3f} | {(1 / avg_duration) * (1 - stats['total_error'] / stats['click_count']):.3f} ")
+
+def read_from_numpy(file_path):
+    data = np.load(file_path, allow_pickle=True)
+    return data.item()
