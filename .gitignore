@@ -1,1 +1,4 @@
 /data/
+src/output_image/
+src/output_json/
+src/output_numpy/

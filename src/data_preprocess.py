@@ -35,18 +35,42 @@ def extract_json_data(input_path):
                             entry['HeisenbergError'] = 1
                         
                 elif tech == "BareHandIntenSelect" or tech == "BareHandTracking":
-                    velocityDIs = [cache.get('velocityDI', 0) for cache in entry['historyCaches']]
-                    peak_index = velocityDIs.index(max(velocityDIs))
-                    stable_index = peak_index
-                    while stable_index >= 0:
-                        if velocityDIs[stable_index] <= 0.1 and entry['historyCaches'][stable_index]['intendedObjectID'] != "null":
-                            break
-                        stable_index -= 1
-                    if stable_index >= 0:
-                        stable_obj = entry['historyCaches'][stable_index]['intendedObjectID']
-                        target_obj = entry['targetPointID']
-                        if (stable_obj == target_obj):
-                            entry['HeisenbergError'] = 1
+                    history_caches = entry['historyCaches']
+                    middle_index = len(history_caches) // 2
+                    intended_id = history_caches[middle_index]['intendedObjectID']
+
+                    if intended_id == "null":
+                        step = 1
+                        found = False
+                        while not found and step <= len(history_caches):
+                            left_idx = middle_index - step
+                            if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
+                                intended_id = history_caches[left_idx]['intendedObjectID']
+                                found = True
+                                break
+                            right_idx = middle_index + step
+                            if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
+                                intended_id = history_caches[right_idx]['intendedObjectID']
+                                found = True
+                                break
+                            step += 1
+
+                    if intended_id == entry['targetPointID']:
+                        entry['HeisenbergError'] = 1
+
+                    # velocityDIs = [cache.get('velocityDI', 0) for cache in entry['historyCaches']]
+                    # distanceDIs = [cache.get('distanceDI', 0) for cache in entry['historyCaches']]
+                    # peak_index = velocityDIs.index(max(velocityDIs))
+                    # stable_index = peak_index
+                    # while stable_index >= 0:
+                    #     if velocityDIs[stable_index] <= 0.005 and entry['historyCaches'][stable_index]['intendedObjectID'] != "null" and distanceDIs[stable_index] >= 0.01: 
+                    #         break
+                    #     stable_index -= 1
+                    # if stable_index >= 0:
+                    #     stable_obj = entry['historyCaches'][stable_index]['intendedObjectID']
+                    #     target_obj = entry['targetPointID']
+                    #     if (stable_obj == target_obj):
+                    #         entry['HeisenbergError'] = 1
 
             entry.pop('selectedPointID', None)
             entry.pop('targetPointID', None)

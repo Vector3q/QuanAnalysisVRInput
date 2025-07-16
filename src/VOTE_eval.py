@@ -36,8 +36,13 @@ full_name = ABBREV_TO_FULL.get(args.folder, args.folder)
 abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
 data_folders = [
-    f'../data\Heisenberg\P3\{full_name}/Study1',
-    f'../data\Heisenberg\P4\{full_name}/Study1'
+    f'../data\Heisenberg\FP1\{full_name}/Study1',
+    f'../data\Heisenberg\FP2\{full_name}/Study1',
+    f'../data\Heisenberg\FP3\{full_name}/Study1',
+    f'../data\Heisenberg\FP4\{full_name}/Study1',
+    f'../data\Heisenberg\FP5\{full_name}/Study1',
+    f'../data\Heisenberg\FP6\{full_name}/Study1',
+    f'../data\Heisenberg\TEST3\{full_name}/Study1',
 ]
 
 # '../data/Heisenberg/P1/BareHandIntenSelect/Study1_ISO_Test_Varied_Distance',

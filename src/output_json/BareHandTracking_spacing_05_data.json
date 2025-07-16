@@ -584,7 +584,7 @@
             {
                 "clickDuration": 2.24899888,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 1.22187531,
@@ -1075,7 +1075,7 @@
             {
                 "clickDuration": 0.125101,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 4.22227669,
@@ -1253,7 +1253,7 @@
             {
                 "clickDuration": 3.040805,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 4.610496,
@@ -1735,7 +1735,7 @@
             {
                 "clickDuration": 1.12517,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 5.86109543,
@@ -1830,7 +1830,7 @@
             {
                 "clickDuration": 0.249363631,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 0.166277513,
@@ -3388,7 +3388,7 @@
             {
                 "clickDuration": 0.6966891,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 0.5284865,
@@ -3633,7 +3633,7 @@
             {
                 "clickDuration": 1.55625582,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 0.417413682,
@@ -3860,7 +3860,7 @@
             {
                 "clickDuration": 1.2640065,
                 "isCorrect": 0,
-                "HeisenbergError": 0
+                "HeisenbergError": 1
             },
             {
                 "clickDuration": 0.6671823,

@@ -3,7 +3,10 @@ import argparse
 import json
 
 from data_preprocess import load_json_data, save_data_to_json
-
+def read_from_numpy(file_path):
+    data = np.load(file_path, allow_pickle=True)
+    return data.item()
+    
 def extract_all_wanted_data(data):
     all_selection_times = []
     all_correct_selection_times = []
@@ -81,6 +84,9 @@ def main():
     def analyze_data(partial_name):
         data_file_path = './output_json/' + full_name + "_" + partial_name + "_data.json"
         data = load_json_data(data_file_path)
+
+        print(f'tech: {full_name}, partial_name: {partial_name}')
+
 
         if data is None:
             print("The data is None for ", full_name, " and ", partial_name)

@@ -1,6 +1,7 @@
 from audioop import avg
 import os
 import json
+from turtle import distance
 import matplotlib.pyplot as plt
 import argparse
 import math
@@ -41,6 +42,7 @@ data_folders = [
     f'../data\Heisenberg\FP3\{full_name}/Study1',
     f'../data\Heisenberg\FP4\{full_name}/Study1',
     f'../data\Heisenberg\FP5\{full_name}/Study1',
+    f'../data\Heisenberg\FP6\{full_name}/Study1',
     f'../data\Heisenberg\TEST3\{full_name}/Study1',
     # f'../data\Heisenberg\TEST2\{full_name}/Study1',
     # f'../data\Heisenberg\P3\{full_name}/Study1',
@@ -92,11 +94,17 @@ for data_folder in data_folders:
                                 stats['heisenberg_error'] += 1
                     
                     elif tech == "BareHandIntenSelect" or tech == "BareHandTracking":
-                        velocityDIs = [cache.get('velocityDI', 0) for cache in selection['historyCaches']]
+                        history_caches = selection['historyCaches']
+                        # middle_index = len(history_caches) // 2
+                        # if history_caches[middle_index]['intendedObjectID'] == selection['targetPointID']:
+                        #     stats['heisenberg_error'] += 1
+
+                        velocityDIs = [cache.get('velocityDI', 0) for cache in history_caches]
+                        distanceDIs = [cache.get('distanceDI', 0) for cache in history_caches]
                         peak_index = velocityDIs.index(max(velocityDIs))
                         stable_index = peak_index
                         while stable_index >= 0:
-                            if velocityDIs[stable_index] <= 0.1 and selection['historyCaches'][stable_index]['intendedObjectID'] != "null":
+                            if velocityDIs[stable_index] <= 0.005 and selection['historyCaches'][stable_index]['intendedObjectID'] != "null" and distanceDIs[stable_index] >= 0.01:
                                 break
                             stable_index -= 1
                         if stable_index >= 0:
@@ -163,7 +171,3 @@ for spacing, stats in sorted(spacing_stats.items()):
     heisenberg_of_total = (stats['heisenberg_error'] / stats['total_error'] * 100) if stats['total_error'] > 0 else 0
     avg_duration = stats['total_duration'] / stats['click_count']
     print(f"{spacing:7} | {stats['click_count']:11} | {total_error_pct:12.1f}% | {heisenberg_pct:17.1f}% | {heisenberg_of_total:17.1f}% | {avg_duration:12.3f} | {(1 / avg_duration) * (1 - stats['total_error'] / stats['click_count']):.3f} ")
-
-def read_from_numpy(file_path):
-    data = np.load(file_path, allow_pickle=True)
-    return data.item()
