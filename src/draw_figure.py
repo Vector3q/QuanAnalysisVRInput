@@ -216,7 +216,7 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=8)
     axis.set_xlabel('Target Size (cm)', fontsize=8)
     x_axis = np.arange(len(xaxis_labels))
-    axis.set_ylim(0,100)
+    axis.set_ylim(0,50)
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
     if tech_type1 == 'BareHandIntenSelect':
@@ -453,7 +453,7 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=8)
     axis.set_xlabel('Target Spacing (cm)', fontsize=8)
     x_axis = np.arange(len(xaxis_labels))
-    axis.set_ylim(0,45)
+    axis.set_ylim(0,50)
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
     if tech_type1 == 'BareHandIntenSelect':

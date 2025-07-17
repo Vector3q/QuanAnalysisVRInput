@@ -73,11 +73,15 @@ for data_folder in data_folders:
                 intended_objects = [cache['intendedObjectID'] for cache in selection['historyCaches'] 
                    if 'intendedObjectID' in cache and cache['intendedObjectID'] != "null"]
                 
-                obj_counter = Counter(intended_objects)
+                # obj_counter = Counter(intended_objects)
 
-                most_common_obj, count = obj_counter.most_common(1)[0] if intended_objects else (None, 0)
+                # most_common_obj, count = obj_counter.most_common(1)[0] if intended_objects else (None, 0)
 
-                if selection['targetPointID'] != most_common_obj:
+                # if selection['targetPointID'] != most_common_obj:
+                #     stats['total_error'] += 1
+
+                target_id = selection['targetPointID']
+                if target_id not in intended_objects:
                     stats['total_error'] += 1
 
                 stats['total_duration'] += selection['clickDuration']
