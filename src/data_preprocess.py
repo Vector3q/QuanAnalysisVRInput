@@ -18,7 +18,9 @@ def extract_json_data(input_path):
         
         for entry in entries:
             entry['HeisenbergError'] = 0
-            # entry['HeisenbergOffset'] = [0.0, 0.0, 0.0]
+            entry['HeisenbergOffset'] = [0.0, 0.0, 0.0]
+            last_frame = entry['historyCaches'][-1] if entry['historyCaches'] else None
+            heisenberg_frame = None
             if not entry['isCorrect']:
                 if tech == "ControllerIntenSelect" or tech == "ControllerTracking":
                     intention_index = len(entry['historyCaches']) - 1
