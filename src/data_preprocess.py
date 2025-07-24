@@ -21,44 +21,50 @@ def extract_json_data(input_path):
             entry['HeisenbergOffset'] = [0.0, 0.0, 0.0]
             last_frame = entry['historyCaches'][-1] if entry['historyCaches'] else None
             heisenberg_frame = None
-            if not entry['isCorrect']:
-                if tech == "ControllerIntenSelect" or tech == "ControllerTracking":
-                    intention_index = len(entry['historyCaches']) - 1
-                    while intention_index >= 0:
-                        if entry['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0 and entry['historyCaches'][intention_index]['intendedObjectID'] != "null":
-                            break
-                        intention_index -= 1
-                    if intention_index >= 0:
-                        intention_obj = entry['historyCaches'][intention_index]['intendedObjectID']
-                        target_obj = entry['targetPointID']
-                        if (intention_obj is not None and 
-                                target_obj is not None and 
-                                intention_obj == target_obj):
-                            entry['HeisenbergError'] = 1
-                        
-                elif tech == "BareHandIntenSelect" or tech == "BareHandTracking":
-                    history_caches = entry['historyCaches']
-                    middle_index = len(history_caches) // 2
-                    intended_id = history_caches[middle_index]['intendedObjectID']
 
-                    if intended_id == "null":
-                        step = 1
-                        found = False
-                        while not found and step <= len(history_caches):
-                            left_idx = middle_index - step
-                            if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
-                                intended_id = history_caches[left_idx]['intendedObjectID']
-                                found = True
-                                break
-                            right_idx = middle_index + step
-                            if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
-                                intended_id = history_caches[right_idx]['intendedObjectID']
-                                found = True
-                                break
-                            step += 1
-
-                    if intended_id == entry['targetPointID']:
+            if tech == "ControllerIntenSelect" or tech == "ControllerTracking":
+                intention_index = len(entry['historyCaches']) - 1
+                while intention_index >= 0:
+                    if entry['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0 and entry['historyCaches'][intention_index]['intendedObjectID'] != "null":
+                        break
+                    intention_index -= 1
+                if intention_index >= 0:
+                    intention_obj = entry['historyCaches'][intention_index]['intendedObjectID']
+                    target_obj = entry['targetPointID']
+                    heisenberg_frame = entry['historyCaches'][intention_index]
+                    if (intention_obj is not None and 
+                            target_obj is not None and 
+                            intention_obj == target_obj and not entry['isCorrect']):
                         entry['HeisenbergError'] = 1
+                        
+                        
+            elif tech == "BareHandIntenSelect" or tech == "BareHandTracking":
+                history_caches = entry['historyCaches']
+                if len(entry['historyCaches']) == 0:
+                    continue
+                middle_index = len(history_caches) // 2
+                
+                intended_id = history_caches[middle_index]['intendedObjectID']
+                heisenberg_frame = entry['historyCaches'][middle_index]
+                if intended_id == "null":
+                    step = 1
+                    found = False
+                    while not found and step <= len(history_caches):
+                        left_idx = middle_index - step
+                        if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
+                            intended_id = history_caches[left_idx]['intendedObjectID']
+                            found = True
+                            break
+                        right_idx = middle_index + step
+                        if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
+                            intended_id = history_caches[right_idx]['intendedObjectID']
+                            found = True
+                            break
+                        step += 1
+
+                if intended_id == entry['targetPointID'] and not entry['isCorrect']: 
+                    entry['HeisenbergError'] = 1
+                    
 
                     # velocityDIs = [cache.get('velocityDI', 0) for cache in entry['historyCaches']]
                     # distanceDIs = [cache.get('distanceDI', 0) for cache in entry['historyCaches']]
@@ -73,7 +79,12 @@ def extract_json_data(input_path):
                     #     target_obj = entry['targetPointID']
                     #     if (stable_obj == target_obj):
                     #         entry['HeisenbergError'] = 1
-
+            if heisenberg_frame and last_frame:
+                    entry['HeisenbergOffset'] = [
+                        last_frame['endPoint'][0] - heisenberg_frame['endPoint'][0],
+                        last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1],
+                        last_frame['endPoint'][2] - heisenberg_frame['endPoint'][2]
+                    ]
             entry.pop('selectedPointID', None)
             entry.pop('targetPointID', None)
             entry.pop('targetPointPos', None)
@@ -91,7 +102,7 @@ def load_json_data(file_path):
 def load_jsons_r_and_s(json_files_dir, technique=""):
 
     json_files = utils.get_all_json_files(json_files_dir)
-
+    
     data_radius_007_spacing_03 = []
     data_radius_007_spacing_05 = []
     data_radius_007_spacing_07 = []

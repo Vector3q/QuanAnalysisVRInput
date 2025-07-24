@@ -33,7 +33,6 @@ for i, selection in enumerate(data['selectionSequence'], 1):
         if di_values:
             plt.plot(di_values, label=f'Pinch {i}')
 
-
 plt.title('DI Velocity in Pinch Gesture', fontsize=14)
 plt.xlabel('frame', fontsize=12)
 plt.ylabel('DI Velocity', fontsize=12)
