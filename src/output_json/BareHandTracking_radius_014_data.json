@@ -1287,6 +1287,993 @@
         ]
     },
     {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.3",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "selectionSequence": [
+            {
+                "clickDuration": 0.442809463,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.0029843132999999994,
+                    0.029694556699999992,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.458836615,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.0018411000000000122,
+                    0.19149017699999998,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.334126145,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.028638548799999997,
+                    -0.015734195000000006,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.152117014,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.00075718575,
+                    0.06678736199999996,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.72511554,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.04580670600000003,
+                    -0.03108246299999995,
+                    -4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 2.541731,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.0011864109999999983,
+                    0.03675739,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.28462362,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.010010764000000005,
+                    0.04954877999999985,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.69437277,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.08056750000000001,
+                    0.043873251,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.43024826,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.06754505799999999,
+                    0.026688339999999977,
+                    -4.799999997473492e-07
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.5",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "selectionSequence": [
+            {
+                "clickDuration": 1.96976733,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.12635739999999995,
+                    -0.016063576000000024,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.45930076,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.070554793,
+                    -0.15372838,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.09747481,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.12496388299999994,
+                    -0.052192919999999976,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.61010671,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.005799155,
+                    0.04342206100000001,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.44518292,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.06635036500000002,
+                    -0.159834027,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.15317655,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.224381208,
+                    -0.16409946000000009,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.306703925,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.11018224900000007,
+                    0.15672422000000008,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.277683139,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.01292538700000001,
+                    0.013970850000000201,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.276778877,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.0032699110000000697,
+                    -0.15824795000000025,
+                    4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.44467926,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.09180413900000006,
+                    0.20594787000000014,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.429570168,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.05292629999999998,
+                    0.17508339000000017,
+                    4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.6109029,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.08649960200000001,
+                    -0.008256310000000155,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.458572417,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.026645898999999973,
+                    -0.09117566000000021,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.72392535,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.018769500000000106,
+                    -0.17151355999999973,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.3754087,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.05212720000000004,
+                    0.014727600000000063,
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.7",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "selectionSequence": [
+            {
+                "clickDuration": 1.44404817,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.049692150000000046,
+                    0.10232117000000018,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.584291458,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.03751993999999992,
+                    -0.1091778299999997,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.22522449,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.04800283999999988,
+                    0.1204925,
+                    4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.7363724,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.042006130000000086,
+                    -0.020284473999999997,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.235319719,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.040933969999999986,
+                    0.0003781370000000006,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.43061662,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.07930540999999991,
+                    -0.046790999999999805,
+                    1.4799999989989487e-06
+                ]
+            },
+            {
+                "clickDuration": 1.304286,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.0016837840999999881,
+                    -0.1583807399999997,
+                    -4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.167717189,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.04407688999999998,
+                    0.02032399000000007,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.2784825,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.086372435,
+                    0.03449701999999988,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.3051294,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.002039526,
+                    0.16331655999999972,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.57026911,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.1537891,
+                    0.09060812000000018,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.84691834,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.08541821999999999,
+                    -0.0016902700000001047,
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.7",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "selectionSequence": [
+            {
+                "clickDuration": 1.74342918,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.1500515899999999,
+                    0.3331695200000002,
+                    4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.722939968,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.07759512000000002,
+                    -0.20069384999999995,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.1677839,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.03349541999999994,
+                    -0.031204939999999848,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.55611134,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.06042503300000002,
+                    0.10192023999999988,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.08274651,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.11450398000000006,
+                    0.11074136999999995,
+                    -4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 3.431492,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.018256244000000033,
+                    -0.10425043,
+                    4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 1.16687322,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.05048704999999987,
+                    0.10529354999999985,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.27746928,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.07988060000000008,
+                    0.21449326999999996,
+                    4.799999997473492e-07
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.3",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "selectionSequence": [
+            {
+                "clickDuration": 1.65313518,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.006223140000000002,
+                    0.09515699999999994,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.80843616,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.0604093964,
+                    -0.04768830599999996,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.12641215,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.12371499999999991,
+                    -0.05105636899999999,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.79116392,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.016349477,
+                    0.07808542000000007,
+                    -4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.389619082,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.022203042000000006,
+                    -0.055704600000000104,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.11061013,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.03151490000000001,
+                    -0.004503839999999926,
+                    4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 1.04103041,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.00026136700000001234,
+                    -0.06387463800000004,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.70842087,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.024978696999999994,
+                    0.08460307100000003,
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.5",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "selectionSequence": [
+            {
+                "clickDuration": 2.52894521,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.07389634900000003,
+                    -0.010648960000000152,
+                    -4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 0.876247942,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.039422575000000126,
+                    0.001428009999999924,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.73649764,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.03546143000000001,
+                    0.06497604199999996,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.30540812,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.0009075210000000222,
+                    0.06273568000000007,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.87509346,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.08230786999999995,
+                    0.005102139999999977,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.3326478,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.031045496000000006,
+                    0.07145334000000014,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.1389401,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.00531198300000002,
+                    0.05134780000000028,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.6801584,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.0039051469999999977,
+                    -0.03763615999999992,
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.3",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "selectionSequence": [
+            {
+                "clickDuration": 1.848616,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.007718741999999945,
+                    -0.15108668999999986,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.319615215,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.0262597939,
+                    -0.032148829999999906,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.9301445,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.015465497999999966,
+                    0.11650896,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.4169068,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.054683999999999955,
+                    -0.1351086800000001,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.9309845,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.009422841999999987,
+                    -0.028517307000000006,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.1795646,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.004556507000000043,
+                    -0.05661469699999999,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.16635633,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.050344765000000014,
+                    -0.06306802999999994,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.16778851,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.001745525100000006,
+                    0.06441587199999999,
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.5",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "selectionSequence": [
+            {
+                "clickDuration": 0.1505725,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.014355463000000013,
+                    0.008234530000000184,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.695518553,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.1694839524,
+                    0.050808430000000016,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.4456163,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.028264545,
+                    -0.12124097000000011,
+                    -4.799999997473492e-07
+                ]
+            },
+            {
+                "clickDuration": 1.26394784,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.12796348999999996,
+                    0.11821556000000011,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.1393795,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.05856886499999997,
+                    -0.009069460000000085,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.55491424,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.003468599999999933,
+                    -0.014006968000000009,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.1538915,
+                "isCorrect": 0,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.0020445000000000046,
+                    0.03402149700000001,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.235859215,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.044438933999999986,
+                    0.04658516200000007,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.26613939,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.019883935999999935,
+                    -0.028113990000000033,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.8200047,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.04279953599999997,
+                    0.13824909900000004,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.4144736,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    -0.009129050000000083,
+                    -0.10768556600000001,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.305792481,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.01996803200000008,
+                    0.11302504100000005,
+                    -4.799999997473492e-07
+                ]
+            }
+        ]
+    },
+    {
+        "username": "FP10",
+        "userAge": 25,
+        "usergender": "male",
+        "studyname": "Study1",
+        "inputtechnique": "BareHandTracking",
+        "variable": "radius_0.14_distance_0.75_spacing_0.7",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "selectionSequence": [
+            {
+                "clickDuration": 1.79364407,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.037089580999999996,
+                    0.17322709999999997,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 3.14041853,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.05967272000000001,
+                    0.10663032000000028,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.59819627,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.03770755999999986,
+                    0.06262064,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 2.48657751,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.10466445000000002,
+                    0.11941968999999997,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.6663744,
+                "isCorrect": 0,
+                "HeisenbergError": 1,
+                "HeisenbergOffset": [
+                    0.0750399799999999,
+                    0.16367785999999995,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 0.306649536,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    0.062263610000000025,
+                    -0.0978653399999998,
+                    0.0
+                ]
+            },
+            {
+                "clickDuration": 1.30569494,
+                "isCorrect": 1,
+                "HeisenbergError": 0,
+                "HeisenbergOffset": [
+                    -0.030284362000000065,
+                    0.14372695000000002,
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
