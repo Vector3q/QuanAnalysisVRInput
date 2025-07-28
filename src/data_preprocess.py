@@ -4,6 +4,7 @@ import utils
 import os
 import argparse
 import math
+import numpy as np
 def extract_json_data(input_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -42,71 +43,72 @@ def extract_json_data(input_path):
 
                 # velocityDIs = [cache.get('velocityDI', 0) for cache in entry['historyCaches']]
                 # distanceDIs = [cache.get('distanceDI', 0) for cache in entry['historyCaches']]
-                # velocityRots = [cache.get('velocityRot', 0) for cache in entry['historyCaches']]
-                # start_index = max(0, len(velocityRots) - 14)
-                # candidate_indices = [i for i in range(start_index, len(velocityRots)) if velocityRots[i] > 0.3]
-                # peak_index = min(candidate_indices) if candidate_indices else middle_index
-                # stable_index = peak_index
+                velocityRots = [cache.get('velocityRot', 0) for cache in entry['historyCaches']]
+                start_index = max(0, len(velocityRots) - 14)
+                candidate_indices = [i for i in range(start_index, len(velocityRots)) if velocityRots[i] > 0.3]
+                peak_index = min(candidate_indices) if candidate_indices else middle_index
+                stable_index = peak_index
                 
-                # while stable_index >= 0:
-                #     if velocityRots[stable_index] <= 0.001 and entry['historyCaches'][stable_index]['intendedObjectID'] != "null":
-                #         break
-                #     stable_index -= 1
-                # if stable_index >= 0:
-                #     stable_obj = entry['historyCaches'][stable_index]['intendedObjectID']
-                #     heisenberg_frame = entry['historyCaches'][stable_index]
-                #     target_obj = entry['targetPointID']
-                #     if (stable_obj == target_obj):
-                #         entry['HeisenbergError'] = 1    
-                # else:
-                #     intended_id = history_caches[middle_index]['intendedObjectID']
-                #     heisenberg_frame = entry['historyCaches'][middle_index]
-                #     stable_index = middle_index
-                #     if intended_id == "null":
-                #         step = 1
-                #         found = False
-                #         while not found and step <= len(history_caches):
-                #             left_idx = middle_index - step
-                #             if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
-                #                 intended_id = history_caches[left_idx]['intendedObjectID']
-                #                 found = True
-                #                 break
-                #             right_idx = middle_index + step
-                #             if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
-                #                 intended_id = history_caches[right_idx]['intendedObjectID']
-                #                 found = True
-                #                 break
-                #             step += 1
+                while stable_index >= 0:
+                    if velocityRots[stable_index] <= 0.001 and entry['historyCaches'][stable_index]['intendedObjectID'] != "null":
+                        break
+                    stable_index -= 1
+                if stable_index >= 0:
+                    stable_obj = entry['historyCaches'][stable_index]['intendedObjectID']
+                    heisenberg_frame = entry['historyCaches'][stable_index]
+                    target_obj = entry['targetPointID']
+                    if (stable_obj == target_obj):
+                        entry['HeisenbergError'] = 1    
+                else:
+                    intended_id = history_caches[middle_index]['intendedObjectID']
+                    heisenberg_frame = entry['historyCaches'][middle_index]
+                    stable_index = middle_index
+                    if intended_id == "null":
+                        step = 1
+                        found = False
+                        while not found and step <= len(history_caches):
+                            left_idx = middle_index - step
+                            if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
+                                intended_id = history_caches[left_idx]['intendedObjectID']
+                                found = True
+                                break
+                            right_idx = middle_index + step
+                            if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
+                                intended_id = history_caches[right_idx]['intendedObjectID']
+                                found = True
+                                break
+                            step += 1
 
-                #     if intended_id == entry['targetPointID'] and not entry['isCorrect']: 
-                #         entry['HeisenbergError'] = 1
+                    if intended_id == entry['targetPointID'] and not entry['isCorrect']: 
+                        entry['HeisenbergError'] = 1
 
 
-                intended_id = history_caches[middle_index]['intendedObjectID']
-                heisenberg_frame = entry['historyCaches'][middle_index]
-                real_id = middle_index
-                if intended_id == "null":
-                    step = 1
-                    found = False
-                    while not found and step <= len(history_caches):
-                        left_idx = middle_index - step
-                        if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
-                            intended_id = history_caches[left_idx]['intendedObjectID']
-                            real_id = left_idx
-                            found = True
-                            break
-                        right_idx = middle_index + step
-                        if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
-                            intended_id = history_caches[right_idx]['intendedObjectID']
-                            real_id = right_idx
-                            found = True
-                            break
-                        step += 1
-                if intended_id == entry['targetPointID'] and not entry['isCorrect']: 
-                    entry['HeisenbergError'] = 1
-
+                # intended_id = history_caches[middle_index]['intendedObjectID']
+                # heisenberg_frame = entry['historyCaches'][middle_index]
+                # real_id = middle_index
+                # if intended_id == "null":
+                #     step = 1
+                #     found = False
+                #     while not found and step <= len(history_caches):
+                #         left_idx = middle_index - step
+                #         if left_idx >= 0 and history_caches[left_idx]['intendedObjectID'] != "null":
+                #             intended_id = history_caches[left_idx]['intendedObjectID']
+                #             real_id = left_idx
+                #             found = True
+                #             break
+                #         right_idx = middle_index + step
+                #         if right_idx < len(history_caches) and history_caches[right_idx]['intendedObjectID'] != "null":
+                #             intended_id = history_caches[right_idx]['intendedObjectID']
+                #             real_id = right_idx
+                #             found = True
+                #             break
+                #         step += 1
+                # if intended_id == entry['targetPointID'] and not entry['isCorrect']: 
+                #     entry['HeisenbergError'] = 1
+                
+            entry['HeisenbergAngle'] = 0.0
             if heisenberg_frame and last_frame:
-                entry['HeisenbergAngle'] = 0.0
+                
                 if 'rayForward' in last_frame and 'rayForward' in heisenberg_frame and last_frame['rayForward'] and heisenberg_frame['rayForward']:
                     vec1 = last_frame['rayForward']
                     vec2 = heisenberg_frame['rayForward']
@@ -131,8 +133,10 @@ def extract_json_data(input_path):
                     last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1],
                     last_frame['endPoint'][2] - heisenberg_frame['endPoint'][2]
                 ]
-                magnitude = np.sqrt(float(last_frame['endPoint'][0] - heisenberg_frame['endPoint'][0])**2 + float(last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1])**2)
-                entry['HeisenbergAngle'] = (np.arctan(magnitude / 7.5) * (180 / np.pi))
+                if entry['HeisenbergAngle'] == 0.0:
+                    magnitude = np.sqrt(float(last_frame['endPoint'][0] - heisenberg_frame['endPoint'][0])**2 + float(last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1])**2)
+                    entry['HeisenbergAngle'] = (np.arctan(magnitude / 7.5) * (180 / np.pi))
+            entry.pop('HeisenbergOffset', None)
             entry.pop('selectedPointID', None)
             entry.pop('targetPointID', None)
             entry.pop('targetPointPos', None)

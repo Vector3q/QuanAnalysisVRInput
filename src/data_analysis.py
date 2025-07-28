@@ -28,24 +28,22 @@ def extract_all_wanted_data(data):
         for entry in data_item["selectionSequence"]:
             if ("HeisenbergAngle" in entry and 
                 isinstance(entry["HeisenbergAngle"], (int, float)) and 
-                entry["HeisenbergAngle"] > 0):
-                h_offset = entry["HeisenbergOffset"]
-                all_H_Offset_x.append(float(h_offset[0]))
-                all_H_Offset_y.append(float(h_offset[1]))
+                entry["HeisenbergAngle"] >= 0):
                 all_H_Offset_magnitude.append(float(entry["HeisenbergAngle"]))
             elif "HeisenbergOffset" in entry and isinstance(entry["HeisenbergOffset"], list):
+                print("here")
                 h_offset = entry["HeisenbergOffset"]
                 all_H_Offset_x.append(float(h_offset[0]))
                 all_H_Offset_y.append(float(h_offset[1]))
                 magnitude = np.sqrt(float(h_offset[0])**2 + float(h_offset[1])**2)
                 all_H_Offset_magnitude.append(np.arctan(magnitude / 7.5) * (180 / np.pi))
-                # all_H_Offset_magnitude.append(h_offset)
+
+        
 
         all_selection_times.extend(selection_times)
         all_selection_errors.extend(selection_errors)
         all_H_selection_errors.extend(H_selection_errors)
         all_correct_selection_times.extend(correct_selection_times)
-
 
     all_selection_times = np.array(all_selection_times)
     all_selection_errors = np.array(all_selection_errors)
@@ -62,13 +60,12 @@ def extract_all_wanted_data(data):
         lower_bound = mean - 3 * std
         upper_bound = mean + 3 * std
         print(f"lower_bound: {lower_bound}")
-        mask = (all_selection_times >= 0.1) & (all_selection_times <= upper_bound)
+        mask = (all_selection_times >= 0.1) & (all_selection_times <= upper_bound) & (all_H_Offset_magnitude >= 0.01)
+        print(mask)
 
         all_selection_times = all_selection_times[mask]
         all_selection_errors = all_selection_errors[mask]
         all_H_selection_errors = all_H_selection_errors[mask]
-        all_H_Offset_x = all_H_Offset_x[mask]
-        all_H_Offset_y = all_H_Offset_y[mask]
         all_H_Offset_magnitude = all_H_Offset_magnitude[mask]
 
         filtered_count = original_count - len(all_selection_times)
