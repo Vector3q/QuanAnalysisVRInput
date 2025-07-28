@@ -13,7 +13,7 @@
             {
                 "clickDuration": 0.1388655,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6998634904245385
             },
             {
@@ -31,31 +31,31 @@
             {
                 "clickDuration": 1.34749293,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04009934443253357
             },
             {
                 "clickDuration": 4.916928,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7681710464489597
             },
             {
                 "clickDuration": 10.0832386,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2732444556307106
             },
             {
                 "clickDuration": 3.166664,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13705497023075178
             },
             {
                 "clickDuration": 1.44435132,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7404943536402251
             },
             {
@@ -67,13 +67,13 @@
             {
                 "clickDuration": 0.6106542,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4329146060639513
             },
             {
                 "clickDuration": 2.695557,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2815397412419565
             }
         ]
@@ -128,7 +128,7 @@
             {
                 "clickDuration": 3.50024343,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4613102284720006
             },
             {
@@ -140,7 +140,7 @@
             {
                 "clickDuration": 5.15253162,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6650910453835696
             },
             {
@@ -152,19 +152,19 @@
             {
                 "clickDuration": 2.41606021,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07456259504406323
             },
             {
                 "clickDuration": 5.722003,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13388385723301782
             },
             {
                 "clickDuration": 3.9429307,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13658901427888967
             },
             {
@@ -194,13 +194,13 @@
             {
                 "clickDuration": 0.6674233,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9721302520187632
             },
             {
                 "clickDuration": 3.23536754,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.11197484856990651
             },
             {
@@ -212,7 +212,7 @@
             {
                 "clickDuration": 2.04156113,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05300657536224566
             }
         ]
@@ -231,7 +231,7 @@
             {
                 "clickDuration": 4.355471,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07157128012591518
             },
             {
@@ -243,7 +243,7 @@
             {
                 "clickDuration": 0.417212754,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6364574544962437
             },
             {
@@ -261,7 +261,7 @@
             {
                 "clickDuration": 10.0133924,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.282032558841139
             },
             {
@@ -279,7 +279,7 @@
             {
                 "clickDuration": 1.52834332,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0174700276632282
             },
             {
@@ -297,7 +297,7 @@
             {
                 "clickDuration": 6.63935041,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0733047321019446
             },
             {
@@ -327,19 +327,19 @@
             {
                 "clickDuration": 3.33240962,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4941680995812342
             },
             {
                 "clickDuration": 2.86154175,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4472697656321455
             },
             {
                 "clickDuration": 3.01397634,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5200319411020239
             }
         ]
@@ -358,13 +358,13 @@
             {
                 "clickDuration": 3.78026533,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6055939034271346
             },
             {
                 "clickDuration": 0.9583903,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.39223234444202437
             },
             {
@@ -376,7 +376,7 @@
             {
                 "clickDuration": 0.9030919,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0341979613174153
             },
             {
@@ -388,7 +388,7 @@
             {
                 "clickDuration": 1.41693544,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9087172259419329
             },
             {
@@ -425,7 +425,7 @@
             {
                 "clickDuration": 0.946576238,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.4887121945555946
             },
             {
@@ -437,13 +437,13 @@
             {
                 "clickDuration": 0.3195754,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3505911742913665
             },
             {
                 "clickDuration": 3.277675,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.14301338679848927
             },
             {
@@ -473,31 +473,31 @@
             {
                 "clickDuration": 0.7078325,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3106741495831454
             },
             {
                 "clickDuration": 2.61069036,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6861685550170805
             },
             {
                 "clickDuration": 2.389592,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.27907133608799845
             },
             {
                 "clickDuration": 1.72260451,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18916155548382096
             },
             {
                 "clickDuration": 1.04180884,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.6528330455481322
             }
         ]
@@ -516,7 +516,7 @@
             {
                 "clickDuration": 1.37503719,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5943659909121464
             },
             {
@@ -534,13 +534,13 @@
             {
                 "clickDuration": 2.22215,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06474419640182805
             },
             {
                 "clickDuration": 1.27820611,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.27618224551685466
             },
             {
@@ -582,13 +582,13 @@
             {
                 "clickDuration": 1.87558639,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5832541144541621
             },
             {
                 "clickDuration": 2.79179239,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2520311469206462
             },
             {
@@ -606,7 +606,7 @@
             {
                 "clickDuration": 3.847308,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09932073781108076
             }
         ]
@@ -625,7 +625,7 @@
             {
                 "clickDuration": 2.27880454,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18417449547081877
             },
             {
@@ -649,7 +649,7 @@
             {
                 "clickDuration": 1.86044157,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16190445860006908
             },
             {
@@ -661,31 +661,31 @@
             {
                 "clickDuration": 6.57031965,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15663369560096713
             },
             {
                 "clickDuration": 2.70780325,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4882702637619853
             },
             {
                 "clickDuration": 2.27782559,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.17804546969904683
             },
             {
                 "clickDuration": 1.9162302,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07157770800495482
             },
             {
                 "clickDuration": 1.33240306,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16667716927250892
             }
         ]
@@ -710,25 +710,25 @@
             {
                 "clickDuration": 2.667661,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05324027670070931
             },
             {
                 "clickDuration": 2.38914323,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.050952608002253076
             },
             {
                 "clickDuration": 3.750154,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05354103644766183
             },
             {
                 "clickDuration": 1.45846355,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.21080311658883472
             },
             {
@@ -764,13 +764,13 @@
             {
                 "clickDuration": 10.638485,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.28400918734756203
             },
             {
                 "clickDuration": 2.76435328,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2551985689412789
             },
             {
@@ -782,13 +782,13 @@
             {
                 "clickDuration": 5.86055,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3433724849567981
             },
             {
                 "clickDuration": 1.37532437,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1497100270422391
             }
         ]
@@ -813,7 +813,7 @@
             {
                 "clickDuration": 1.22245026,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5469441827258003
             },
             {
@@ -825,7 +825,7 @@
             {
                 "clickDuration": 2.180616,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.11573825121168552
             },
             {
@@ -843,13 +843,13 @@
             {
                 "clickDuration": 3.21965671,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9534285377186016
             },
             {
                 "clickDuration": 2.81971169,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4262178787888732
             },
             {
@@ -861,7 +861,7 @@
             {
                 "clickDuration": 0.624606252,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3730111517429248
             },
             {
@@ -873,13 +873,13 @@
             {
                 "clickDuration": 0.625903964,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4310236619517503
             },
             {
                 "clickDuration": 2.402625,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15766480878212225
             },
             {
@@ -910,49 +910,49 @@
             {
                 "clickDuration": 1.76395512,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9812006809554835
             },
             {
                 "clickDuration": 1.61162686,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2220882989821304
             },
             {
                 "clickDuration": 2.38952017,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.41568355786375305
             },
             {
                 "clickDuration": 1.05512452,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3033853419327227
             },
             {
                 "clickDuration": 1.181165,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.44868388371902446
             },
             {
                 "clickDuration": 2.09809971,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18830883417239425
             },
             {
                 "clickDuration": 0.7094205,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6267894867388033
             },
             {
                 "clickDuration": 0.985963464,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12301845144213043
             }
         ]
@@ -1212,13 +1212,13 @@
             {
                 "clickDuration": 0.235319719,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.20792066620935365
             },
             {
                 "clickDuration": 2.43061662,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8449705858151767
             },
             {
@@ -1242,19 +1242,19 @@
             {
                 "clickDuration": 0.3051294,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2782054219362329
             },
             {
                 "clickDuration": 1.57026911,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0386927279445335
             },
             {
                 "clickDuration": 1.84691834,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6526466515454148
             }
         ]
@@ -1303,25 +1303,25 @@
             {
                 "clickDuration": 0.333181918,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.4470455448219273
             },
             {
                 "clickDuration": 1.5938412,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8300018717188902
             },
             {
                 "clickDuration": 1.47537529,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2790455744015415
             },
             {
                 "clickDuration": 1.79240382,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.605385020771571
             },
             {
@@ -1376,13 +1376,13 @@
             {
                 "clickDuration": 3.431492,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.4005300453947902
             },
             {
                 "clickDuration": 1.16687322,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23188074586631172
             },
             {
@@ -1431,7 +1431,7 @@
             {
                 "clickDuration": 1.26465213,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1366353323801461
             },
             {
@@ -1443,7 +1443,7 @@
             {
                 "clickDuration": 1.80636287,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1385341316132294
             }
         ]
@@ -1546,7 +1546,7 @@
             {
                 "clickDuration": 1.04292846,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07047073256383861
             }
         ]
@@ -1595,31 +1595,31 @@
             {
                 "clickDuration": 0.444756061,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0601968502121444
             },
             {
                 "clickDuration": 0.889156461,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2669174279429371
             },
             {
                 "clickDuration": 1.123639,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.88777820785823
             },
             {
                 "clickDuration": 1.68113279,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.3361075360274002
             },
             {
                 "clickDuration": 1.89019513,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5912496838123943
             }
         ]
@@ -1789,13 +1789,13 @@
             {
                 "clickDuration": 1.59819627,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2840748341683736
             },
             {
                 "clickDuration": 2.48657751,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.591089540900023
             },
             {
@@ -1838,19 +1838,19 @@
             {
                 "clickDuration": 2.541423,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.20713149346879461
             },
             {
                 "clickDuration": 1.47242308,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.17454715593924722
             },
             {
                 "clickDuration": 1.72240376,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.24455473611359552
             },
             {
@@ -1862,19 +1862,19 @@
             {
                 "clickDuration": 1.27727222,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12000302672379376
             },
             {
                 "clickDuration": 2.38822937,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.32359487372246953
             },
             {
                 "clickDuration": 1.94526446,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.36192928892761966
             }
         ]
@@ -1893,7 +1893,7 @@
             {
                 "clickDuration": 0.957596,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12376950739275845
             },
             {
@@ -1905,31 +1905,31 @@
             {
                 "clickDuration": 0.583815753,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7868279060881596
             },
             {
                 "clickDuration": 1.40318346,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.40583496575766254
             },
             {
                 "clickDuration": 1.5559268,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.14727130823504989
             },
             {
                 "clickDuration": 1.2632376,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5647277479322906
             },
             {
                 "clickDuration": 0.8886642,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3496002558140724
             }
         ]
@@ -1954,37 +1954,37 @@
             {
                 "clickDuration": 4.529695,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8787319099808368
             },
             {
                 "clickDuration": 2.41614914,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04405657727359179
             },
             {
                 "clickDuration": 1.86090326,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.21455700372254924
             },
             {
                 "clickDuration": 1.33338583,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.33086490084852066
             },
             {
                 "clickDuration": 1.58291912,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.19476243794795678
             },
             {
                 "clickDuration": 1.13829327,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1690597563509427
             }
         ]
@@ -2031,7 +2031,7 @@
             {
                 "clickDuration": 1.08432448,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.8481923536059401
             },
             {
@@ -2043,7 +2043,7 @@
             {
                 "clickDuration": 0.59793365,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4294840243554299
             },
             {
@@ -2055,13 +2055,13 @@
             {
                 "clickDuration": 1.54282963,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23331906520619589
             },
             {
                 "clickDuration": 1.722808,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23213804552462017
             },
             {
@@ -2073,7 +2073,7 @@
             {
                 "clickDuration": 1.25062656,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4392487665830218
             }
         ]
@@ -2092,7 +2092,7 @@
             {
                 "clickDuration": 1.76446712,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4180651838685645
             },
             {
@@ -2104,7 +2104,7 @@
             {
                 "clickDuration": 1.5033102,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5884586061490831
             },
             {
@@ -2116,25 +2116,25 @@
             {
                 "clickDuration": 0.375923663,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.38410121333481556
             },
             {
                 "clickDuration": 3.15262938,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4118792900701113
             },
             {
                 "clickDuration": 1.80498552,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.08686535055055605
             },
             {
                 "clickDuration": 2.194988,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.5068660089796615
             }
         ]
@@ -2153,13 +2153,13 @@
             {
                 "clickDuration": 2.96155214,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.29484647502845923
             },
             {
                 "clickDuration": 1.47343814,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2606010262848645
             },
             {
@@ -2171,7 +2171,7 @@
             {
                 "clickDuration": 1.09768748,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.026661206632135812
             },
             {
@@ -2183,19 +2183,19 @@
             {
                 "clickDuration": 3.0146935,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16430342017218957
             },
             {
                 "clickDuration": 3.069275,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.22805844636833722
             },
             {
                 "clickDuration": 2.75114822,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6595323112501232
             }
         ]
@@ -2214,25 +2214,25 @@
             {
                 "clickDuration": 2.12283015,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09273089250336002
             },
             {
                 "clickDuration": 0.875963151,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16975399337621377
             },
             {
                 "clickDuration": 1.31996691,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.29869137684009744
             },
             {
                 "clickDuration": 1.209049,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18859424112248438
             },
             {
@@ -2244,13 +2244,13 @@
             {
                 "clickDuration": 4.41598463,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0506849949759232
             },
             {
                 "clickDuration": 1.48615873,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.80582574215952
             }
         ]
@@ -2269,25 +2269,25 @@
             {
                 "clickDuration": 2.888304,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04010887067183986
             },
             {
                 "clickDuration": 2.16837525,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23717008172355983
             },
             {
                 "clickDuration": 1.77748024,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.11950574952717939
             },
             {
                 "clickDuration": 2.530229,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15913310234413253
             },
             {
@@ -2311,7 +2311,7 @@
             {
                 "clickDuration": 1.41571069,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1264885662452679
             },
             {
@@ -2323,7 +2323,7 @@
             {
                 "clickDuration": 0.750061035,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.20246654689429813
             }
         ]
@@ -2342,25 +2342,25 @@
             {
                 "clickDuration": 0.5265785,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.44472430612731795
             },
             {
                 "clickDuration": 1.05734694,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09548530277079839
             },
             {
                 "clickDuration": 1.32086647,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.02318602359259716
             },
             {
                 "clickDuration": 1.91753721,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18553983979668265
             },
             {
@@ -2378,7 +2378,7 @@
             {
                 "clickDuration": 0.4724337,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.46640925600430655
             }
         ]
@@ -2397,13 +2397,13 @@
             {
                 "clickDuration": 1.99976945,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7923325761039296
             },
             {
                 "clickDuration": 2.13880563,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0042924825618256
             },
             {
@@ -2421,31 +2421,31 @@
             {
                 "clickDuration": 0.9714845,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5371090737934662
             },
             {
                 "clickDuration": 2.251685,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.8085985630025927
             },
             {
                 "clickDuration": 2.02724862,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.38765163857962537
             },
             {
                 "clickDuration": 1.87548232,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5682734997418433
             },
             {
                 "clickDuration": 1.90452027,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7127083959362868
             }
         ]
@@ -2476,13 +2476,13 @@
             {
                 "clickDuration": 0.929757953,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.057278687005165585
             },
             {
                 "clickDuration": 2.37537,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.315731068141809
             },
             {
@@ -2494,7 +2494,7 @@
             {
                 "clickDuration": 1.83352375,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07395294612522216
             },
             {
@@ -2524,7 +2524,7 @@
             {
                 "clickDuration": 0.6100728,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3607460226693431
             },
             {
@@ -2536,13 +2536,13 @@
             {
                 "clickDuration": 0.9304861,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.377269195831615
             },
             {
                 "clickDuration": 2.77772951,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.252030067210435
             },
             {
@@ -2572,7 +2572,7 @@
             {
                 "clickDuration": 0.166125387,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.014521925408110292
             }
         ]
@@ -2603,13 +2603,13 @@
             {
                 "clickDuration": 0.3610794,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.519998712038667
             },
             {
                 "clickDuration": 2.55635047,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6461823420416698
             },
             {
@@ -2633,7 +2633,7 @@
             {
                 "clickDuration": 4.722185,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05236025606840492
             },
             {
@@ -2645,7 +2645,7 @@
             {
                 "clickDuration": 1.138867,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12279897603981496
             },
             {
@@ -2717,13 +2717,13 @@
             {
                 "clickDuration": 0.8194016,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04805820906371354
             },
             {
                 "clickDuration": 1.45909476,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.27185763999722173
             },
             {
@@ -2735,7 +2735,7 @@
             {
                 "clickDuration": 0.486321956,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6806207219876441
             }
         ]
@@ -2754,13 +2754,13 @@
             {
                 "clickDuration": 3.14598274,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4532173816050343
             },
             {
                 "clickDuration": 0.917424858,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.36924367129388114
             },
             {
@@ -2784,7 +2784,7 @@
             {
                 "clickDuration": 0.9708684,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.25113679132320893
             },
             {
@@ -2796,7 +2796,7 @@
             {
                 "clickDuration": 0.875325441,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04642758088585951
             },
             {
@@ -2808,7 +2808,7 @@
             {
                 "clickDuration": 1.3755002,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04268773397311329
             },
             {
@@ -2820,19 +2820,19 @@
             {
                 "clickDuration": 0.639172137,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6920241302534796
             },
             {
                 "clickDuration": 0.985674143,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07724686472202107
             },
             {
                 "clickDuration": 3.09576368,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1988785383737513
             }
         ]
@@ -2851,19 +2851,19 @@
             {
                 "clickDuration": 0.99804765,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23936820264178607
             },
             {
                 "clickDuration": 2.265681,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8971937699867631
             },
             {
                 "clickDuration": 1.62575865,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.35919227113142926
             },
             {
@@ -2887,25 +2887,25 @@
             {
                 "clickDuration": 1.26349187,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6616824142705591
             },
             {
                 "clickDuration": 2.110987,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.02331311019806255
             },
             {
                 "clickDuration": 1.32055557,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9242385241743286
             },
             {
                 "clickDuration": 1.94414413,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.34747634116136356
             }
         ]
@@ -2936,13 +2936,13 @@
             {
                 "clickDuration": 2.01307774,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3024777216354639
             },
             {
                 "clickDuration": 2.4305532,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0923002477844095
             },
             {
@@ -3026,7 +3026,7 @@
             {
                 "clickDuration": 10.7647028,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09487839655762129
             },
             {
@@ -3146,7 +3146,7 @@
             {
                 "clickDuration": 1.37529421,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6710275302671946
             },
             {
@@ -3218,7 +3218,7 @@
             {
                 "clickDuration": 0.971383631,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4986309026434323
             },
             {
@@ -3236,7 +3236,7 @@
             {
                 "clickDuration": 0.680912,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04718628983724516
             }
         ]
@@ -3255,7 +3255,7 @@
             {
                 "clickDuration": 0.513998866,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6386675624597814
             },
             {
@@ -3363,7 +3363,7 @@
             {
                 "clickDuration": 1.69437432,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04545162155613487
             },
             {
@@ -3411,13 +3411,13 @@
             {
                 "clickDuration": 0.9996771,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3403524473001649
             },
             {
                 "clickDuration": 3.0132935,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13517349445239293
             },
             {
@@ -3459,7 +3459,7 @@
             {
                 "clickDuration": 2.45852017,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.35758634564926206
             },
             {
@@ -3507,7 +3507,7 @@
             {
                 "clickDuration": 0.776925,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4318056139533497
             }
         ]
@@ -3538,13 +3538,13 @@
             {
                 "clickDuration": 2.03093314,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.781409626261349
             },
             {
                 "clickDuration": 1.13804555,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2865884361555742
             },
             {
@@ -3568,13 +3568,13 @@
             {
                 "clickDuration": 1.0968504,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2066211086866927
             },
             {
                 "clickDuration": 1.4450227,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5156926422561305
             },
             {
@@ -3586,13 +3586,13 @@
             {
                 "clickDuration": 1.70755172,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.049725961642150915
             },
             {
                 "clickDuration": 3.08580637,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09656369296219736
             }
         ]
@@ -3683,13 +3683,13 @@
             {
                 "clickDuration": 2.29216766,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8053830278390747
             },
             {
                 "clickDuration": 1.41696811,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.03344806236437507
             },
             {
@@ -3701,7 +3701,7 @@
             {
                 "clickDuration": 1.88886058,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6223600143690725
             }
         ]
@@ -3744,7 +3744,7 @@
             {
                 "clickDuration": 3.98675013,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06809416227371025
             },
             {
@@ -3816,7 +3816,7 @@
             {
                 "clickDuration": 1.88987243,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.22653543937643714
             },
             {
@@ -3828,7 +3828,7 @@
             {
                 "clickDuration": 6.09774733,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3037826328942517
             },
             {
@@ -3888,13 +3888,13 @@
             {
                 "clickDuration": 1.23583436,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05562778338967695
             },
             {
                 "clickDuration": 13.1664667,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06647865466774898
             }
         ]
@@ -3913,19 +3913,19 @@
             {
                 "clickDuration": 1.56742811,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6558381790118099
             },
             {
                 "clickDuration": 1.19572556,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8934706515800357
             },
             {
                 "clickDuration": 1.45897746,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2008932372176557
             },
             {
@@ -3937,7 +3937,7 @@
             {
                 "clickDuration": 2.79080343,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7995354786599813
             },
             {
@@ -3949,13 +3949,13 @@
             {
                 "clickDuration": 0.5693854,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.46745946475770206
             },
             {
                 "clickDuration": 2.0972147,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7444890256228478
             }
         ]
@@ -4004,13 +4004,13 @@
             {
                 "clickDuration": 0.583568931,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07781928655070217
             },
             {
                 "clickDuration": 2.01523733,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.17299846357924326
             },
             {
@@ -4040,7 +4040,7 @@
             {
                 "clickDuration": 0.0959276,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12346703947197905
             },
             {
@@ -4052,7 +4052,7 @@
             {
                 "clickDuration": 2.65285325,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3990938748444775
             },
             {
@@ -4083,7 +4083,7 @@
             {
                 "clickDuration": 2.668508,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1843786005368197
             },
             {
@@ -4149,7 +4149,7 @@
             {
                 "clickDuration": 3.79109335,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7587207281035176
             },
             {
@@ -4167,7 +4167,7 @@
             {
                 "clickDuration": 7.555313,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4470396233119014
             },
             {
@@ -4179,7 +4179,7 @@
             {
                 "clickDuration": 1.99942946,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.014000139109782535
             }
         ]
@@ -4198,7 +4198,7 @@
             {
                 "clickDuration": 3.91446638,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.01038390884417007
             },
             {
@@ -4210,31 +4210,31 @@
             {
                 "clickDuration": 0.5135074,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8184952845959462
             },
             {
                 "clickDuration": 2.110096,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.38493615747972687
             },
             {
                 "clickDuration": 3.251451,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2521091733564675
             },
             {
                 "clickDuration": 2.23667765,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.985545003360283
             },
             {
                 "clickDuration": 2.04001665,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.21164097208034202
             }
         ]
@@ -4259,13 +4259,13 @@
             {
                 "clickDuration": 1.25024307,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.361593535861157
             },
             {
                 "clickDuration": 1.79233241,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2199683062118343
             },
             {
@@ -4289,19 +4289,19 @@
             {
                 "clickDuration": 0.651565969,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.20938903007895326
             },
             {
                 "clickDuration": 1.66703129,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8424194027803491
             },
             {
                 "clickDuration": 2.01339769,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5371853043206198
             }
         ]
@@ -4326,19 +4326,19 @@
             {
                 "clickDuration": 1.56919563,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.025461184330696218
             },
             {
                 "clickDuration": 2.29265857,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2893978425381682
             },
             {
                 "clickDuration": 1.00019526,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07457434834168165
             },
             {
@@ -4356,7 +4356,7 @@
             {
                 "clickDuration": 0.81976825,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.01239186233893967
             },
             {
@@ -4374,7 +4374,7 @@
             {
                 "clickDuration": 1.15115714,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06377234212254165
             }
         ]
@@ -4393,19 +4393,19 @@
             {
                 "clickDuration": 3.599468,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1786633035564995
             },
             {
                 "clickDuration": 4.331911,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07551428865581675
             },
             {
                 "clickDuration": 3.56911135,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09537289090678899
             },
             {
@@ -4423,13 +4423,13 @@
             {
                 "clickDuration": 3.917212,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06761896382643863
             },
             {
                 "clickDuration": 5.27701044,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13960634740051261
             },
             {
@@ -4447,7 +4447,7 @@
             {
                 "clickDuration": 4.72284,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4083065794182462
             }
         ]
@@ -4466,37 +4466,37 @@
             {
                 "clickDuration": 2.29086614,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.637821517952208
             },
             {
                 "clickDuration": 1.32062638,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4096209482371017
             },
             {
                 "clickDuration": 2.61146164,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.25205394739696774
             },
             {
                 "clickDuration": 2.15382242,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4560225471538651
             },
             {
                 "clickDuration": 1.7080009,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15462377846689646
             },
             {
                 "clickDuration": 1.820661,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.041465915127835
             }
         ]
@@ -4515,19 +4515,19 @@
             {
                 "clickDuration": 2.375286,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3963426140944221
             },
             {
                 "clickDuration": 1.264342,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7491129652110906
             },
             {
                 "clickDuration": 2.18048716,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2313896073323478
             },
             {
@@ -4539,7 +4539,7 @@
             {
                 "clickDuration": 2.1254046,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4058882909672692
             },
             {
@@ -4551,7 +4551,7 @@
             {
                 "clickDuration": 0.597797453,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 2.797123441432488
             }
         ]
@@ -4570,25 +4570,25 @@
             {
                 "clickDuration": 1.43121707,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.021932861840751702
             },
             {
                 "clickDuration": 1.00029325,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0322147504611633
             },
             {
                 "clickDuration": 1.23468649,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7199823151837702
             },
             {
                 "clickDuration": 1.36070216,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.760626162196023
             },
             {
@@ -4600,13 +4600,13 @@
             {
                 "clickDuration": 0.6806455,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.11795594110071728
             },
             {
                 "clickDuration": 1.5419544,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5168847217176766
             }
         ]
@@ -4625,13 +4625,13 @@
             {
                 "clickDuration": 4.073348,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16462079240548985
             },
             {
                 "clickDuration": 2.764513,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1078202133294107
             },
             {
@@ -4643,13 +4643,13 @@
             {
                 "clickDuration": 1.48672223,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6181888914959608
             },
             {
                 "clickDuration": 3.08461761,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.013106311914491346
             },
             {
@@ -4739,13 +4739,13 @@
             {
                 "clickDuration": 3.802507,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16682863057002295
             },
             {
                 "clickDuration": 5.625977,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.061063508890063754
             }
         ]
@@ -4764,13 +4764,13 @@
             {
                 "clickDuration": 4.05573225,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.24997865541203604
             },
             {
                 "clickDuration": 3.57068825,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15483363181308427
             },
             {
@@ -4812,7 +4812,7 @@
             {
                 "clickDuration": 2.85906744,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.338111017129086
             },
             {
@@ -4836,13 +4836,13 @@
             {
                 "clickDuration": 1.05517781,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06315278450066139
             },
             {
                 "clickDuration": 6.06919241,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07240695496493049
             }
         ]
@@ -4873,13 +4873,13 @@
             {
                 "clickDuration": 1.68104267,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5843722715465964
             },
             {
                 "clickDuration": 1.12561917,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7446968080644746
             },
             {
@@ -4910,7 +4910,7 @@
             {
                 "clickDuration": 1.41245186,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.34834194564906884
             },
             {
@@ -4928,7 +4928,7 @@
             {
                 "clickDuration": 0.276669323,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2502795022190898
             },
             {
@@ -4958,25 +4958,25 @@
             {
                 "clickDuration": 1.51337755,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7089578869445953
             },
             {
                 "clickDuration": 2.69396424,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.3626782119648113
             },
             {
                 "clickDuration": 2.917547,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12727526525905877
             },
             {
                 "clickDuration": 1.16652119,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4295939371387378
             }
         ]
@@ -5001,7 +5001,7 @@
             {
                 "clickDuration": 1.55596852,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7184967158977388
             },
             {
@@ -5037,19 +5037,19 @@
             {
                 "clickDuration": 0.6953756,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09162053033207078
             },
             {
                 "clickDuration": 1.75084066,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12332825501808341
             },
             {
                 "clickDuration": 2.33368134,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7445008279224417
             }
         ]
@@ -5074,13 +5074,13 @@
             {
                 "clickDuration": 0.431512415,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09613256811037187
             },
             {
                 "clickDuration": 7.056714,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3105140130047223
             },
             {
@@ -5092,19 +5092,19 @@
             {
                 "clickDuration": 0.999258757,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12273178839622988
             },
             {
                 "clickDuration": 1.4435041,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.22997372842820332
             },
             {
                 "clickDuration": 1.77810812,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0648478763860416
             },
             {
@@ -5116,7 +5116,7 @@
             {
                 "clickDuration": 0.833664536,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16545746696304867
             }
         ]
@@ -5141,13 +5141,13 @@
             {
                 "clickDuration": 1.59747529,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.29267650297948217
             },
             {
                 "clickDuration": 2.66628456,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15296083655873768
             },
             {
@@ -5177,19 +5177,19 @@
             {
                 "clickDuration": 4.014388,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2988956481844437
             },
             {
                 "clickDuration": 4.3322897,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.29128973161198524
             },
             {
                 "clickDuration": 2.23635626,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.03099170027641826
             },
             {
@@ -5201,7 +5201,7 @@
             {
                 "clickDuration": 0.208343431,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6540219999693626
             }
         ]
@@ -5232,19 +5232,19 @@
             {
                 "clickDuration": 0.598060668,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3606254603266782
             },
             {
                 "clickDuration": 4.376065,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15888982693456322
             },
             {
                 "clickDuration": 5.70754576,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13424426888276056
             },
             {
@@ -5256,7 +5256,7 @@
             {
                 "clickDuration": 1.23508549,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.22965274723148468
             },
             {
@@ -5280,13 +5280,13 @@
             {
                 "clickDuration": 0.1535068,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.061414235197662974
             },
             {
                 "clickDuration": 7.30575657,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1283995163341204
             }
         ]
@@ -5305,7 +5305,7 @@
             {
                 "clickDuration": 2.83693624,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.08700089150770361
             },
             {
@@ -5317,25 +5317,25 @@
             {
                 "clickDuration": 2.11085916,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7594722454635514
             },
             {
                 "clickDuration": 2.07050967,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5337150453028485
             },
             {
                 "clickDuration": 1.72229278,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0641853952614345
             },
             {
                 "clickDuration": 0.918187559,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6841196595420985
             }
         ]
@@ -5354,7 +5354,7 @@
             {
                 "clickDuration": 3.91102672,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.425304266698682
             },
             {
@@ -5378,25 +5378,25 @@
             {
                 "clickDuration": 0.6945306,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18468084862323073
             },
             {
                 "clickDuration": 2.54217243,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06736472425554887
             },
             {
                 "clickDuration": 1.20829237,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4332029546722245
             },
             {
                 "clickDuration": 1.84755409,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04306669821351863
             },
             {
@@ -5439,37 +5439,37 @@
             {
                 "clickDuration": 4.514057,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05392472479414604
             },
             {
                 "clickDuration": 2.9446342,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.007392226360574152
             },
             {
                 "clickDuration": 3.18047762,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.14906157594309524
             },
             {
                 "clickDuration": 3.02778673,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1330435531806959
             },
             {
                 "clickDuration": 2.13828325,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06394204452228618
             },
             {
                 "clickDuration": 1.74963892,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09476855773548516
             }
         ]
@@ -5488,13 +5488,13 @@
             {
                 "clickDuration": 1.64374375,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.10697164620729026
             },
             {
                 "clickDuration": 0.249622419,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04936225328991799
             },
             {
@@ -5506,13 +5506,13 @@
             {
                 "clickDuration": 2.08486748,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3384276681647138
             },
             {
                 "clickDuration": 1.75030231,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12024711804245106
             },
             {
@@ -5524,7 +5524,7 @@
             {
                 "clickDuration": 0.334000975,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06223392253416784
             }
         ]
@@ -5549,7 +5549,7 @@
             {
                 "clickDuration": 0.861726344,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.08659482469089619
             },
             {
@@ -5561,19 +5561,19 @@
             {
                 "clickDuration": 2.722999,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7153412176183961
             },
             {
                 "clickDuration": 1.2780695,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9427202846180789
             },
             {
                 "clickDuration": 0.8338403,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3562010175559535
             }
         ]
@@ -5626,7 +5626,7 @@
             {
                 "clickDuration": 1.3758378,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2745382809785657
             },
             {
@@ -5638,7 +5638,7 @@
             {
                 "clickDuration": 0.9584044,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.055280744258932424
             },
             {
@@ -5656,7 +5656,7 @@
             {
                 "clickDuration": 0.334165722,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.424801782321229
             }
         ]
@@ -5675,7 +5675,7 @@
             {
                 "clickDuration": 2.9105885,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.24218825449215592
             },
             {
@@ -5687,7 +5687,7 @@
             {
                 "clickDuration": 3.26399517,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.023984508571029288
             },
             {
@@ -5705,25 +5705,25 @@
             {
                 "clickDuration": 0.7503886,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3172417815949731
             },
             {
                 "clickDuration": 1.5147351,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1822295378432342
             },
             {
                 "clickDuration": 2.250416,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.17673184990570856
             },
             {
                 "clickDuration": 1.80547011,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05394469259655208
             }
         ]
@@ -5742,7 +5742,7 @@
             {
                 "clickDuration": 1.72572553,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.36016005776307797
             },
             {
@@ -5754,7 +5754,7 @@
             {
                 "clickDuration": 0.9302064,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4767175247554144
             },
             {
@@ -5772,19 +5772,19 @@
             {
                 "clickDuration": 1.04332078,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.34896127386758924
             },
             {
                 "clickDuration": 2.87546158,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3198265199623604
             },
             {
                 "clickDuration": 3.04245877,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1065689870561117
             }
         ]
@@ -5809,31 +5809,31 @@
             {
                 "clickDuration": 1.75001073,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23549176851109532
             },
             {
                 "clickDuration": 2.90323162,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.26783106039696164
             },
             {
                 "clickDuration": 2.084021,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16608214792492634
             },
             {
                 "clickDuration": 1.5830704,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.013210052777970186
             },
             {
                 "clickDuration": 1.93071043,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.705942654331487
             }
         ]
@@ -5852,37 +5852,37 @@
             {
                 "clickDuration": 1.93767178,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2693923172654794
             },
             {
                 "clickDuration": 1.26496661,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.43910524505088433
             },
             {
                 "clickDuration": 0.721022844,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.9878322935944186
             },
             {
                 "clickDuration": 1.347466,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2452632658231013
             },
             {
                 "clickDuration": 1.7360872,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.2733913584776109
             },
             {
                 "clickDuration": 1.54169607,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13360457773309029
             }
         ]
@@ -5901,7 +5901,7 @@
             {
                 "clickDuration": 2.41637969,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.01461555798207195
             },
             {
@@ -5919,7 +5919,7 @@
             {
                 "clickDuration": 0.597833037,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16923850380203945
             },
             {
@@ -5931,7 +5931,7 @@
             {
                 "clickDuration": 3.62422776,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04232795708775265
             },
             {
@@ -5943,19 +5943,19 @@
             {
                 "clickDuration": 5.19293976,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05443646728079088
             },
             {
                 "clickDuration": 3.93109441,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04088184878735595
             },
             {
                 "clickDuration": 4.37504,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.08662913487236612
             }
         ]
@@ -5974,13 +5974,13 @@
             {
                 "clickDuration": 1.34263277,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.0279806610279978
             },
             {
                 "clickDuration": 1.81996071,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.47032905912019457
             },
             {
@@ -5992,7 +5992,7 @@
             {
                 "clickDuration": 0.374953061,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3149319374422158
             },
             {
@@ -6016,19 +6016,19 @@
             {
                 "clickDuration": 1.72271717,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.23650987763121
             },
             {
                 "clickDuration": 1.09562838,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5216049219021114
             },
             {
                 "clickDuration": 2.23625183,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6309229431012456
             }
         ]
@@ -6047,37 +6047,37 @@
             {
                 "clickDuration": 1.87147272,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5086912812910522
             },
             {
                 "clickDuration": 1.39033461,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.23041904529626991
             },
             {
                 "clickDuration": 1.51423192,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7187758836985988
             },
             {
                 "clickDuration": 0.81949383,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.47754063350377124
             },
             {
                 "clickDuration": 0.9155608,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.9639874104420811
             },
             {
                 "clickDuration": 1.83365512,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.8831748207597117
             }
         ]
@@ -6096,7 +6096,7 @@
             {
                 "clickDuration": 2.11701941,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.22022734733696844
             },
             {
@@ -6174,19 +6174,19 @@
             {
                 "clickDuration": 0.4838874,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3414917785276387
             },
             {
                 "clickDuration": 3.41640973,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2163806608454468
             },
             {
                 "clickDuration": 2.27757144,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.02046372111106308
             },
             {
@@ -6204,7 +6204,7 @@
             {
                 "clickDuration": 0.6939585,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5111616320882814
             },
             {
@@ -6216,7 +6216,7 @@
             {
                 "clickDuration": 1.24022079,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.015920822963039604
             }
         ]
@@ -6235,37 +6235,37 @@
             {
                 "clickDuration": 1.17185163,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.044258522224940186
             },
             {
                 "clickDuration": 2.54298067,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2399430176374725
             },
             {
                 "clickDuration": 2.45917773,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.8993028327427655
             },
             {
                 "clickDuration": 1.56893134,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0922896560976232
             },
             {
                 "clickDuration": 1.01368165,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5026111540474175
             },
             {
                 "clickDuration": 1.3056469,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.11105039764253793
             }
         ]
@@ -6284,19 +6284,19 @@
             {
                 "clickDuration": 1.91913521,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.46666480072804106
             },
             {
                 "clickDuration": 1.2927736,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.654195709833557
             },
             {
                 "clickDuration": 1.63855314,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.5492196007447219
             },
             {
@@ -6314,7 +6314,7 @@
             {
                 "clickDuration": 0.81956327,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5280927760140551
             }
         ]
@@ -6339,25 +6339,25 @@
             {
                 "clickDuration": 3.54177165,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05704336477686041
             },
             {
                 "clickDuration": 2.109543,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4257569261595606
             },
             {
                 "clickDuration": 2.88826227,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13542299393974302
             },
             {
                 "clickDuration": 2.67968059,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.049154429109499714
             },
             {
@@ -6369,7 +6369,7 @@
             {
                 "clickDuration": 3.6248138,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2054916226411404
             },
             {
@@ -6393,7 +6393,7 @@
             {
                 "clickDuration": 0.583187938,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05748034881898319
             }
         ]
@@ -6448,7 +6448,7 @@
             {
                 "clickDuration": 3.51344132,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09012114228000302
             },
             {
@@ -6472,13 +6472,13 @@
             {
                 "clickDuration": 1.541411,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.14305090689815045
             },
             {
                 "clickDuration": 5.08296776,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.37553425372857324
             },
             {
@@ -6502,7 +6502,7 @@
             {
                 "clickDuration": 6.58419132,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.046258522296686505
             },
             {
@@ -6514,7 +6514,7 @@
             {
                 "clickDuration": 2.291082,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.45170111286909054
             },
             {
@@ -6532,7 +6532,7 @@
             {
                 "clickDuration": 0.9586282,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.24799895939480024
             }
         ]
@@ -6569,7 +6569,7 @@
             {
                 "clickDuration": 3.79089665,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.25287126982509534
             },
             {
@@ -6581,7 +6581,7 @@
             {
                 "clickDuration": 0.805232942,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.016605798634376917
             },
             {
@@ -6593,7 +6593,7 @@
             {
                 "clickDuration": 0.680503964,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.1009875519581678
             },
             {
@@ -6605,13 +6605,13 @@
             {
                 "clickDuration": 4.31995773,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.008629636776840255
             },
             {
                 "clickDuration": 2.11082816,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6990411311960809
             }
         ]
@@ -6630,19 +6630,19 @@
             {
                 "clickDuration": 1.68052685,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3415990837343994
             },
             {
                 "clickDuration": 1.29126859,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06041757129820407
             },
             {
                 "clickDuration": 1.08333552,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.40372426046673193
             },
             {
@@ -6660,7 +6660,7 @@
             {
                 "clickDuration": 1.278284,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5751506522772891
             },
             {
@@ -6672,7 +6672,7 @@
             {
                 "clickDuration": 1.12547064,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4657421474051501
             },
             {
@@ -6690,7 +6690,7 @@
             {
                 "clickDuration": 0.736552,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04605594919525963
             }
         ]
@@ -6721,13 +6721,13 @@
             {
                 "clickDuration": 3.48660254,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.17824336190181586
             },
             {
                 "clickDuration": 1.984486,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0810185899832344
             },
             {
@@ -6751,25 +6751,25 @@
             {
                 "clickDuration": 2.45832729,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6202136569826383
             },
             {
                 "clickDuration": 2.180635,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15103878403054197
             },
             {
                 "clickDuration": 2.48575068,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.601184489447691
             },
             {
                 "clickDuration": 3.38792539,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06619687267502503
             }
         ]
@@ -6800,13 +6800,13 @@
             {
                 "clickDuration": 2.41784739,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5236565116606439
             },
             {
                 "clickDuration": 1.49986207,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16176217611715965
             },
             {
@@ -6818,19 +6818,19 @@
             {
                 "clickDuration": 1.3196373,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.08943558124877012
             },
             {
                 "clickDuration": 1.66661918,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.04684971888567905
             },
             {
                 "clickDuration": 1.56956041,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.45721765305380213
             }
         ]
@@ -6849,13 +6849,13 @@
             {
                 "clickDuration": 6.738746,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.02929312313497353
             },
             {
                 "clickDuration": 3.83338976,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.010254204853287424
             },
             {
@@ -6879,13 +6879,13 @@
             {
                 "clickDuration": 4.70836639,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.27552286164438855
             },
             {
                 "clickDuration": 6.05592871,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.01883002464319086
             },
             {
@@ -6909,7 +6909,7 @@
             {
                 "clickDuration": 2.00105143,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07405549520157807
             }
         ]
@@ -6956,7 +6956,7 @@
             {
                 "clickDuration": 4.888692,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.12138204950189631
             },
             {
@@ -7022,25 +7022,25 @@
             {
                 "clickDuration": 6.569478,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5651966354735511
             },
             {
                 "clickDuration": 3.26458,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6276059355273689
             },
             {
                 "clickDuration": 26.6112347,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.10534303875118019
             },
             {
                 "clickDuration": 6.88925076,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.15961792457123494
             }
         ]
@@ -7059,7 +7059,7 @@
             {
                 "clickDuration": 2.571443,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.681374453164085
             },
             {
@@ -7077,7 +7077,7 @@
             {
                 "clickDuration": 2.2209444,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.082576727300818
             },
             {
@@ -7095,7 +7095,7 @@
             {
                 "clickDuration": 2.93180013,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16280516015318186
             },
             {
@@ -7107,13 +7107,13 @@
             {
                 "clickDuration": 1.55570757,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2932631048500451
             },
             {
                 "clickDuration": 3.44550753,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6899047693604098
             }
         ]
@@ -7138,7 +7138,7 @@
             {
                 "clickDuration": 1.80610764,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.044581584301031055
             },
             {
@@ -7162,19 +7162,19 @@
             {
                 "clickDuration": 6.76311541,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07883166169994808
             },
             {
                 "clickDuration": 1.70827782,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09388257655059257
             },
             {
                 "clickDuration": 1.37511933,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5496957899839733
             },
             {
@@ -7186,7 +7186,7 @@
             {
                 "clickDuration": 2.167136,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.43930815281828495
             }
         ]
@@ -7205,7 +7205,7 @@
             {
                 "clickDuration": 0.4584387,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2507182888387564
             },
             {
@@ -7217,7 +7217,7 @@
             {
                 "clickDuration": 0.500099957,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5918682746633485
             },
             {
@@ -7229,7 +7229,7 @@
             {
                 "clickDuration": 0.8753107,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5514340854483525
             },
             {
@@ -7284,7 +7284,7 @@
             {
                 "clickDuration": 0.416693121,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.3392630631496427
             },
             {
@@ -7302,7 +7302,7 @@
             {
                 "clickDuration": 0.416817933,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7805404493003671
             },
             {
@@ -7314,7 +7314,7 @@
             {
                 "clickDuration": 0.472997665,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2965617047767449
             },
             {
@@ -7374,7 +7374,7 @@
             {
                 "clickDuration": 0.236019909,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.40161586104277636
             }
         ]
@@ -7489,7 +7489,7 @@
             {
                 "clickDuration": 1.04146516,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2993906525384525
             },
             {
@@ -7501,7 +7501,7 @@
             {
                 "clickDuration": 0.2644394,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5968346984185813
             },
             {
@@ -7567,7 +7567,7 @@
             {
                 "clickDuration": 2.36074328,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5376419749166469
             },
             {
@@ -7603,7 +7603,7 @@
             {
                 "clickDuration": 0.485724419,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13726859756270451
             },
             {
@@ -7633,7 +7633,7 @@
             {
                 "clickDuration": 0.44485873,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3273189980321132
             }
         ]
@@ -7670,7 +7670,7 @@
             {
                 "clickDuration": 0.41688633,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.14335656131057364
             },
             {
@@ -7700,13 +7700,13 @@
             {
                 "clickDuration": 0.3063764,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.779761048846562
             },
             {
                 "clickDuration": 1.51342249,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.7917023739225363
             }
         ]
@@ -7737,7 +7737,7 @@
             {
                 "clickDuration": 1.19517374,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.041848629020428
             },
             {
@@ -7774,7 +7774,7 @@
             {
                 "clickDuration": 1.77568591,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05690487085904279
             },
             {
@@ -7798,7 +7798,7 @@
             {
                 "clickDuration": 2.47257543,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.019190395090287842
             },
             {
@@ -7870,7 +7870,7 @@
             {
                 "clickDuration": 0.333309025,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3526402130452918
             }
         ]
@@ -7889,13 +7889,13 @@
             {
                 "clickDuration": 2.78783584,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.19154763899844812
             },
             {
                 "clickDuration": 1.56964028,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5368017841959728
             },
             {
@@ -7931,7 +7931,7 @@
             {
                 "clickDuration": 0.473379552,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3997769878009418
             },
             {
@@ -7961,7 +7961,7 @@
             {
                 "clickDuration": 0.4727384,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.40504162919215003
             }
         ]
@@ -8070,7 +8070,7 @@
             {
                 "clickDuration": 0.736929059,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.1020493230356927
             }
         ]
@@ -8125,7 +8125,7 @@
             {
                 "clickDuration": 0.5412636,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.14194540022713276
             },
             {
@@ -8174,7 +8174,7 @@
             {
                 "clickDuration": 1.48682344,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3052109629300908
             },
             {
@@ -8192,7 +8192,7 @@
             {
                 "clickDuration": 0.6807995,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.028177229074513616
             },
             {
@@ -8210,7 +8210,7 @@
             {
                 "clickDuration": 1.29192507,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6850687387624146
             }
         ]
@@ -8247,7 +8247,7 @@
             {
                 "clickDuration": 5.655086,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09025671449108098
             },
             {
@@ -8265,13 +8265,13 @@
             {
                 "clickDuration": 0.8894142,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.37474909220577546
             },
             {
                 "clickDuration": 3.73690319,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13796432084790364
             },
             {
@@ -8283,19 +8283,19 @@
             {
                 "clickDuration": 0.6519319,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6617310835414595
             },
             {
                 "clickDuration": 3.02698946,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5976193015313758
             },
             {
                 "clickDuration": 3.48699212,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.29388634682926124
             }
         ]
@@ -8314,7 +8314,7 @@
             {
                 "clickDuration": 2.74904943,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.22030163615337434
             },
             {
@@ -8404,7 +8404,7 @@
             {
                 "clickDuration": 1.8901552,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.4608598054620826
             },
             {
@@ -8416,7 +8416,7 @@
             {
                 "clickDuration": 2.88955641,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5665015894006176
             },
             {
@@ -8440,7 +8440,7 @@
             {
                 "clickDuration": 2.042441,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.40262184751480296
             }
         ]
@@ -8465,13 +8465,13 @@
             {
                 "clickDuration": 1.94424069,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2524799440967952
             },
             {
                 "clickDuration": 2.097317,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18294815428811362
             },
             {
@@ -8483,7 +8483,7 @@
             {
                 "clickDuration": 0.736061335,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.16295762055558247
             },
             {
@@ -8507,7 +8507,7 @@
             {
                 "clickDuration": 1.08319247,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.38175682670326
             },
             {
@@ -8519,7 +8519,7 @@
             {
                 "clickDuration": 0.749175131,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.739835549137479
             },
             {
@@ -8531,7 +8531,7 @@
             {
                 "clickDuration": 0.570585549,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.06576727683631275
             }
         ]
@@ -8562,7 +8562,7 @@
             {
                 "clickDuration": 0.847938538,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09312149486421245
             },
             {
@@ -8580,25 +8580,25 @@
             {
                 "clickDuration": 2.61160064,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.18420487817544054
             },
             {
                 "clickDuration": 1.59604228,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5180074812698493
             },
             {
                 "clickDuration": 2.84836483,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09979532011022585
             },
             {
                 "clickDuration": 4.18072033,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5156065422570835
             },
             {
@@ -8616,7 +8616,7 @@
             {
                 "clickDuration": 1.47232711,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.17503045546868412
             }
         ]
@@ -8635,31 +8635,31 @@
             {
                 "clickDuration": 1.93034327,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.02166895781963123
             },
             {
                 "clickDuration": 1.57082415,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.13447990612884594
             },
             {
                 "clickDuration": 0.264199227,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.2682133908484665
             },
             {
                 "clickDuration": 0.5140606,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6718762439122793
             },
             {
                 "clickDuration": 1.63955665,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 1.3371846461694163
             },
             {
@@ -8690,25 +8690,25 @@
             {
                 "clickDuration": 1.72246575,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.5536543612040468
             },
             {
                 "clickDuration": 1.08348858,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.1953262163282162
             },
             {
                 "clickDuration": 2.26392078,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.05556516944523576
             },
             {
                 "clickDuration": 1.070313,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0390914461228887
             },
             {
@@ -8720,7 +8720,7 @@
             {
                 "clickDuration": 0.402337223,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.24244655662513115
             },
             {
@@ -8732,7 +8732,7 @@
             {
                 "clickDuration": 3.09702015,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.018542515645365056
             }
         ]
@@ -8763,7 +8763,7 @@
             {
                 "clickDuration": 2.79279,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09826798157760909
             },
             {
@@ -8805,7 +8805,7 @@
             {
                 "clickDuration": 1.650109,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.6198858192379741
             },
             {
@@ -8841,19 +8841,19 @@
             {
                 "clickDuration": 0.3193641,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.08355293746043808
             },
             {
                 "clickDuration": 2.04209447,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.3503820724585125
             },
             {
                 "clickDuration": 1.70907009,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.0871626060677745
             }
         ]
@@ -8890,7 +8890,7 @@
             {
                 "clickDuration": 1.2361995,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09583533472005545
             },
             {
@@ -8914,7 +8914,7 @@
             {
                 "clickDuration": 0.8328856,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.09325313066031492
             },
             {
@@ -8926,7 +8926,7 @@
             {
                 "clickDuration": 0.4722749,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.21748894390494583
             },
             {
@@ -8938,13 +8938,13 @@
             {
                 "clickDuration": 0.487297982,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.035183741459651745
             },
             {
                 "clickDuration": 3.44617915,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.07130323707169915
             },
             {
@@ -8956,7 +8956,7 @@
             {
                 "clickDuration": 1.45798874,
                 "isCorrect": 1,
-                "HeisenbergError": 1,
+                "HeisenbergError": 0,
                 "HeisenbergAngle": 0.27971933408235317
             }
         ]

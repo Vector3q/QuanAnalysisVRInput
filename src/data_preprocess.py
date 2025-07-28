@@ -57,7 +57,7 @@ def extract_json_data(input_path):
                     stable_obj = entry['historyCaches'][stable_index]['intendedObjectID']
                     heisenberg_frame = entry['historyCaches'][stable_index]
                     target_obj = entry['targetPointID']
-                    if (stable_obj == target_obj):
+                    if (stable_obj == target_obj and not entry['isCorrect']):
                         entry['HeisenbergError'] = 1    
                 else:
                     intended_id = history_caches[middle_index]['intendedObjectID']
@@ -105,7 +105,7 @@ def extract_json_data(input_path):
                 #         step += 1
                 # if intended_id == entry['targetPointID'] and not entry['isCorrect']: 
                 #     entry['HeisenbergError'] = 1
-                
+
             entry['HeisenbergAngle'] = 0.0
             if heisenberg_frame and last_frame:
                 
