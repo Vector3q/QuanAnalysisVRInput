@@ -5,30 +5,11 @@ import json
 from scipy import stats
 import pandas as pd
 import pingouin as pg
+from statsmodels.stats.anova import AnovaRM
 import os
-from rpy2.robjects import pandas2ri
-import rpy2.robjects as robjects
-from rpy2.robjects.packages import importr
-from rpy2.robjects.conversion import localconverter
-from rpy2.robjects import default_converter
+import art
 
-os.environ['R_HOME'] = r'C:\R\R-4.3.2'
 
-try:
-    art = importr('ARTool')
-    emmeans = importr('emmeans')
-except:
-    utils.install_packages('ARTool')
-    utils.install_packages('emmeans')
-    art = importr('ARTool')
-    emmeans = importr('emmeans')
-
-def analyze_data(partial_name):
-    data_file_path = './output_json/' + full_name + "_" + partial_name + "_data.json"
-    data = load_json_data(data_file_path)
-    print(f'tech: {full_name}, partial_name: {partial_name}')
-    if data is None:
-            print("The data is None for ", full_name, " and ", partial_name)
 
 def load_technique_data(npy_dir):
     data = []
@@ -58,7 +39,7 @@ def load_technique_data(npy_dir):
                             'Subject': f"S0",  # Single subject for scalar value
                             'Technique': technique,
                             'ConditionType': condition_type,
-                            'ConditionLevel': condition_level,
+                            'ConditionLevel': str(condition_level),
                             'DependentVariable': dv_name,
                             'Value': dv_value
                         })
@@ -68,7 +49,7 @@ def load_technique_data(npy_dir):
                                 'Subject': f"S{subject_id}",  # Subject 必须为 categorical
                                 'Technique': technique,
                                 'ConditionType': condition_type,
-                                'ConditionLevel': condition_level,
+                                'ConditionLevel': str(condition_level),
                                 'DependentVariable': dv_name,
                                 'Value': value
                             })
@@ -131,56 +112,184 @@ def run_technique_anova(df):
         print(f"\nEffect Size (η²): {eta_sq:.4f}")
         print("=====================================")
 
+def load_json_data(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    return data
+
+def convert_json_to_anova_format(input_dir, output_csv):
+    all_data = []
+    json_files = [f for f in os.listdir(input_dir) if f.endswith('.json')]
+
+    for filename in json_files:
+        file_path = os.path.join(input_dir, filename)
+        try:
+            # 加载JSON数据
+            data = load_json_data(file_path)
+            if not data:
+                continue
+
+            # 提取关键信息并添加到总数据列表
+            for entry in data:
+                # 基础参数
+                base_info = {
+                    'technique': entry.get('inputtechnique', 'unknown'),
+                    'radius': entry.get('radius', 0),
+                    'distance': entry.get('distance', 0),
+                    'spacing': entry.get('spacing', 0),
+                    'username': entry.get('username', 'unknown')
+                }
+
+                # 遍历每个选择事件
+                for selection in entry.get('selectionSequence', []):
+                    observation = {
+                        **base_info,
+                        'click_duration': selection.get('clickDuration', 0),
+                        'is_correct': selection.get('isCorrect', 0),
+                        'heisenberg_error': selection.get('HeisenbergError', 0),
+                        'heisenberg_angle': selection.get('HeisenbergAngle', 0)
+                    }
+                    all_data.append(observation)
+
+        except Exception as e:
+            print(f"处理文件 {filename} 时出错: {str(e)}")
+            continue
+
+    # 转换为DataFrame并保存
+    df = pd.DataFrame(all_data)
+
+    def filter_outliers(group):
+        mean = group['click_duration'].mean()
+        std = group['click_duration'].std()
+        upper_bound = mean + 3 * std
+        mask = (
+            (group['click_duration'] >= 0.1) & 
+            (group['click_duration'] <= upper_bound) & 
+            (group['heisenberg_angle'] >= 0.01)
+        )
+        return group[mask]
+
+
+
+    filtered_df = df.groupby(['technique', 'radius', 'spacing']).apply(filter_outliers).reset_index(drop=True)
+    normality_results = []
+    def perform_normality_test(group):
+        condition = (
+            f"tech:{group['technique'].iloc[0]}, "
+            f"radius:{group['radius'].iloc[0]}, "
+            f"spacing:{group['spacing'].iloc[0]}"
+        )
+        if len(group) >= 3:
+            # 使用原始数据进行检验，不做任何筛选
+            sw_stat, sw_p = stats.shapiro(group['click_duration'])
+            
+            # 判断是否符合正态分布 (p>0.05为符合)
+            is_normal = sw_p > 0.05
+            normality_results.append({
+                'technique': group['technique'].iloc[0],
+                'radius': group['radius'].iloc[0],
+                'spacing': group['spacing'].iloc[0],
+                'sample_size': len(group),
+                'shapiro_w': round(sw_stat, 4),
+                'p_value': round(sw_p, 4),
+                'is_normal': is_normal
+            })
+            
+            # 打印检验结果
+            print(f"Shapiro-Wilk检验: {condition} | W={sw_stat:.4f}, p={sw_p:.4f} | {'' if is_normal else '不'}符合正态分布")
+        else:
+            print(f"Shapiro-Wilk检验: {condition} | 样本量不足(n={len(group)})，无法检验")
+
+        return group
+
+    filtered_df.groupby([
+        'technique', 'radius', 'spacing', 'distance'
+    ], group_keys=False).apply(perform_normality_test)
+
+    filtered_df.to_csv(output_csv, index=False)
+    print(f"所有数据已合并并过滤至: {output_csv}")
+    print(f"过滤前记录数: {len(df)}, 过滤后记录数: {len(filtered_df)}")
+    return filtered_df
+
 def main():
-    FOLDER_ABBREVIATIONS = {
-        'ControllerTracking': 'DC',
-        'ControllerIntenSelect': 'SC',
-        'BareHandTracking': 'DH',
-        'BareHandIntenSelect': 'SH'
-    }
-    ABBREV_TO_FULL = {v: k for k, v in FOLDER_ABBREVIATIONS.items()}
-
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--tech', type=str, default='DC', help='the technique of the json files')
-
-    args = parser.parse_args()
-    full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
-    abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
-
-    radius_range = ['radius_007', 'radius_014', 'radius_021']
-    spacing_range = ['spacing_03', 'spacing_05', 'spacing_07']
-    numpy_dir = os.path.join(os.path.dirname(__file__), './output_numpy')
-    if not os.path.exists(numpy_dir):
-        print(f"Error: Directory {numpy_dir} not found!")
-        return
-        
-    def analyze_data(partial_name):
-        data_file_path = './output_json/' + full_name + "_" + partial_name + "_data.json"
-        data = load_json_data(data_file_path)
-
-        print(f'tech: {full_name}, partial_name: {partial_name}')
-
-
-        if data is None:
-            print("The data is None for ", full_name, " and ", partial_name)
-
-        click_count, all_selection_times, all_selection_errors, H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude = extract_all_wanted_data(data)
-    # 加载并整合数据
-    df = load_technique_data(numpy_dir)
-    if df.empty:
-        print("No valid data found for ANOVA analysis!")
-        return
+    input_json = './output_json/'
+    output_csv = './output_csv/' + "csv_files.csv"
     
-    # df_list = []
-    # for (dv, condition), group_df in df.groupby(['DependentVariable', 'ConditionType']):
-    #     art_df = aligned_rank_transform(group_df.copy(), group_col='Technique', dv_col='Value')
-    #     df_list.append(art_df)
-    # df = pd.concat(df_list, ignore_index=True)
+    convert_json_to_anova_format(input_json, output_csv)
+    
+    df = pd.read_csv(output_csv)
 
-    # 执行ANOVA分析
-    run_technique_anova(df)
+    target_radius = 0.21
+    output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
+    df_filtered = df[df['radius'] == target_radius].copy()
+    df_filtered.to_csv(output_radius_csv, index=False)
+    df = df_filtered
 
-    run_art_rm_anova(df)
+    
+
+    df_agg = df.groupby(['username', 'technique', 'spacing'])['click_duration'].mean().reset_index()
+
+    aovrm = AnovaRM(data=df_agg, depvar='click_duration', subject='username',
+                    within=['technique', 'spacing']) 
+    fit = aovrm.fit()
+
+    
+
+    print(fit)
+
+    posthoc_ttest = pg.pairwise_tests(dv='click_duration',      # 因变量
+                                   within='technique',         # 重复测量因子
+                                   subject='username',         # 被试ID
+                                   data=df_agg,
+                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
+    print(posthoc_ttest.to_string())  
+
+    df_agg = df.groupby(['username', 'technique', 'spacing'])['is_correct'].mean().reset_index()
+
+    aovrm = AnovaRM(data=df_agg, depvar='is_correct', subject='username',
+                    within=['technique', 'spacing']) 
+    fit = aovrm.fit()
+
+    print(fit)
+
+    posthoc_ttest = pg.pairwise_tests(dv='is_correct',      # 因变量
+                                   within='technique',         # 重复测量因子
+                                   subject='username',         # 被试ID
+                                   data=df_agg,
+                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
+    print(posthoc_ttest.to_string())  
+
+    df_agg = df.groupby(['username', 'technique', 'spacing'])['heisenberg_error'].mean().reset_index()
+
+    aovrm = AnovaRM(data=df_agg, depvar='heisenberg_error', subject='username',
+                    within=['technique', 'spacing']) 
+    fit = aovrm.fit()
+
+    print(fit)
+
+    posthoc_ttest = pg.pairwise_tests(dv='heisenberg_error',      # 因变量
+                                   within='technique',         # 重复测量因子
+                                   subject='username',         # 被试ID
+                                   data=df_agg,
+                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
+    print(posthoc_ttest.to_string())  
+
+
+    df_agg = df.groupby(['username', 'technique', 'spacing'])['heisenberg_angle'].mean().reset_index()
+
+    aovrm = AnovaRM(data=df_agg, depvar='heisenberg_angle', subject='username',
+                    within=['technique', 'spacing']) 
+    fit = aovrm.fit()
+
+    print(fit)
+
+    posthoc_ttest = pg.pairwise_tests(dv='heisenberg_angle',      # 因变量
+                                   within='technique',         # 重复测量因子
+                                   subject='username',         # 被试ID
+                                   data=df_agg,
+                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
+    print(posthoc_ttest.to_string())  
+
 
 if __name__ == '__main__':
     main()

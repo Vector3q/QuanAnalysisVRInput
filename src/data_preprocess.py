@@ -41,8 +41,6 @@ def extract_json_data(input_path):
                     continue
                 middle_index = len(history_caches) // 2
 
-                # velocityDIs = [cache.get('velocityDI', 0) for cache in entry['historyCaches']]
-                # distanceDIs = [cache.get('distanceDI', 0) for cache in entry['historyCaches']]
                 velocityRots = [cache.get('velocityRot', 0) for cache in entry['historyCaches']]
                 start_index = max(0, len(velocityRots) - 14)
                 candidate_indices = [i for i in range(start_index, len(velocityRots)) if velocityRots[i] > 0.3]
