@@ -7,6 +7,7 @@ import pandas as pd
 import pingouin as pg
 import os
 
+
 def load_technique_data(npy_dir):
     data = []
     for filename in os.listdir(npy_dir):
@@ -45,15 +46,10 @@ def run_technique_anova(df):
     for (dv, condition), group_df in df.groupby(['DependentVariable', 'ConditionType']):
         print(f"\n=== ANOVA Results for {dv} ({condition}) ===")
         
-        art_data = pg.art(
-            data=group_df,
-            dv='Value',
-            between='Technique'
-        )
         # 单因素ANOVA (Technique为自变量)
         anova_result = pg.anova(
-            data=art_data,
-            dv='aligned_rank',
+            data=group_df,
+            dv='Value',
             between='Technique',
             detailed=True
         )
@@ -86,6 +82,12 @@ def main():
         print("No valid data found for ANOVA analysis!")
         return
     
+    # df_list = []
+    # for (dv, condition), group_df in df.groupby(['DependentVariable', 'ConditionType']):
+    #     art_df = aligned_rank_transform(group_df.copy(), group_col='Technique', dv_col='Value')
+    #     df_list.append(art_df)
+    # df = pd.concat(df_list, ignore_index=True)
+
     # 执行ANOVA分析
     run_technique_anova(df)
 
