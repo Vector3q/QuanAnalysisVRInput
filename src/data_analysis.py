@@ -2,6 +2,8 @@ from calendar import c
 import numpy as np
 import argparse
 import json
+from scipy import stats
+import pandas as pd
 
 from data_preprocess import load_json_data, save_data_to_json
 def read_from_numpy(file_path):
@@ -24,11 +26,19 @@ def extract_all_wanted_data(data):
         H_selection_errors = [float(1) if entry["HeisenbergError"] == 1 and entry["isCorrect"] == 0 else float(0) for entry in data_item["selectionSequence"]]
 
         for entry in data_item["selectionSequence"]:
-            if "HeisenbergOffset" in entry and isinstance(entry["HeisenbergOffset"], list):
+            if ("HeisenbergAngle" in entry and 
+                isinstance(entry["HeisenbergAngle"], (int, float)) and 
+                entry["HeisenbergAngle"] > 0):
                 h_offset = entry["HeisenbergOffset"]
                 all_H_Offset_x.append(float(h_offset[0]))
                 all_H_Offset_y.append(float(h_offset[1]))
-                all_H_Offset_magnitude.append(np.sqrt(float(h_offset[0])**2 + float(h_offset[1])**2))
+                all_H_Offset_magnitude.append(float(entry["HeisenbergAngle"]))
+            elif "HeisenbergOffset" in entry and isinstance(entry["HeisenbergOffset"], list):
+                h_offset = entry["HeisenbergOffset"]
+                all_H_Offset_x.append(float(h_offset[0]))
+                all_H_Offset_y.append(float(h_offset[1]))
+                magnitude = np.sqrt(float(h_offset[0])**2 + float(h_offset[1])**2)
+                all_H_Offset_magnitude.append(np.arctan(magnitude / 7.5) * (180 / np.pi))
                 # all_H_Offset_magnitude.append(h_offset)
 
         all_selection_times.extend(selection_times)
@@ -64,34 +74,22 @@ def extract_all_wanted_data(data):
         filtered_count = original_count - len(all_selection_times)
         print(f"过滤掉的数据点数量: {filtered_count}")
         print(f"过滤前: {original_count} 个, 过滤后: {len(all_selection_times)} 个")
-
+        
+        if len(all_H_Offset_magnitude) >= 3:
+            sw_stat, sw_p = stats.shapiro(all_H_Offset_magnitude)
+            print(f"\nShapiro-Wilk Test Results for Selection Times:")
+            print(f"统计量 (W): {sw_stat:.4f}, p值: {sw_p:.4f}")
+            if sw_p > 0.05:
+                print(f"结论: 数据符合正态分布 (p={sw_p:.4f} > 0.05)")
+            else:
+                print(f"结论: 数据不符合正态分布 (p={sw_p:.4f} ≤ 0.05)")
+            print("")
     all_correct_selection_times = all_selection_times[all_selection_errors > 0].tolist()
 
     return len(all_correct_selection_times), all_selection_times, all_selection_errors, all_H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude
 
 
 def get_global_avg_and_std(selection_times):
-    # print("sum: ", np.sum(selection_times))
-    # print("len: ", len(selection_times))
-
-    # selection_times = np.array(selection_times)
-
-    # original_mean = np.mean(selection_times)
-    # original_std = np.std(selection_times)
-
-    # lower_bound = original_mean - 3 * original_std
-    # upper_bound = original_mean + 3 * original_std
-
-    # filtered_times = selection_times[(selection_times >= lower_bound) & (selection_times <= upper_bound)]
-    # print(f"数据过滤: 原始{len(selection_times)}个, 过滤后{len(filtered_times)}个, 删除{len(selection_times)-len(filtered_times)}个异常值")
-    # avg = np.mean(filtered_times)
-    # std_dev = np.std(filtered_times)
-    # sem = std_dev / np.sqrt(len(filtered_times)) if len(filtered_times) > 0 else 0
-    # print("average: ", np.mean(selection_times))
-    # print("过滤后的平均值: ", avg)
-    # print("过滤后的标准差: ", std_dev)
-    # print("过滤后的标准误: ", sem)
-    # return avg, std_dev, sem
     avg = np.mean(selection_times)
 
     std_dev = np.std(selection_times)

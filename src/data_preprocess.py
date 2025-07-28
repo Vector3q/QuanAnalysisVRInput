@@ -106,22 +106,26 @@ def extract_json_data(input_path):
                     entry['HeisenbergError'] = 1
 
             if heisenberg_frame and last_frame:
-                # a = heisenberg_frame['endPoint']
-                # b = last_frame['endPoint']
-
-                # dot_product = a[0]*b[0] + a[1]*b[1] + (a[2]-1)*(b[2]-1)
-                # a_magnitude = math.sqrt(a[0]**2 + a[1]**2 + (a[2]-1)**2)
-                # b_magnitude = math.sqrt(b[0]**2 + b[1]**2 + (b[2]-1)**2)
-
-                # if a_magnitude * b_magnitude == 0:
-                #     angle_rad = 0.0  # 避免零向量导致的除零错误
-                # else:
-                #     cos_theta = dot_product / (a_magnitude * b_magnitude)
-                #     cos_theta = max(min(cos_theta, 1.0), -1.0)  # 数值稳定性处理
-                #     angle_rad = math.acos(cos_theta)
+                entry['HeisenbergAngle'] = 0.0
+                if 'rayForward' in last_frame and 'rayForward' in heisenberg_frame and last_frame['rayForward'] and heisenberg_frame['rayForward']:
+                    vec1 = last_frame['rayForward']
+                    vec2 = heisenberg_frame['rayForward']
+                    dot_product = sum(v1 * v2 for v1, v2 in zip(vec1, vec2))
+                    norm1 = math.sqrt(sum(v**2 for v in vec1))
+                    norm2 = math.sqrt(sum(v**2 for v in vec2))
+                    if norm1 == 0 or norm2 == 0:
+                        angle_deg = 0.0
+                    else:
+                        cos_theta = dot_product / (norm1 * norm2)
+                        cos_theta = max(min(cos_theta, 1.0), -1.0)
+                        
+                        angle_rad = math.acos(cos_theta)
+                        angle_deg = math.degrees(angle_rad)
                     
-                # angle_deg = math.degrees(angle_rad)
-                # entry['HeisenbergOffset'] = angle_deg  # 存储夹角（度）
+                    entry['HeisenbergAngle'] = angle_deg
+                    # print(f"Tech: {tech}, OffsetAngle: {entry['HeisenbergAngle']}")
+
+                
                 entry['HeisenbergOffset'] = [
                     last_frame['endPoint'][0] - heisenberg_frame['endPoint'][0],
                     last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1],
