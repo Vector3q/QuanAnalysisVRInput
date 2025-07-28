@@ -23,6 +23,13 @@ except:
     art = importr('ARTool')
     emmeans = importr('emmeans')
 
+def analyze_data(partial_name):
+    data_file_path = './output_json/' + full_name + "_" + partial_name + "_data.json"
+    data = load_json_data(data_file_path)
+    print(f'tech: {full_name}, partial_name: {partial_name}')
+    if data is None:
+            print("The data is None for ", full_name, " and ", partial_name)
+
 def load_technique_data(npy_dir):
     data = []
     for filename in os.listdir(npy_dir):
@@ -125,12 +132,39 @@ def run_technique_anova(df):
         print("=====================================")
 
 def main():
+    FOLDER_ABBREVIATIONS = {
+        'ControllerTracking': 'DC',
+        'ControllerIntenSelect': 'SC',
+        'BareHandTracking': 'DH',
+        'BareHandIntenSelect': 'SH'
+    }
+    ABBREV_TO_FULL = {v: k for k, v in FOLDER_ABBREVIATIONS.items()}
 
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('--tech', type=str, default='DC', help='the technique of the json files')
+
+    args = parser.parse_args()
+    full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
+    abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
+
+    radius_range = ['radius_007', 'radius_014', 'radius_021']
+    spacing_range = ['spacing_03', 'spacing_05', 'spacing_07']
     numpy_dir = os.path.join(os.path.dirname(__file__), './output_numpy')
     if not os.path.exists(numpy_dir):
         print(f"Error: Directory {numpy_dir} not found!")
         return
-    
+        
+    def analyze_data(partial_name):
+        data_file_path = './output_json/' + full_name + "_" + partial_name + "_data.json"
+        data = load_json_data(data_file_path)
+
+        print(f'tech: {full_name}, partial_name: {partial_name}')
+
+
+        if data is None:
+            print("The data is None for ", full_name, " and ", partial_name)
+
+        click_count, all_selection_times, all_selection_errors, H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude = extract_all_wanted_data(data)
     # 加载并整合数据
     df = load_technique_data(numpy_dir)
     if df.empty:
