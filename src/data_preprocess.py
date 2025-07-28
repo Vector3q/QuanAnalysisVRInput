@@ -131,6 +131,8 @@ def extract_json_data(input_path):
                     last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1],
                     last_frame['endPoint'][2] - heisenberg_frame['endPoint'][2]
                 ]
+                magnitude = np.sqrt(float(last_frame['endPoint'][0] - heisenberg_frame['endPoint'][0])**2 + float(last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1])**2)
+                entry['HeisenbergAngle'] = (np.arctan(magnitude / 7.5) * (180 / np.pi))
             entry.pop('selectedPointID', None)
             entry.pop('targetPointID', None)
             entry.pop('targetPointPos', None)

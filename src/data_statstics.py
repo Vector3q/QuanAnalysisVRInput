@@ -6,7 +6,22 @@ from scipy import stats
 import pandas as pd
 import pingouin as pg
 import os
+from rpy2.robjects import pandas2ri
+import rpy2.robjects as robjects
+from rpy2.robjects.packages import importr
+from rpy2.robjects.conversion import localconverter
+from rpy2.robjects import default_converter
 
+os.environ['R_HOME'] = r'C:\R\R-4.3.2'
+
+try:
+    art = importr('ARTool')
+    emmeans = importr('emmeans')
+except:
+    utils.install_packages('ARTool')
+    utils.install_packages('emmeans')
+    art = importr('ARTool')
+    emmeans = importr('emmeans')
 
 def load_technique_data(npy_dir):
     data = []
@@ -28,18 +43,57 @@ def load_technique_data(npy_dir):
             except:
                 continue
             
-            # 提取需要分析的因变量（可根据需求扩展）
             for dv_name in ['global_avg_selection_time', 'global_error_rate', 'global_H_offset_magnitude']:
                 if dv_name in processed_data:
-                    data.append({
-                        'Technique': technique,
-                        'ConditionType': condition_type,
-                        'ConditionLevel': condition_level,
-                        'DependentVariable': dv_name,
-                        'Value': processed_data[dv_name]
-                    })
-    
+                    dv_value = processed_data[dv_name]
+                    if np.isscalar(dv_value):
+                        data.append({
+                            'Subject': f"S0",  # Single subject for scalar value
+                            'Technique': technique,
+                            'ConditionType': condition_type,
+                            'ConditionLevel': condition_level,
+                            'DependentVariable': dv_name,
+                            'Value': dv_value
+                        })
+                    else:
+                        for subject_id, value in enumerate(dv_value):
+                            data.append({
+                                'Subject': f"S{subject_id}",  # Subject 必须为 categorical
+                                'Technique': technique,
+                                'ConditionType': condition_type,
+                                'ConditionLevel': condition_level,
+                                'DependentVariable': dv_name,
+                                'Value': value
+                            })
     return pd.DataFrame(data)
+
+def run_art_rm_anova(df):
+    for (dv, condition), group_df in df.groupby(['DependentVariable', 'ConditionType']):
+        print(f"\n=== ART + RM-ANOVA for {dv} ({condition}) ===")
+
+        # 检查是否包含 Subject 列
+        if 'Subject' not in group_df.columns:
+            print("Missing 'Subject' column for RM-ANOVA. Skipping...")
+            continue
+
+        # 将数据传入 R 环境
+        with localconverter(default_converter + pandas2ri.converter):
+            r_df = pandas2ri.py2rpy(group_df)
+            robjects.globalenv['data'] = r_df
+
+        robjects.r(f'''
+        library(ARTool)
+        library(emmeans)
+
+        model <- art(Value ~ Technique + (1|Subject), data=data)
+        art_anova <- anova(model)
+
+        # Bonferroni pairwise comparisons
+        pairwise_result <- emmeans(model, pairwise ~ Technique, adjust = "bonferroni")
+        ''')
+
+        print(robjects.r('art_anova'))
+        print(robjects.r('pairwise_result'))
 
 def run_technique_anova(df):
     # 按因变量和条件类型分组分析
@@ -71,6 +125,7 @@ def run_technique_anova(df):
         print("=====================================")
 
 def main():
+
     numpy_dir = os.path.join(os.path.dirname(__file__), './output_numpy')
     if not os.path.exists(numpy_dir):
         print(f"Error: Directory {numpy_dir} not found!")
@@ -90,6 +145,8 @@ def main():
 
     # 执行ANOVA分析
     run_technique_anova(df)
+
+    run_art_rm_anova(df)
 
 if __name__ == '__main__':
     main()
