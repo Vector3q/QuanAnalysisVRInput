@@ -220,9 +220,17 @@ def main():
     df = pd.read_csv(output_csv)
 
     target_radius = 0.21
+    target_spacing = 0.3
+
     output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
+    output_spacing_csv = './output_csv/' + "csv_files_spacing"+ "_03"+".csv"
+
     df_filtered = df[df['radius'] == target_radius].copy()
     df_filtered.to_csv(output_radius_csv, index=False)
+
+    df_filtered_spacing = df[df['spacing'] == target_spacing].copy()
+    df_filtered_spacing.to_csv(output_spacing_csv, index=False)
+
     df = df_filtered
 
     
