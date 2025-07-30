@@ -115,17 +115,19 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [data1['global_error_rate']*100, data5['global_error_rate']*100, data9['global_error_rate']*100]
+    data_selection_time_type1 = [100 - data1['global_error_rate']*100, 100 - data5['global_error_rate']*100, 100 - data9['global_error_rate']*100]
     data_selection_sem_type1 = [data1['global_error_rate_sem']*100, data5['global_error_rate_sem']*100, data9['global_error_rate_sem']*100]
 
-    data_selection_time_type2 = [data2['global_error_rate']*100, data6['global_error_rate']*100, data10['global_error_rate']*100]
+    data_selection_time_type2 = [100 - data2['global_error_rate']*100, 100 - data6['global_error_rate']*100, 100 - data10['global_error_rate']*100]
+
     data_selection_sem_type2 = [data2['global_error_rate_sem']*100, data6['global_error_rate_sem']*100, data10['global_error_rate_sem']*100]
 
-    data_selection_time_type3 = [data3['global_error_rate']*100, data7['global_error_rate']*100, data11['global_error_rate']*100]
+    data_selection_time_type3 = [100 - data3['global_error_rate']*100, 100 - data7['global_error_rate']*100, 100 - data11['global_error_rate']*100]
+
     data_selection_sem_type3 = [data3['global_error_rate_sem']*100, data7['global_error_rate_sem']*100, data11['global_error_rate_sem']*100]
 
+    data_selection_time_type4 = [100 - data4['global_error_rate']*100, 100 - data8['global_error_rate']*100, 100 - data12['global_error_rate']*100]
 
-    data_selection_time_type4 = [data4['global_error_rate']*100, data8['global_error_rate']*100, data12['global_error_rate']*100]
     data_selection_sem_type4 = [data4['global_error_rate_sem']*100, data8['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
@@ -428,17 +430,18 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [data1['global_error_rate']*100, data5['global_error_rate']*100, data9['global_error_rate']*100]
+    data_selection_time_type1 = [100 - data1['global_error_rate']*100, 100 - data5['global_error_rate']*100, 100 - data9['global_error_rate']*100]
     data_selection_sem_type1 = [data1['global_error_rate_sem']*100, data5['global_error_rate_sem']*100, data9['global_error_rate_sem']*100]
 
-    data_selection_time_type2 = [data2['global_error_rate']*100, data6['global_error_rate']*100, data10['global_error_rate']*100]
+    data_selection_time_type2 = [100 - data2['global_error_rate']*100, 100 - data6['global_error_rate']*100, 100 - data10['global_error_rate']*100]
     data_selection_sem_type2 = [data2['global_error_rate_sem']*100, data6['global_error_rate_sem']*100, data10['global_error_rate_sem']*100]
 
-    data_selection_time_type3 = [data3['global_error_rate']*100, data7['global_error_rate']*100, data11['global_error_rate']*100]
+    data_selection_time_type3 = [100 - data3['global_error_rate']*100, 100 - data7['global_error_rate']*100, 100 - data11['global_error_rate']*100]
     data_selection_sem_type3 = [data3['global_error_rate_sem']*100, data7['global_error_rate_sem']*100, data11['global_error_rate_sem']*100]
 
 
-    data_selection_time_type4 = [data4['global_error_rate']*100, data8['global_error_rate']*100, data12['global_error_rate']*100]
+    data_selection_time_type4 = [100 - data4['global_error_rate']*100, 100 - data8['global_error_rate']*100, 100 - data12['global_error_rate']*100]
+
     data_selection_sem_type4 = [data4['global_error_rate_sem']*100, data8['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))

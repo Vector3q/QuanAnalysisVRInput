@@ -13,6 +13,7 @@ def extract_json_data(input_path):
         entries = data['selectionSequence']
         tech = data['inputtechnique']
         
+
         for entry in entries:
             entry['HeisenbergError'] = 0
             entry['HeisenbergOffset'] = [0.0, 0.0, 0.0]
@@ -169,7 +170,7 @@ def load_jsons_r_and_s(json_files_dir, technique=""):
         if technique != "":
             if json_file["inputtechnique"] != technique:
                 continue
-
+        
         if json_file["radius"] == 0.07 and json_file["spacing"] == 0.3:
             data_radius_007_spacing_03.append(json_file)
         elif json_file["radius"] == 0.07 and json_file["spacing"] == 0.5:
@@ -230,6 +231,8 @@ def load_jsons_r(json_files_dir, technique=""):
         if technique != "":
             if json_file["inputtechnique"] != technique:
                 continue
+        
+        
 
         if json_file["radius"] == 0.07:
             data_radius_007.append(json_file)

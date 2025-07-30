@@ -120,6 +120,19 @@ def compute_global_HeisenbergOffset(heisenberg_offset):
     print("")
     return global_HeisenbergOffset, global_HeisenbergOffset_sem
 
+def compute_global_EffectiveScore(global_avg_selection_time, global_avg_error_rate, global_sem_selection_time, global_sem_error_rate):
+    effective_score = (1 / global_avg_selection_time) * (1 - global_avg_error_rate)
+    print("effective_score: ", effective_score)
+
+    d_score_d_time = -(1 - global_avg_error_rate) / (global_avg_selection_time ** 2)
+    d_score_d_error = -1 / global_avg_selection_time
+
+    sem_time_contribution = (d_score_d_time * global_sem_selection_time) ** 2
+    sem_error_contribution = (d_score_d_error * global_sem_error_rate) ** 2
+
+    sem_effective = np.sqrt(sem_time_contribution + sem_error_contribution)
+    return effective_score, sem_effective
+
 def compute_HeisenbergOffset_direction(all_H_Offset_x, all_H_Offset_y):
     count_right_top = 0
     count_right_down = 0
@@ -188,6 +201,8 @@ def main():
 
         global_H_Offset_magnitude, global_H_Offset_sem = compute_global_HeisenbergOffset(all_H_Offset_magnitude)
 
+        global_Effective_Score, global_Effective_Score_sem = compute_global_EffectiveScore(global_avg_selection_time, global_error_rate, global_sem_selection_time, global_error_rate_sem)
+
         count_right_top, count_right_down, count_left_top, count_left_down, count_in_axis = compute_HeisenbergOffset_direction(all_H_Offset_x, all_H_Offset_y)
 
         processed_data = {
@@ -201,6 +216,8 @@ def main():
             "global_H_error_rate_sem": global_H_error_rate_sem,
             "global_H_offset_magnitude": global_H_Offset_magnitude,
             "global_H_offset_sem": global_H_Offset_sem,
+            "global_avg_EffectiveScore": global_Effective_Score,
+            "global_sem_EffectiveScore": global_Effective_Score_sem,
             "count_right_top": count_right_top,
             "count_right_down": count_right_down,
             "count_left_top": count_left_top,
