@@ -3,5166 +3,1596 @@
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8190496,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3002556396153423
-            },
-            {
-                "clickDuration": 1.19613612,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.04120255630893999
-            },
-            {
-                "clickDuration": 0.9162649,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17999802667267703
-            },
-            {
-                "clickDuration": 0.735649943,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15680444840733992
-            },
-            {
-                "clickDuration": 0.5690845,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11377670070057865
-            },
-            {
-                "clickDuration": 0.6665882,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.21589182112586533
-            },
-            {
-                "clickDuration": 0.681208,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.47278474334486903
-            },
-            {
-                "clickDuration": 0.680801034,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.286218207414518
-            },
-            {
-                "clickDuration": 0.668244243,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5046640267226226
-            }
-        ]
+        "clickDuration": 0.7703362822222222,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergAngle": 0.25239957447919475,
+        "EffectiveScore": 1.1538972126882987
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.53645182,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27620212615798645
-            },
-            {
-                "clickDuration": 0.9176255,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2839133627876349
-            },
-            {
-                "clickDuration": 1.22357035,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27744544103606905
-            },
-            {
-                "clickDuration": 0.7779522,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15635513339541798
-            },
-            {
-                "clickDuration": 0.749491632,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18718583578090903
-            },
-            {
-                "clickDuration": 1.2353003,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1024713780980771
-            },
-            {
-                "clickDuration": 0.7363261,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.16186332978270354
-            },
-            {
-                "clickDuration": 1.08272147,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20228588368238615
-            },
-            {
-                "clickDuration": 0.9166568,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11446761266906973
-            }
-        ]
+        "clickDuration": 1.0195662413333333,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.19579890037669487,
+        "EffectiveScore": 0.871830444019457
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7575201,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.24894093629484113
-            },
-            {
-                "clickDuration": 0.7516817,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.13651406314269837
-            },
-            {
-                "clickDuration": 0.7655825,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1175830558189015
-            },
-            {
-                "clickDuration": 0.723166764,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.33112843419875754
-            },
-            {
-                "clickDuration": 0.709115,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2324435971326932
-            },
-            {
-                "clickDuration": 0.8054753,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.12873019526815993
-            },
-            {
-                "clickDuration": 0.639763832,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10209111370832766
-            },
-            {
-                "clickDuration": 1.08230746,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20196699748608324
-            }
-        ]
+        "clickDuration": 0.779326582,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.1874247991313078,
+        "EffectiveScore": 1.283159105690559
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.48376381,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.03876456123313825
-            },
-            {
-                "clickDuration": 0.918724239,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27564878173281626
-            },
-            {
-                "clickDuration": 1.09707689,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.13578969163095767
-            },
-            {
-                "clickDuration": 0.6808579,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2631635398332712
-            },
-            {
-                "clickDuration": 0.583331048,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23653198751689772
-            },
-            {
-                "clickDuration": 0.6105243,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17193529560350018
-            },
-            {
-                "clickDuration": 0.916042149,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5291674592352775
-            },
-            {
-                "clickDuration": 0.582919359,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.21923220865183624
-            }
-        ]
+        "clickDuration": 0.859154961875,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.23377919067971187,
+        "EffectiveScore": 1.1639343824746389
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.873878539,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17840835969092847
-            },
-            {
-                "clickDuration": 0.9888646,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.19808540181560505
-            },
-            {
-                "clickDuration": 0.6125038,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07730111200328572
-            },
-            {
-                "clickDuration": 0.584556758,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2588173127744195
-            },
-            {
-                "clickDuration": 0.95892334,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.44208742155431185
-            },
-            {
-                "clickDuration": 0.82000035,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.28351941848125517
-            },
-            {
-                "clickDuration": 0.764540732,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27024006884995944
-            },
-            {
-                "clickDuration": 0.5973098,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3191878369113748
-            }
-        ]
+        "clickDuration": 0.7750722398749998,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.25345586651014246,
+        "EffectiveScore": 1.2902023173495099
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.04218864,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0421735260077678
-            },
-            {
-                "clickDuration": 0.709581554,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15571457232505748
-            },
-            {
-                "clickDuration": 0.903607,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10031862695242628
-            },
-            {
-                "clickDuration": 0.8894945,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2927000682199292
-            },
-            {
-                "clickDuration": 0.570031464,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2747938166248813
-            },
-            {
-                "clickDuration": 0.6679402,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07233799112395135
-            },
-            {
-                "clickDuration": 0.735691369,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.14948921607006033
-            },
-            {
-                "clickDuration": 0.7784827,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.04596468302139491
-            }
-        ]
+        "clickDuration": 0.787127178375,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.1416865625431836,
+        "EffectiveScore": 1.2704427282824478
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.652516544,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.16272786597316446
-            },
-            {
-                "clickDuration": 0.8879248,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08455860697930072
-            },
-            {
-                "clickDuration": 0.9710461,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11064481059884734
-            },
-            {
-                "clickDuration": 0.5700635,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1624772994370656
-            },
-            {
-                "clickDuration": 0.7648677,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15812508003197373
-            },
-            {
-                "clickDuration": 1.08243334,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.06884097364426499
-            },
-            {
-                "clickDuration": 0.791489363,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08816447007086048
-            }
-        ]
+        "clickDuration": 0.715042668375,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.10444238834193466,
+        "EffectiveScore": 1.398517940576318
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.48311186,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2651834366175583
-            },
-            {
-                "clickDuration": 1.15441072,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.24272797003089805
-            },
-            {
-                "clickDuration": 0.8201398,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10909732754288215
-            },
-            {
-                "clickDuration": 0.708985448,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.34349166354417626
-            },
-            {
-                "clickDuration": 0.860293031,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25224988092417294
-            },
-            {
-                "clickDuration": 1.06917226,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.03646522704071779
-            },
-            {
-                "clickDuration": 0.7497625,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15370371957490936
-            },
-            {
-                "clickDuration": 1.51210213,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.484920920832712
-            }
-        ]
+        "clickDuration": 1.044747218625,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.23598001826350334,
+        "EffectiveScore": 0.9571693345267842
     },
     {
         "username": "FP1",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7145657,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.30252900666108107
-            },
-            {
-                "clickDuration": 0.5559703,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10399826815448425
-            },
-            {
-                "clickDuration": 0.9043122,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.06517121867099494
-            },
-            {
-                "clickDuration": 1.402689,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3914791887347044
-            },
-            {
-                "clickDuration": 0.861923456,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.14670994665174616
-            },
-            {
-                "clickDuration": 0.764754832,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.15901601049682
-            },
-            {
-                "clickDuration": 0.694300234,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4835191232049537
-            },
-            {
-                "clickDuration": 0.778869569,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1740735315819906
-            },
-            {
-                "clickDuration": 0.7917087,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3742235429000913
-            }
-        ]
+        "clickDuration": 0.8298993323333334,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergAngle": 0.35563553745076293,
+        "EffectiveScore": 1.0710803759652405
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.736617863,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.4173270195036867
-            },
-            {
-                "clickDuration": 0.455770224,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6838454684089541
-            },
-            {
-                "clickDuration": 0.9306532,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6071397218855719
-            },
-            {
-                "clickDuration": 0.6819662,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5894192456568884
-            },
-            {
-                "clickDuration": 1.40372384,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.46672824807646573
-            },
-            {
-                "clickDuration": 0.70882535,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.4775488237937933
-            },
-            {
-                "clickDuration": 0.319639146,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8062939957914654
-            }
-        ]
+        "clickDuration": 0.654649477875,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.25,
+        "HeisenbergAngle": 0.7560378153896032,
+        "EffectiveScore": 1.145651261243664
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.89610827,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.373659040881723
-            },
-            {
-                "clickDuration": 0.779494,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0346181984545189
-            },
-            {
-                "clickDuration": 0.6943266,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8121382110954012
-            },
-            {
-                "clickDuration": 0.946461439,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.12786718289172
-            },
-            {
-                "clickDuration": 1.0008837,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8462496065741824
-            },
-            {
-                "clickDuration": 0.6520109,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3800045272953319
-            }
-        ]
+        "clickDuration": 0.8282141515,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.9290894611988129,
+        "EffectiveScore": 1.2074171857470368
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7427666,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3066579147131958
-            },
-            {
-                "clickDuration": 1.50254631,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7479894214424173
-            },
-            {
-                "clickDuration": 0.890562534,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9817486216292383
-            },
-            {
-                "clickDuration": 0.667182148,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.3423101447398638
-            },
-            {
-                "clickDuration": 0.9172619,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18055996393593537
-            },
-            {
-                "clickDuration": 0.6393604,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5035830961907216
-            }
-        ]
+        "clickDuration": 0.893279982,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.677141527108562,
+        "EffectiveScore": 1.1194698416515059
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.9286315,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.07140349906917
-            },
-            {
-                "clickDuration": 0.626257837,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5684551599772828
-            },
-            {
-                "clickDuration": 0.6838688,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7808318971300651
-            },
-            {
-                "clickDuration": 0.705864668,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4183190034662135
-            },
-            {
-                "clickDuration": 0.6684558,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8581146452021146
-            },
-            {
-                "clickDuration": 0.847502232,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.3775425525143727
-            }
-        ]
+        "clickDuration": 0.6372258338571429,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7249523939084598,
+        "EffectiveScore": 1.3451163019467545
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9369949,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.124752195911829
-            },
-            {
-                "clickDuration": 0.361738116,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.36467325794760397
-            },
-            {
-                "clickDuration": 0.348018557,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.7956078924591894
-            },
-            {
-                "clickDuration": 0.389004081,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0091678129296522
-            },
-            {
-                "clickDuration": 0.8757496,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8864561945555728
-            },
-            {
-                "clickDuration": 0.7231224,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.0316421865676089
-            },
-            {
-                "clickDuration": 0.361399353,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.525239564222516
-            },
-            {
-                "clickDuration": 0.6946324,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7676923972693821
-            },
-            {
-                "clickDuration": 0.5961854,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7515877119636447
-            },
-            {
-                "clickDuration": 0.89006,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5796001619201624
-            }
-        ]
+        "clickDuration": 0.6176904807,
+        "isCorrect": 0.6,
+        "HeisenbergError": 0.4,
+        "HeisenbergAngle": 0.7836419375747161,
+        "EffectiveScore": 0.9713602827747123
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.10572171,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1377244529598117
-            },
-            {
-                "clickDuration": 0.445038766,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3390577645688872
-            },
-            {
-                "clickDuration": 0.6685639,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.086070727443444
-            },
-            {
-                "clickDuration": 1.138885,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.7432534983628647
-            },
-            {
-                "clickDuration": 1.09719372,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.3733444226875775
-            },
-            {
-                "clickDuration": 0.542042136,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3446513954278053
-            },
-            {
-                "clickDuration": 0.681427836,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4867174459507866
-            },
-            {
-                "clickDuration": 0.557519734,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8710130956756771
-            }
-        ]
+        "clickDuration": 0.7795491002499999,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.125,
+        "HeisenbergAngle": 0.7977291003846068,
+        "EffectiveScore": 0.9620946259311651
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7320697,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2630666847548723
-            },
-            {
-                "clickDuration": 0.583787441,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27989071831303436
-            },
-            {
-                "clickDuration": 0.7092182,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.24857323100746537
-            },
-            {
-                "clickDuration": 0.6239651,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08807036370913472
-            },
-            {
-                "clickDuration": 0.7373322,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7032920777489996
-            },
-            {
-                "clickDuration": 0.8342388,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.830408549682009
-            }
-        ]
+        "clickDuration": 0.7034352401666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.40221693753591925,
+        "EffectiveScore": 1.42159497122019
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.623057067,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7546297245760921
-            },
-            {
-                "clickDuration": 0.542777061,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0789157704877252
-            },
-            {
-                "clickDuration": 0.556307137,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4311378498151403
-            },
-            {
-                "clickDuration": 0.56963104,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2624740540875775
-            },
-            {
-                "clickDuration": 0.431657761,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.35503795848750874
-            },
-            {
-                "clickDuration": 0.6390744,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7054865234679838
-            },
-            {
-                "clickDuration": 0.805342436,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.4279821292190087
-            }
-        ]
+        "clickDuration": 0.5954067002857143,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7165234300201481,
+        "EffectiveScore": 1.4395922261733787
     },
     {
         "username": "FP10",
         "userAge": 25,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.5661194,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7984011694946044
-            },
-            {
-                "clickDuration": 0.473893374,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08880076094447296
-            },
-            {
-                "clickDuration": 0.5560096,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7973419538098554
-            },
-            {
-                "clickDuration": 0.5987498,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.077374121664591
-            },
-            {
-                "clickDuration": 0.5744457,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2412953462445378
-            },
-            {
-                "clickDuration": 0.399091661,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9171976326107599
-            }
-        ]
+        "clickDuration": 0.5280515891666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6534018307948036,
+        "EffectiveScore": 1.8937543613458843
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.0244422,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3432958573317731
-            },
-            {
-                "clickDuration": 0.68222326,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5659989663734237
-            },
-            {
-                "clickDuration": 0.694644034,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6435819568220091
-            },
-            {
-                "clickDuration": 0.6115603,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.680721604855415
-            },
-            {
-                "clickDuration": 0.556565464,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5556846150895991
-            },
-            {
-                "clickDuration": 0.721268,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5524518053630526
-            }
-        ]
+        "clickDuration": 0.7151172096666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5569558009725454,
+        "EffectiveScore": 1.3983721640066866
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.6763593,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08179142528382666
-            },
-            {
-                "clickDuration": 0.612591147,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.33477782148255963
-            },
-            {
-                "clickDuration": 0.710364342,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.12210225538011577
-            },
-            {
-                "clickDuration": 0.541563332,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.12844966925603027
-            },
-            {
-                "clickDuration": 0.763835132,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.052332690037597794
-            },
-            {
-                "clickDuration": 0.556605041,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.26939466281037916
-            }
-        ]
+        "clickDuration": 0.643553049,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.16480808737508487,
+        "EffectiveScore": 1.5538734554266715
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7297907,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.04861966569424712
-            },
-            {
-                "clickDuration": 0.7642832,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08546007640698375
-            },
-            {
-                "clickDuration": 0.6256352,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6130903466185816
-            },
-            {
-                "clickDuration": 0.471603334,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.147242523599589
-            },
-            {
-                "clickDuration": 0.5844048,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0382374275496868
-            },
-            {
-                "clickDuration": 0.5835531,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.49101771909186165
-            }
-        ]
+        "clickDuration": 0.6265450556666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.40394462649349167,
+        "EffectiveScore": 1.5960544113399213
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.569681,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7642359235942605
-            },
-            {
-                "clickDuration": 0.723222554,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3419557155693452
-            },
-            {
-                "clickDuration": 0.5144437,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4292854526928358
-            },
-            {
-                "clickDuration": 0.833417654,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17957816547754982
-            },
-            {
-                "clickDuration": 0.681104839,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.5161385408357835
-            }
-        ]
+        "clickDuration": 0.5536449578333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5385322996949625,
+        "EffectiveScore": 1.8062116991247579
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.771658838,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5289825984159744
-            },
-            {
-                "clickDuration": 0.5834126,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.33318092001365296
-            },
-            {
-                "clickDuration": 1.1970526,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.26542049479165347
-            },
-            {
-                "clickDuration": 1.013948,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07397029822627482
-            },
-            {
-                "clickDuration": 2.02958322,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.46226993380619585
-            },
-            {
-                "clickDuration": 0.5257813,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1754124194860234
-            }
-        ]
+        "clickDuration": 1.0202394263333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.3065394441232958,
+        "EffectiveScore": 0.9801620817516605
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.4127535,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17110958611650606
-            },
-            {
-                "clickDuration": 0.570394,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2800097995923872
-            },
-            {
-                "clickDuration": 0.542615354,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.977112080683041
-            },
-            {
-                "clickDuration": 0.5251854,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5714789741501538
-            },
-            {
-                "clickDuration": 0.5276149,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.018512422719949538
-            },
-            {
-                "clickDuration": 0.4730999,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1887965332912989
-            }
-        ]
+        "clickDuration": 0.5086105089999999,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.36783656609222276,
+        "EffectiveScore": 1.9661410495943963
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9270153,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2852804491842007
-            },
-            {
-                "clickDuration": 0.723053753,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5516323731532473
-            },
-            {
-                "clickDuration": 0.69543463,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27339192190112055
-            },
-            {
-                "clickDuration": 0.7783334,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.16858149810245812
-            },
-            {
-                "clickDuration": 0.527896762,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.4670625676510243
-            },
-            {
-                "clickDuration": 0.334143579,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3028688017837048
-            },
-            {
-                "clickDuration": 0.555651546,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2430870898211694
-            }
-        ]
+        "clickDuration": 0.6487898528571429,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.4702721002281321,
+        "EffectiveScore": 1.321140972486189
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.5044979,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.05553009661111851
-            },
-            {
-                "clickDuration": 0.598531365,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18203880201027528
-            },
-            {
-                "clickDuration": 0.528618634,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.4998789,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.22139318098750557
-            },
-            {
-                "clickDuration": 0.7367772,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.9407940104598258
-            },
-            {
-                "clickDuration": 0.528488159,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.30903474227811994
-            }
-        ]
+        "clickDuration": 0.5661320263333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.45146513872447414,
+        "EffectiveScore": 1.7663724246033188
     },
     {
         "username": "FP11",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.6454612,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6650648181874551
-            },
-            {
-                "clickDuration": 0.5018035,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7545150462865581
-            },
-            {
-                "clickDuration": 0.444486529,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17676222212127202
-            },
-            {
-                "clickDuration": 0.5007957,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1171350788497556
-            },
-            {
-                "clickDuration": 0.7783362,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.4100055189293557
-            },
-            {
-                "clickDuration": 0.5269885,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4555173495608621
-            }
-        ]
+        "clickDuration": 0.5663119381666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5965000056558764,
+        "EffectiveScore": 1.7658112651435895
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.7066890118333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.24847512736384017,
+        "EffectiveScore": 1.415049595020223
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.7379527558571429,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.5427322163024445,
+        "EffectiveScore": 1.1615145418723631
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.7033994663333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.30119739184221184,
+        "EffectiveScore": 1.4216672713910063
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.6014141343333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2970932652447517,
+        "EffectiveScore": 1.6627477521932512
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.8062491303333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5372829052691771,
+        "EffectiveScore": 1.2403114153891401
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.7267038833333332,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.35497510543476474,
+        "EffectiveScore": 1.376076312421889
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.712596222,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4065358976402948,
+        "EffectiveScore": 1.2028450764686445
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.8093981268333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5244196157114002,
+        "EffectiveScore": 1.2354859331246195
+    },
+    {
+        "username": "FP12",
+        "userAge": 25,
+        "usergender": "female",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.5400588823333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2358978271365296,
+        "EffectiveScore": 1.8516499454272162
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.8917388235,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.24194649167245733,
+        "EffectiveScore": 1.1214045790617078
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.7709222317142858,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.33219087529645186,
+        "EffectiveScore": 1.1118408859955227
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.6531021521666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6208030083938191,
+        "EffectiveScore": 1.5311540418026484
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.6162417191666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2660095847897492,
+        "EffectiveScore": 1.6227398582366077
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.7441379204285715,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.36315175266993266,
+        "EffectiveScore": 1.151860204421786
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.8590938466666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.37116266555694216,
+        "EffectiveScore": 1.1640171837803952
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.7027210164285714,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.4985831198557869,
+        "EffectiveScore": 1.2197484308909694
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.9469386223333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4005173705891831,
+        "EffectiveScore": 1.056034653582847
+    },
+    {
+        "username": "FP13",
+        "userAge": 23,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.7806105405,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.3614943898680991,
+        "EffectiveScore": 1.2810485486904593
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.13039231,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4773847068716988
-            },
-            {
-                "clickDuration": 1.12609112,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27401918125883684
-            },
-            {
-                "clickDuration": 1.11229157,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2497363122198912
-            },
-            {
-                "clickDuration": 0.9174257,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.32698450122489287
-            },
-            {
-                "clickDuration": 0.8197681,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.3029857618683093
-            },
-            {
-                "clickDuration": 0.667065,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18901921777389183
-            },
-            {
-                "clickDuration": 0.569891751,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.13344975455622105
-            },
-            {
-                "clickDuration": 1.05596852,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.538613799811048
-            },
-            {
-                "clickDuration": 0.7776518,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1686230161019843
-            }
-        ]
+        "clickDuration": 0.9085050967777778,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergAngle": 0.29564625018741936,
+        "EffectiveScore": 0.9784082577428983
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.930001557,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4154209679032442
-            },
-            {
-                "clickDuration": 0.668134034,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.592675901816586
-            },
-            {
-                "clickDuration": 1.19560111,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4481258442876215
-            },
-            {
-                "clickDuration": 1.0692333,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9162979423147475
-            },
-            {
-                "clickDuration": 1.11175966,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.46005255285227076
-            },
-            {
-                "clickDuration": 0.8609144,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.14113332196471193
-            },
-            {
-                "clickDuration": 0.8312824,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8463591385163122
-            },
-            {
-                "clickDuration": 0.7078255,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3794949997844939
-            }
-        ]
+        "clickDuration": 0.921843995125,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5249450836799985,
+        "EffectiveScore": 1.0847822465496477
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.996661842,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3135833951864956
-            },
-            {
-                "clickDuration": 0.5693291,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.16166734197834592
-            },
-            {
-                "clickDuration": 0.95942533,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.26206634292093406
-            },
-            {
-                "clickDuration": 0.639432967,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.47224637858648644
-            },
-            {
-                "clickDuration": 0.6387475,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.49193463008728244
-            },
-            {
-                "clickDuration": 0.415593833,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1688227186136702
-            },
-            {
-                "clickDuration": 1.1389941,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1844587599428014
-            },
-            {
-                "clickDuration": 0.861785,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.19674940601391316
-            },
-            {
-                "clickDuration": 0.6391627,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23981419801719436
-            }
-        ]
+        "clickDuration": 0.7621258191111111,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2768159079274582,
+        "EffectiveScore": 1.1663282710007452
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.14949954,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17225022910619756
-            },
-            {
-                "clickDuration": 1.139843,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3742462652069546
-            },
-            {
-                "clickDuration": 0.625530064,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20926557077273875
-            },
-            {
-                "clickDuration": 0.6391849,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.34156540670770597
-            },
-            {
-                "clickDuration": 0.9158443,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07863205425111398
-            },
-            {
-                "clickDuration": 0.792050958,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.32480586696701463
-            },
-            {
-                "clickDuration": 0.6379555,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4077296831820529
-            },
-            {
-                "clickDuration": 0.701897144,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.782681242229913
-            },
-            {
-                "clickDuration": 0.6801217,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1618441726613583
-            }
-        ]
+        "clickDuration": 0.8091030117777778,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergAngle": 0.31700227678722775,
+        "EffectiveScore": 1.0986102831774212
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9204829,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.4359200376100774
-            },
-            {
-                "clickDuration": 0.5425993,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.142996387915346
-            },
-            {
-                "clickDuration": 0.624951,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.282698672876574
-            },
-            {
-                "clickDuration": 0.597900569,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25306620192019896
-            },
-            {
-                "clickDuration": 0.708601236,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.39572011566810983
-            },
-            {
-                "clickDuration": 0.779346645,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8959007952007814
-            },
-            {
-                "clickDuration": 0.901724935,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.2049953689655255
-            },
-            {
-                "clickDuration": 0.834994555,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7692036374752758
-            },
-            {
-                "clickDuration": 1.05669165,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25126534071163575
-            }
-        ]
+        "clickDuration": 0.7741436433333333,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7368629509270582,
+        "EffectiveScore": 1.148222163346174
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.13553882,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.44919524238168285
-            },
-            {
-                "clickDuration": 1.05692029,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.09035291027843578
-            },
-            {
-                "clickDuration": 0.695263267,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5623698294134613
-            },
-            {
-                "clickDuration": 1.6118629,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8592993616689408
-            },
-            {
-                "clickDuration": 0.874412239,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3353035872800331
-            },
-            {
-                "clickDuration": 0.709292948,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.41370813878991475
-            },
-            {
-                "clickDuration": 0.901452661,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7689505277571815
-            },
-            {
-                "clickDuration": 0.584395468,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3751231968967614
-            }
-        ]
+        "clickDuration": 0.946142324125,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.48178784930830143,
+        "EffectiveScore": 1.0569234400594096
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.763906538,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7679945509203839
-            },
-            {
-                "clickDuration": 1.042089,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8755651643016762
-            },
-            {
-                "clickDuration": 0.903656662,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0029231888134837
-            },
-            {
-                "clickDuration": 0.903404355,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.518673364319871
-            },
-            {
-                "clickDuration": 0.903386831,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10323691338855696
-            },
-            {
-                "clickDuration": 1.13942552,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.4540043873957431
-            },
-            {
-                "clickDuration": 0.8060288,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.48643892086248597
-            }
-        ]
+        "clickDuration": 0.80773721325,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.776104561250275,
+        "EffectiveScore": 1.2380264070989302
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.27472913,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3415635123944574
-            },
-            {
-                "clickDuration": 1.01472342,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5701476058998741
-            },
-            {
-                "clickDuration": 0.5982255,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.039043126367134036
-            },
-            {
-                "clickDuration": 1.56939721,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.580594137083312
-            },
-            {
-                "clickDuration": 0.874671161,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07673721679044647
-            },
-            {
-                "clickDuration": 0.9175327,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4340655973804607
-            },
-            {
-                "clickDuration": 0.5413093,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27076581598499416
-            },
-            {
-                "clickDuration": 0.7645053,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6833542143774313
-            }
-        ]
+        "clickDuration": 0.9443867151249999,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.37453390328476377,
+        "EffectiveScore": 1.058888254127589
     },
     {
         "username": "FP2",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8299402,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3755699526513865
-            },
-            {
-                "clickDuration": 1.09878623,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4461045319068122
-            },
-            {
-                "clickDuration": 0.625816166,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2855599344569154
-            },
-            {
-                "clickDuration": 0.6259626,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7087169732165793
-            },
-            {
-                "clickDuration": 0.7919154,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3131962684425247
-            },
-            {
-                "clickDuration": 0.5417937,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1263078055558361
-            },
-            {
-                "clickDuration": 0.6805355,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.24450514415527458
-            },
-            {
-                "clickDuration": 0.9174654,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.335705667574656
-            },
-            {
-                "clickDuration": 0.5833942,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8793120091581496
-            }
-        ]
+        "clickDuration": 0.7439565995555556,
+        "isCorrect": 0.8888888888888888,
+        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergAngle": 0.5238864763464594,
+        "EffectiveScore": 1.1948128283557355
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 1.0709064,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.127866798753982
-            },
-            {
-                "clickDuration": 0.708096564,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7920347279037377
-            },
-            {
-                "clickDuration": 1.11235166,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.45961267604446127
-            },
-            {
-                "clickDuration": 0.6960308,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08657670049876685
-            },
-            {
-                "clickDuration": 0.793292642,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4886535460784844
-            }
-        ]
+        "clickDuration": 0.7301130109999999,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.325790741546572,
+        "EffectiveScore": 1.3696509785935045
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.03966391,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.46269341466828684
-            },
-            {
-                "clickDuration": 0.570729256,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4704397360420047
-            },
-            {
-                "clickDuration": 0.542803049,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9611068956626354
-            },
-            {
-                "clickDuration": 0.5284045,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08421349212859772
-            },
-            {
-                "clickDuration": 0.5974742,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1935543562512219
-            },
-            {
-                "clickDuration": 0.611346066,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5681298393400472
-            }
-        ]
+        "clickDuration": 0.6484034968333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6233562890154656,
+        "EffectiveScore": 1.5422495481344412
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.734648168,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.32291221910980733
-            },
-            {
-                "clickDuration": 0.5699331,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1727491550260507
-            },
-            {
-                "clickDuration": 0.597168565,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7098143729454658
-            },
-            {
-                "clickDuration": 0.5150676,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7053520701000446
-            },
-            {
-                "clickDuration": 1.19308186,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9438443643540625
-            },
-            {
-                "clickDuration": 0.65107137,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15473159612914542
-            },
-            {
-                "clickDuration": 1.05774045,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1713949204035304
-            },
-            {
-                "clickDuration": 0.598544359,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.518624406243435
-            }
-        ]
+        "clickDuration": 0.739656934,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5874278880389427,
+        "EffectiveScore": 1.0139835990505295
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.236037,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.21473547014597386
-            },
-            {
-                "clickDuration": 0.819896758,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.39064618341594654
-            },
-            {
-                "clickDuration": 0.637975037,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.68665646236389
-            },
-            {
-                "clickDuration": 0.8618742,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.36575989597163333
-            },
-            {
-                "clickDuration": 1.05651057,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.775996995144557
-            },
-            {
-                "clickDuration": 0.5844203,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.4294425658422229
-            },
-            {
-                "clickDuration": 0.70826304,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7178493717010853
-            }
-        ]
+        "clickDuration": 0.8435681292857142,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.5115838492264727,
+        "EffectiveScore": 1.0160920349950124
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.678486943,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.40934484607598426
-            },
-            {
-                "clickDuration": 0.542622864,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4389769780047773
-            },
-            {
-                "clickDuration": 0.5561656,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20860486876550804
-            },
-            {
-                "clickDuration": 0.542509854,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4661292111650156
-            },
-            {
-                "clickDuration": 0.5985791,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5942972194672519
-            },
-            {
-                "clickDuration": 0.55637604,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0828841430415805
-            }
-        ]
+        "clickDuration": 0.5791234001666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.533372877753353,
+        "EffectiveScore": 1.7267477012882035
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.88836503,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4333533647668844
-            },
-            {
-                "clickDuration": 0.931230962,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3531686416745619
-            },
-            {
-                "clickDuration": 0.5848412,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.41570027565040063
-            },
-            {
-                "clickDuration": 0.541616,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.9086767936575466
-            },
-            {
-                "clickDuration": 0.805367,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4206143868450372
-            },
-            {
-                "clickDuration": 1.59882033,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2781435679546673
-            }
-        ]
+        "clickDuration": 0.8917067536666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6349428384248497,
+        "EffectiveScore": 1.121444909874278
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.554486,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15836718002184783
-            },
-            {
-                "clickDuration": 0.7371966,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8662807871946456
-            },
-            {
-                "clickDuration": 0.70874995,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9261994734613248
-            },
-            {
-                "clickDuration": 0.5008641,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9253161225148486
-            },
-            {
-                "clickDuration": 0.762492061,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8822696456898942
-            }
-        ]
+        "clickDuration": 0.5439647851666668,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6264055348137602,
+        "EffectiveScore": 1.8383542965811792
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8824992,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6536597470636799
-            },
-            {
-                "clickDuration": 0.639402747,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3749882624966302
-            },
-            {
-                "clickDuration": 0.7652194,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8049494570633617
-            },
-            {
-                "clickDuration": 0.497484565,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5263314895113086
-            },
-            {
-                "clickDuration": 0.457812339,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8935990484768113
-            },
-            {
-                "clickDuration": 0.5562252,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.22402005691345533
-            }
-        ]
+        "clickDuration": 0.6331072418333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5795913435875412,
+        "EffectiveScore": 1.5795112327324348
     },
     {
         "username": "FP3",
         "userAge": 23,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8735169,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.49576500723739064
-            },
-            {
-                "clickDuration": 0.5840393,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1704055520486929
-            },
-            {
-                "clickDuration": 1.43207228,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.12326332879458984
-            },
-            {
-                "clickDuration": 0.681735039,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08082835677478459
-            },
-            {
-                "clickDuration": 0.6809869,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5567166741753733
-            },
-            {
-                "clickDuration": 1.04319954,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.166494515714784
-            }
-        ]
+        "clickDuration": 0.8825916598333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2655789057909359,
+        "EffectiveScore": 1.133026795413904
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.832121432,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.36465231132065745
-            },
-            {
-                "clickDuration": 0.6270679,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.225352295213449
-            },
-            {
-                "clickDuration": 0.611027658,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3432245874341224
-            },
-            {
-                "clickDuration": 0.6262421,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4476588233189784
-            },
-            {
-                "clickDuration": 0.556025743,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6116090495423854
-            },
-            {
-                "clickDuration": 0.777197063,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4793391098015267
-            }
-        ]
+        "clickDuration": 0.6716136493333335,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.41197269610518655,
+        "EffectiveScore": 1.4889512757708752
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9946768,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6290281609203384
-            },
-            {
-                "clickDuration": 1.44745469,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.65193846959354
-            },
-            {
-                "clickDuration": 0.7383364,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.4333103665300226
-            },
-            {
-                "clickDuration": 0.7084199,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6761878415203234
-            },
-            {
-                "clickDuration": 0.819210231,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5091732953342917
-            },
-            {
-                "clickDuration": 0.7791836,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9136711368688103
-            }
-        ]
+        "clickDuration": 0.9145469368333332,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.8022182117945543,
+        "EffectiveScore": 1.0934375915822894
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.06443548,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4257415769267668
-            },
-            {
-                "clickDuration": 0.6820369,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.29830954209915717
-            },
-            {
-                "clickDuration": 0.9182311,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.11306875152242525
-            },
-            {
-                "clickDuration": 1.01520252,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6728262472731985
-            },
-            {
-                "clickDuration": 0.6803735,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.48036191941928474
-            },
-            {
-                "clickDuration": 0.6946839,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6237561480177688
-            },
-            {
-                "clickDuration": 1.55629027,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.40701836968859006
-            },
-            {
-                "clickDuration": 1.23547542,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3600160008661637
-            }
-        ]
+        "clickDuration": 0.98084113625,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.25,
+        "HeisenbergAngle": 0.4226373194766694,
+        "EffectiveScore": 0.7646498217513968
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.787065268,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2501195845974509
-            },
-            {
-                "clickDuration": 1.22431636,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11558225069003537
-            },
-            {
-                "clickDuration": 0.8626121,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1893990747141924
-            },
-            {
-                "clickDuration": 0.626631558,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.37370652988611375
-            },
-            {
-                "clickDuration": 0.598022,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.35738612820301247
-            },
-            {
-                "clickDuration": 0.7646652,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4966818995985302
-            }
-        ]
+        "clickDuration": 0.810552081,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2971459112815558,
+        "EffectiveScore": 1.2337270157474312
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9370135,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.27650942340653156
-            },
-            {
-                "clickDuration": 0.959561944,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.05047804016640271
-            },
-            {
-                "clickDuration": 1.75045037,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07761058106482237
-            },
-            {
-                "clickDuration": 2.44634318,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11913937027163957
-            },
-            {
-                "clickDuration": 1.69405735,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.24965233549893756
-            },
-            {
-                "clickDuration": 0.7219893,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7158328155319565
-            }
-        ]
+        "clickDuration": 1.4182359406666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2482037609900484,
+        "EffectiveScore": 0.7051012961425392
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.786734164,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.22001714353042673
-            },
-            {
-                "clickDuration": 0.682490468,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.36973252822373676
-            },
-            {
-                "clickDuration": 0.5695079,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3935991805189234
-            },
-            {
-                "clickDuration": 0.7091572,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.5257835531468115
-            },
-            {
-                "clickDuration": 0.8058408,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3762556237654125
-            },
-            {
-                "clickDuration": 0.9581,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4165146351286675
-            },
-            {
-                "clickDuration": 0.874993145,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.13049835015183422
-            }
-        ]
+        "clickDuration": 0.7695462395714285,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.3474858592094018,
+        "EffectiveScore": 1.113828920300114
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9396897,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2965539789894913
-            },
-            {
-                "clickDuration": 0.778395832,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.04148281181567856
-            },
-            {
-                "clickDuration": 0.7237281,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18829422072369745
-            },
-            {
-                "clickDuration": 0.8609003,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.16403986308651652
-            },
-            {
-                "clickDuration": 1.01426542,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2939805910803092
-            },
-            {
-                "clickDuration": 0.72177434,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.21083801516860576
-            }
-        ]
+        "clickDuration": 0.8397922819999999,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.1991982468107165,
+        "EffectiveScore": 1.1907706482113158
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.895917833,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3056502701020128
-            },
-            {
-                "clickDuration": 0.8769466,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.059540933670916056
-            },
-            {
-                "clickDuration": 0.555351,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10655146196977763
-            },
-            {
-                "clickDuration": 0.6952405,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.4310704946410846
-            },
-            {
-                "clickDuration": 0.7373288,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6038710993362076
-            },
-            {
-                "clickDuration": 0.5683986,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.6781687759572295
-            }
-        ]
+        "clickDuration": 0.7215305555000001,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6974755059462048,
+        "EffectiveScore": 1.385942691376429
     },
     {
         "username": "FP4",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.44354725,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5242092862588619
-            },
-            {
-                "clickDuration": 1.18246233,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.668877030419632
-            },
-            {
-                "clickDuration": 0.6534125,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2234888635735742
-            },
-            {
-                "clickDuration": 1.44458294,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.634944790942284
-            },
-            {
-                "clickDuration": 0.8893512,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5353984467798976
-            },
-            {
-                "clickDuration": 0.7636734,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6801170577944577
-            }
-        ]
+        "clickDuration": 1.06283827,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5445059126281179,
+        "EffectiveScore": 0.9408769219422254
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.20557737,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8792711967452073
-            },
-            {
-                "clickDuration": 0.585339367,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1398981630574532
-            },
-            {
-                "clickDuration": 1.00850391,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0120655456780752
-            },
-            {
-                "clickDuration": 0.69458586,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3946578753635909
-            },
-            {
-                "clickDuration": 0.7777598,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.16983559654448624
-            },
-            {
-                "clickDuration": 0.695577145,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            }
-        ]
+        "clickDuration": 0.8278905753333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5992880628981354,
+        "EffectiveScore": 1.2078890976592773
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.62601507,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.1981620456872721
-            },
-            {
-                "clickDuration": 0.555214643,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.4824015962840194
-            },
-            {
-                "clickDuration": 0.667448163,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.19036420440570992
-            },
-            {
-                "clickDuration": 1.20999324,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2661048883334625
-            },
-            {
-                "clickDuration": 0.8336233,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6951612468121715
-            },
-            {
-                "clickDuration": 1.0422591,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20570216456028917
-            },
-            {
-                "clickDuration": 0.8341294,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5829823863896171
-            },
-            {
-                "clickDuration": 0.7778853,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.40289765000463995
-            }
-        ]
+        "clickDuration": 0.9433210270000001,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.25,
+        "HeisenbergAngle": 0.5029720228096477,
+        "EffectiveScore": 0.7950633755988563
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.802224636,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3926076086074466
-            },
-            {
-                "clickDuration": 2.05797529,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.31283365757919485
-            },
-            {
-                "clickDuration": 1.05559945,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6584034302516629
-            },
-            {
-                "clickDuration": 0.833249569,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6747745930154239
-            },
-            {
-                "clickDuration": 1.19481754,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7949280184761823
-            },
-            {
-                "clickDuration": 1.80543876,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            }
-        ]
+        "clickDuration": 1.2915508741666668,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.47225788465498514,
+        "EffectiveScore": 0.7742629578143556
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.427682,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6061388892313492
-            },
-            {
-                "clickDuration": 0.7231484,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.2856024391054164
-            },
-            {
-                "clickDuration": 0.793017864,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.007317047891006
-            },
-            {
-                "clickDuration": 0.5419773,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.084214898813569
-            },
-            {
-                "clickDuration": 0.8755252,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6001019143219908
-            },
-            {
-                "clickDuration": 0.8895557,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6335879967679913
-            }
-        ]
+        "clickDuration": 0.8751510773333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.8694938643552205,
+        "EffectiveScore": 1.1426598514248454
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.26308966,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.3600715355541806
-            },
-            {
-                "clickDuration": 0.541766047,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1892184152765901
-            },
-            {
-                "clickDuration": 0.7646749,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5010720015620359
-            },
-            {
-                "clickDuration": 0.8207443,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7652363279953728
-            },
-            {
-                "clickDuration": 1.40317059,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8832128663716229
-            },
-            {
-                "clickDuration": 1.45842111,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5167835568911764
-            },
-            {
-                "clickDuration": 0.972221434,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            }
-        ]
+        "clickDuration": 1.032012577285714,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7450849576644255,
+        "EffectiveScore": 0.8305546618406724
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.09173286,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4693040377360695
-            },
-            {
-                "clickDuration": 0.8752903,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08743743474700735
-            },
-            {
-                "clickDuration": 0.9042825,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6370162723171865
-            },
-            {
-                "clickDuration": 2.33243465,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2172404875218586
-            },
-            {
-                "clickDuration": 0.7644961,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.37017555876403785
-            },
-            {
-                "clickDuration": 0.999812245,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.4642466226943793
-            },
-            {
-                "clickDuration": 0.583225131,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2393580036655521
-            }
-        ]
+        "clickDuration": 1.0787533980000001,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.35496834534944155,
+        "EffectiveScore": 0.794567932515432
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.818987131,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10220748051470907
-            },
-            {
-                "clickDuration": 1.08347952,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0961572242333426
-            },
-            {
-                "clickDuration": 1.52840471,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1824657809698063
-            },
-            {
-                "clickDuration": 0.5837685,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2579180651889549
-            },
-            {
-                "clickDuration": 0.583937,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3541664173274632
-            }
-        ]
+        "clickDuration": 0.7664294768333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4988191613723793,
+        "EffectiveScore": 1.3047514875494
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.76172245,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8755547841660669
-            },
-            {
-                "clickDuration": 0.944710732,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6480360271262705
-            },
-            {
-                "clickDuration": 0.6944694,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3325379086695683
-            },
-            {
-                "clickDuration": 1.04243231,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9382976248337264
-            },
-            {
-                "clickDuration": 1.00028658,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.34708521271735515
-            },
-            {
-                "clickDuration": 1.02927864,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.049842085011354356
-            }
-        ]
+        "clickDuration": 1.0788166853333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5318922737540569,
+        "EffectiveScore": 0.9269415402960879
     },
     {
         "username": "FP5",
         "userAge": 25,
         "usergender": "female",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.11498356,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.0279817915629592
-            },
-            {
-                "clickDuration": 0.862298548,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.2532644869084042
-            },
-            {
-                "clickDuration": 0.8051135,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3255334336870965
-            },
-            {
-                "clickDuration": 0.709647655,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.309441500883146
-            },
-            {
-                "clickDuration": 0.7081424,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6145196591413314
-            },
-            {
-                "clickDuration": 0.83336705,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.14085520525623452
-            },
-            {
-                "clickDuration": 0.6392088,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            }
-        ]
+        "clickDuration": 0.8103945018571428,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.5245137253484532,
+        "EffectiveScore": 1.0576859235577034
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 1.38811588,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4184890325159995
-            },
-            {
-                "clickDuration": 0.652487457,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23673293156518638
-            },
-            {
-                "clickDuration": 0.875092268,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.19205223909909974
-            },
-            {
-                "clickDuration": 0.82058233,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07931640478544655
-            },
-            {
-                "clickDuration": 0.8614014,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.05322840336898286
-            }
-        ]
+        "clickDuration": 0.7662798891666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.16330316855578583,
+        "EffectiveScore": 1.3050061917813154
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.2694205,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.06045369863961644
-            },
-            {
-                "clickDuration": 1.0430733,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.040643117383336314
-            },
-            {
-                "clickDuration": 0.8621054,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.344297570115368
-            },
-            {
-                "clickDuration": 0.735646844,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1756043213928942
-            },
-            {
-                "clickDuration": 1.1669215,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1872079911854915
-            },
-            {
-                "clickDuration": 0.7779387,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0776978685679643
-            }
-        ]
+        "clickDuration": 0.9758510406666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.14765076121411178,
+        "EffectiveScore": 1.0247465630787622
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8740441,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.01789028875004131
-            },
-            {
-                "clickDuration": 0.736917734,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.09362947223651188
-            },
-            {
-                "clickDuration": 0.7226177,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18503016769306596
-            },
-            {
-                "clickDuration": 0.610941768,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2984592840083844
-            },
-            {
-                "clickDuration": 1.79208815,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1751123078954036
-            },
-            {
-                "clickDuration": 1.19464552,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0387672833260087
-            }
-        ]
+        "clickDuration": 0.9885424953333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.13481480065156928,
+        "EffectiveScore": 1.011590300589762
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.924195,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1766549623394328
-            },
-            {
-                "clickDuration": 0.7373325,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23030808237976919
-            },
-            {
-                "clickDuration": 0.653446,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.04018048709304765
-            },
-            {
-                "clickDuration": 1.00062656,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.09518076201626581
-            },
-            {
-                "clickDuration": 0.7225615,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.02021290791041994
-            },
-            {
-                "clickDuration": 0.693972,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20031620325820937
-            }
-        ]
+        "clickDuration": 0.7886889266666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.12714223416619078,
+        "EffectiveScore": 1.2679270193717864
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.637862742,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.04342394959721089
-            },
-            {
-                "clickDuration": 0.6259547,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.14751478382073488
-            },
-            {
-                "clickDuration": 0.542117655,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.38640695434469524
-            },
-            {
-                "clickDuration": 0.639168441,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1701845411718667
-            },
-            {
-                "clickDuration": 0.6805378,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.32033764394661995
-            },
-            {
-                "clickDuration": 0.763918042,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1225441687282399
-            }
-        ]
+        "clickDuration": 0.6482598966666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.1984020069348946,
+        "EffectiveScore": 1.5425911816263362
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.13836157,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10376368869912393
-            },
-            {
-                "clickDuration": 0.7509388,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2581671828495636
-            },
-            {
-                "clickDuration": 0.610803366,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3933060300973894
-            },
-            {
-                "clickDuration": 0.7633665,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.21518130662775592
-            },
-            {
-                "clickDuration": 0.695305049,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.02918538383803848
-            },
-            {
-                "clickDuration": 0.666506231,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07647309723505825
-            }
-        ]
+        "clickDuration": 0.7708802526666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.17934611489115493,
+        "EffectiveScore": 1.2972183377907933
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.743306458,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6334259263401052
-            },
-            {
-                "clickDuration": 0.6397706,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.252618857962178
-            },
-            {
-                "clickDuration": 0.889027953,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25492679371193666
-            },
-            {
-                "clickDuration": 0.514097035,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1419622265178735
-            },
-            {
-                "clickDuration": 0.666751862,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11882001046157926
-            },
-            {
-                "clickDuration": 1.02788544,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3531737368204492
-            }
-        ]
+        "clickDuration": 0.746806558,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.2924879253023536,
+        "EffectiveScore": 1.3390348401305818
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7131151,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25337735776718906
-            },
-            {
-                "clickDuration": 0.6258324,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18797481109022193
-            },
-            {
-                "clickDuration": 0.6675512,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3663245546037504
-            },
-            {
-                "clickDuration": 0.6387922,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.29310078231409636
-            },
-            {
-                "clickDuration": 0.5843619,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5105810571294996
-            },
-            {
-                "clickDuration": 0.5558937,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.14374959154579384
-            }
-        ]
+        "clickDuration": 0.6309244166666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.29251802574175856,
+        "EffectiveScore": 1.5849759077057963
     },
     {
         "username": "FP6",
         "userAge": 28,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.81921,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.013719296311896386
-            },
-            {
-                "clickDuration": 0.792391539,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0653872437789156
-            },
-            {
-                "clickDuration": 0.736662,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1591230449201416
-            },
-            {
-                "clickDuration": 0.958093047,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10234483441106561
-            },
-            {
-                "clickDuration": 0.598043263,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.10301455909042985
-            },
-            {
-                "clickDuration": 0.6811736,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.08723900991900164
-            }
-        ]
+        "clickDuration": 0.7642622415,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.25513799807190846,
+        "EffectiveScore": 1.3084514001860446
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8674882,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3372959323001675
-            },
-            {
-                "clickDuration": 0.751209,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6423857619277474
-            },
-            {
-                "clickDuration": 1.02921033,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5523495169694949
-            },
-            {
-                "clickDuration": 1.00082016,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.44132813249723324
-            },
-            {
-                "clickDuration": 0.931303561,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6895755100373928
-            },
-            {
-                "clickDuration": 0.777656853,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.36228563465212926
-            }
-        ]
+        "clickDuration": 0.8929480173333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5042034147306942,
+        "EffectiveScore": 1.1198860186580206
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.913687766,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2636486296287572
-            },
-            {
-                "clickDuration": 0.889377058,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9409151432699066
-            },
-            {
-                "clickDuration": 0.778113544,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.0410838281363068
-            },
-            {
-                "clickDuration": 0.985695839,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.459662190661295
-            },
-            {
-                "clickDuration": 0.6801695,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7494131859980151
-            },
-            {
-                "clickDuration": 0.8890852,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.43148701944827994
-            },
-            {
-                "clickDuration": 0.818718553,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.5357615975061163
-            },
-            {
-                "clickDuration": 0.570457458,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7085569085773813
-            }
-        ]
+        "clickDuration": 0.81566311475,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.25,
+        "HeisenbergAngle": 0.6413160629032573,
+        "EffectiveScore": 0.91949726110868
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.760333359,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23874562909699612
-            },
-            {
-                "clickDuration": 0.7233847,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5608531706601423
-            },
-            {
-                "clickDuration": 0.917346,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6382939739863385
-            },
-            {
-                "clickDuration": 1.66792214,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.5503940495438265
-            },
-            {
-                "clickDuration": 0.694880843,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9051105993915514
-            },
-            {
-                "clickDuration": 0.639340639,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7821008103508701
-            },
-            {
-                "clickDuration": 1.04049528,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6649413583491803
-            }
-        ]
+        "clickDuration": 0.9205289944285715,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.620062798768415,
+        "EffectiveScore": 0.9311416178421821
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.42938077,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25575695962317896
-            },
-            {
-                "clickDuration": 0.7930252,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.24985693284994226
-            },
-            {
-                "clickDuration": 0.652683854,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.401380472415418
-            },
-            {
-                "clickDuration": 1.19506776,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7432651525948555
-            },
-            {
-                "clickDuration": 1.03995788,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6773616306653255
-            },
-            {
-                "clickDuration": 0.7088563,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6675128130604457
-            }
-        ]
+        "clickDuration": 0.9698286273333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.49918899353486096,
+        "EffectiveScore": 1.0311100041969545
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 2.429174,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.636335072595764
-            },
-            {
-                "clickDuration": 1.05512917,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5429578074330947
-            },
-            {
-                "clickDuration": 1.27811491,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7307301958142385
-            },
-            {
-                "clickDuration": 1.38841057,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9428472359992697
-            },
-            {
-                "clickDuration": 1.0013938,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.284174424686773
-            },
-            {
-                "clickDuration": 0.639054656,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5353299616886269
-            }
-        ]
+        "clickDuration": 1.2985461843333335,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7787291163696279,
+        "EffectiveScore": 0.770091978294476
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.90191555,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3061680781945081
-            },
-            {
-                "clickDuration": 0.722969055,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.343352804688883
-            },
-            {
-                "clickDuration": 0.7507963,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1470349906121491
-            },
-            {
-                "clickDuration": 0.917339146,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5212212415351459
-            },
-            {
-                "clickDuration": 0.597912252,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.17150188384945894
-            },
-            {
-                "clickDuration": 0.861625135,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.0674640256883294
-            }
-        ]
+        "clickDuration": 0.7920929063333334,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4261238374280791,
+        "EffectiveScore": 1.262478166392231
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.61244756,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.22021348816031613
-            },
-            {
-                "clickDuration": 2.82077456,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9541024005232667
-            },
-            {
-                "clickDuration": 1.68224263,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.41732537387460833
-            },
-            {
-                "clickDuration": 0.6401097,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5369574106549809
-            },
-            {
-                "clickDuration": 0.653406143,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.670126008143717
-            }
-        ]
+        "clickDuration": 1.0681634321666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4664541135594815,
+        "EffectiveScore": 0.936186326816671
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.17984569,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2514676751886839
-            },
-            {
-                "clickDuration": 0.821229339,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5883578458252541
-            },
-            {
-                "clickDuration": 0.638788044,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7606958031420982
-            },
-            {
-                "clickDuration": 0.72266674,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.22192997755577004
-            },
-            {
-                "clickDuration": 0.625825465,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6721580065035336
-            },
-            {
-                "clickDuration": 0.847829342,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7772060794934316
-            }
-        ]
+        "clickDuration": 0.80603077,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5453025646181285,
+        "EffectiveScore": 1.2406474259041005
     },
     {
         "username": "FP7",
         "userAge": 31,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.12115669,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7212410606268526
-            },
-            {
-                "clickDuration": 0.723704,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.066481952177356
-            },
-            {
-                "clickDuration": 0.6380561,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4032380785893984
-            },
-            {
-                "clickDuration": 0.848410547,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.5386378648031178
-            },
-            {
-                "clickDuration": 0.901292,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.33332401202733725
-            },
-            {
-                "clickDuration": 1.02806187,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6812170260712401
-            }
-        ]
+        "clickDuration": 0.8767802011666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.6240233323825503,
+        "EffectiveScore": 1.1405367031205471
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.595430434,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7585673259457626
-            },
-            {
-                "clickDuration": 0.668898,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11281813252846186
-            },
-            {
-                "clickDuration": 0.945024669,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.11452966736904517
-            },
-            {
-                "clickDuration": 0.6679265,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3716098166734686
-            },
-            {
-                "clickDuration": 0.9453385,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.8128190729231108
-            },
-            {
-                "clickDuration": 1.0837245,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2511102588686185
-            }
-        ]
+        "clickDuration": 0.8177237671666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5702423790514112,
+        "EffectiveScore": 1.2229068545542008
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.651384,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.204764336621088
-            },
-            {
-                "clickDuration": 0.946941257,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.29618247083542826
-            },
-            {
-                "clickDuration": 0.6672396,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3090488928612062
-            },
-            {
-                "clickDuration": 0.8759334,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 0.4878645700540846
-            },
-            {
-                "clickDuration": 0.389180362,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7113092007663416
-            },
-            {
-                "clickDuration": 0.68098706,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4910014214445103
-            },
-            {
-                "clickDuration": 0.38904196,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7916564870394064
-            }
-        ]
+        "clickDuration": 0.6572439484285715,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergAngle": 0.47026105423172354,
+        "EffectiveScore": 1.3041472031689774
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.5707834,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7489786757517836
-            },
-            {
-                "clickDuration": 0.668427765,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9017549382705327
-            },
-            {
-                "clickDuration": 0.5426117,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.41223019641550546
-            },
-            {
-                "clickDuration": 0.6261404,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1225852959777387
-            },
-            {
-                "clickDuration": 0.249718726,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7488679023580714
-            },
-            {
-                "clickDuration": 0.570592463,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.46438122958939326
-            },
-            {
-                "clickDuration": 0.4731474,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.208228380391683
-            }
-        ]
+        "clickDuration": 0.5287745505714286,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.801003802679244,
+        "EffectiveScore": 1.6209986963566458
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.8774169,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5343233547382369
-            },
-            {
-                "clickDuration": 0.6664557,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9036567085797171
-            },
-            {
-                "clickDuration": 0.598469853,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.31724434381739447
-            },
-            {
-                "clickDuration": 0.334567279,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.6234734021511084
-            },
-            {
-                "clickDuration": 0.723172247,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.06192222187364919
-            },
-            {
-                "clickDuration": 0.5835307,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2503615562901494
-            },
-            {
-                "clickDuration": 0.4589619,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.9952351203358316
-            }
-        ]
+        "clickDuration": 0.5303218223749999,
+        "isCorrect": 0.75,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7107770884732609,
+        "EffectiveScore": 1.4142355987562243
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.52741,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18760549985862718
-            },
-            {
-                "clickDuration": 0.6125721,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5800145980521217
-            },
-            {
-                "clickDuration": 0.805554,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5203579289446449
-            },
-            {
-                "clickDuration": 0.639850259,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.21182458042362995
-            },
-            {
-                "clickDuration": 0.9182218,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1827918104277947
-            },
-            {
-                "clickDuration": 0.8199623,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.44628619046019385
-            }
-        ]
+        "clickDuration": 0.8872617431666668,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.35481343469450205,
+        "EffectiveScore": 1.1270631329498852
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.08011663,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.18703430390234116
-            },
-            {
-                "clickDuration": 0.681610942,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4730645033760103
-            },
-            {
-                "clickDuration": 0.6812581,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.12400108260520468
-            },
-            {
-                "clickDuration": 0.639682531,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.29535987731885416
-            },
-            {
-                "clickDuration": 0.485691875,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.30231982549621034
-            },
-            {
-                "clickDuration": 0.5555669,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.24489860229505966
-            }
-        ]
+        "clickDuration": 0.687321163,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.27111303249894675,
+        "EffectiveScore": 1.4549239188783716
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.816083848,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4954374734157036
-            },
-            {
-                "clickDuration": 0.6546877,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.5572050769696641
-            },
-            {
-                "clickDuration": 0.722669244,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.41341029906299154
-            },
-            {
-                "clickDuration": 0.6245341,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4644251974403737
-            },
-            {
-                "clickDuration": 0.499902666,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5567259796739676
-            },
-            {
-                "clickDuration": 0.5970618,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4242291781539487
-            },
-            {
-                "clickDuration": 0.5006139,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1909084432710202
-            }
-        ]
+        "clickDuration": 0.6307933225714286,
+        "isCorrect": 0.8571428571428571,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.7289059497125242,
+        "EffectiveScore": 1.3588331177139203
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.7462095,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.8360598616070221
-            },
-            {
-                "clickDuration": 1.07057726,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.45935190582907603
-            },
-            {
-                "clickDuration": 0.5143358,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 1.07024992,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.362444267362065
-            },
-            {
-                "clickDuration": 0.486863315,
-                "isCorrect": 0,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.3626435781165411
-            },
-            {
-                "clickDuration": 0.472716033,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 3.865222291849341
-            },
-            {
-                "clickDuration": 0.625677,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 2.4865832142698396
-            },
-            {
-                "clickDuration": 0.6117332,
-                "isCorrect": 0,
-                "HeisenbergError": 1,
-                "HeisenbergAngle": 1.280506024676632
-            },
-            {
-                "clickDuration": 0.569082141,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.1451024251714363
-            }
-        ]
+        "clickDuration": 0.6852715743333334,
+        "isCorrect": 0.6666666666666666,
+        "HeisenbergError": 0.2222222222222222,
+        "HeisenbergAngle": 1.4219903965424392,
+        "EffectiveScore": 0.9728503145854743
     },
     {
         "username": "FP8",
         "userAge": 23,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 2.13991666,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.1971837982436065
-            },
-            {
-                "clickDuration": 0.681685746,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.07873983598312437
-            },
-            {
-                "clickDuration": 0.473058343,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4622330906432885
-            },
-            {
-                "clickDuration": 0.5701152,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4641532834645114
-            },
-            {
-                "clickDuration": 0.556843162,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23270385072923538
-            },
-            {
-                "clickDuration": 0.820220649,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25894600721379846
-            }
-        ]
+        "clickDuration": 0.8736399600000001,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.28232664437959415,
+        "EffectiveScore": 1.1446362870123292
     },
     {
         "username": "FP9",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 1.1542145,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.43968333929037673
-            },
-            {
-                "clickDuration": 0.697012544,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5930860402234429
-            },
-            {
-                "clickDuration": 0.7370836,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.19002578158287706
-            },
-            {
-                "clickDuration": 0.750742555,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.9344725518903799
-            },
-            {
-                "clickDuration": 0.9030316,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7380785235362359
-            }
-        ]
+        "clickDuration": 0.7070141331666666,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.48255770608721876,
+        "EffectiveScore": 1.4143988826942826
     },
     {
         "username": "FP9",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.8717835,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7084987834261285
-            },
-            {
-                "clickDuration": 0.7363301,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4964810517074993
-            },
-            {
-                "clickDuration": 0.6551734,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.5293179980030358
-            },
-            {
-                "clickDuration": 0.8187426,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.20767095168318742
-            },
-            {
-                "clickDuration": 0.6249421,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.6515804967472438
-            },
-            {
-                "clickDuration": 0.652584255,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5134939322658941
-            }
-        ]
+        "clickDuration": 0.7265926591666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.8511738689721647,
+        "EffectiveScore": 1.3762869571885101
     },
     {
         "username": "FP9",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.9707711,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.4924308276572387
-            },
-            {
-                "clickDuration": 0.806126058,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.7007433078027339
-            },
-            {
-                "clickDuration": 0.820442855,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.25370742516478956
-            },
-            {
-                "clickDuration": 0.833878756,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.22923514279296026
-            },
-            {
-                "clickDuration": 0.706425,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.514719571925029
-            },
-            {
-                "clickDuration": 0.7358396,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3774321624169296
-            }
-        ]
+        "clickDuration": 0.8122472281666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.42804473962661344,
+        "EffectiveScore": 1.2311522469053078
     },
     {
         "username": "FP9",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.5",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.5,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.0,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.0
-            },
-            {
-                "clickDuration": 0.7783994,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5117750898241572
-            },
-            {
-                "clickDuration": 0.7644859,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.15599763717188736
-            },
-            {
-                "clickDuration": 0.7785366,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.6239200758609225
-            },
-            {
-                "clickDuration": 0.73666805,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5682906103768823
-            },
-            {
-                "clickDuration": 0.7095295,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2881933377809445
-            }
-        ]
+        "clickDuration": 0.627936575,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.35802945850246565,
+        "EffectiveScore": 1.592517524560502
     },
     {
         "username": "FP9",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.3",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
-        "selectionSequence": [
-            {
-                "clickDuration": 1.05096352,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5459888563257153
-            },
-            {
-                "clickDuration": 1.01628113,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3414212476965623
-            },
-            {
-                "clickDuration": 0.9863899,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.305790262283396
-            },
-            {
-                "clickDuration": 0.7371702,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.3978285773992094
-            },
-            {
-                "clickDuration": 1.015567,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.23910739367761163
-            },
-            {
-                "clickDuration": 0.905453444,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.2174302383482419
-            }
-        ]
+        "clickDuration": 0.9519708656666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.3412610959551227,
+        "EffectiveScore": 1.0504523153654481
     },
     {
         "username": "FP9",
         "userAge": 27,
         "usergender": "male",
-        "studyname": "Study1",
         "inputtechnique": "ControllerIntenSelect",
-        "variable": "radius_0.21_distance_0.75_spacing_0.7",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.7,
-        "selectionSequence": [
-            {
-                "clickDuration": 0.775539041,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.469103736257354
-            },
-            {
-                "clickDuration": 0.681033969,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.8235310973217564
-            },
-            {
-                "clickDuration": 0.7224801,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.2241373945646143
-            },
-            {
-                "clickDuration": 0.7233749,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.3350705152021545
-            },
-            {
-                "clickDuration": 0.805166543,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 1.6083437220261576
-            },
-            {
-                "clickDuration": 0.73729074,
-                "isCorrect": 1,
-                "HeisenbergError": 0,
-                "HeisenbergAngle": 0.5648926698745228
-            }
-        ]
+        "clickDuration": 0.7408142154999999,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 1.33751318920776,
+        "EffectiveScore": 1.3498661055323662
     }
 ]

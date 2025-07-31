@@ -30,8 +30,7 @@ def extract_json_data(input_path):
                     intention_obj = entry['historyCaches'][intention_index]['intendedObjectID']
                     target_obj = entry['targetPointID']
                     heisenberg_frame = entry['historyCaches'][intention_index]
-                    if (intention_obj is not None and 
-                            target_obj is not None and 
+                    if (intention_obj is not None and target_obj is not None and 
                             intention_obj == target_obj and not entry['isCorrect']):
                         entry['HeisenbergError'] = 1
                         
@@ -135,6 +134,8 @@ def extract_json_data(input_path):
                 if entry['HeisenbergAngle'] == 0.0:
                     magnitude = np.sqrt(float(last_frame['endPoint'][0] - heisenberg_frame['endPoint'][0])**2 + float(last_frame['endPoint'][1] - heisenberg_frame['endPoint'][1])**2)
                     entry['HeisenbergAngle'] = (np.arctan(magnitude / 7.5) * (180 / np.pi))
+            
+
             entry.pop('HeisenbergOffset', None)
             entry.pop('selectedPointID', None)
             entry.pop('targetPointID', None)
@@ -142,6 +143,17 @@ def extract_json_data(input_path):
             entry.pop('endPointInStart', None)
             entry.pop('endPointInEnd', None)
             entry.pop('historyCaches', None)
+        
+        data.pop('studyname')
+        data.pop('variable')
+
+        data['clickDuration'] = sum([entry.get('clickDuration', 0) for entry in entries]) / len(entries)
+        data['isCorrect'] = sum([entry.get('isCorrect', 0) for entry in entries]) / len(entries)
+        data['HeisenbergError'] = sum([entry.get('HeisenbergError', 0) for entry in entries]) / len(entries)
+        data['HeisenbergAngle'] = sum([entry.get('HeisenbergAngle', 0) for entry in entries]) / len(entries)
+        data['EffectiveScore'] = (1/data['clickDuration']) * data['isCorrect']
+
+        data.pop('selectionSequence')
     
     return data
 
@@ -232,8 +244,6 @@ def load_jsons_r(json_files_dir, technique=""):
             if json_file["inputtechnique"] != technique:
                 continue
         
-        
-
         if json_file["radius"] == 0.07:
             data_radius_007.append(json_file)
         elif json_file["radius"] == 0.14:
@@ -279,8 +289,6 @@ def main():
     if len(data_spacing_07) > 0:
         save_data_to_json(data_spacing_07, './output_json/' + full_name + '_spacing_07_data.json')
         print("the data has been saved into ", full_name + '_spacing_07_data.json')
-
-
     if len(data_radius_007) > 0:
         save_data_to_json(data_radius_007, './output_json/' + full_name + '_radius_007_data.json')
         print("the data has been saved into ", full_name + '_radius_007_data.json')

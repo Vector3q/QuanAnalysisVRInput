@@ -12,45 +12,36 @@ def read_from_numpy(file_path):
     
 def extract_all_wanted_data(data):
     all_selection_times = []
-    all_correct_selection_times = []
+    # all_correct_selection_times = []
     all_selection_errors = []
     all_H_selection_errors = []
+    all_Effective_score = []
     all_H_Offset_x = []
     all_H_Offset_y = []
     all_H_Offset_magnitude = []
 
     for data_item in data:
-        correct_selection_times = [entry["clickDuration"] for entry in data_item["selectionSequence"] if float(entry["isCorrect"]) > 0]
-        selection_times = [entry["clickDuration"] for entry in data_item["selectionSequence"]]
-        selection_errors = [float(entry["isCorrect"]) for entry in data_item["selectionSequence"]]
-        H_selection_errors = [float(1) if entry["HeisenbergError"] == 1 and entry["isCorrect"] == 0 else float(0) for entry in data_item["selectionSequence"]]
-
-        for entry in data_item["selectionSequence"]:
-            if ("HeisenbergAngle" in entry and 
-                isinstance(entry["HeisenbergAngle"], (int, float)) and 
-                entry["HeisenbergAngle"] >= 0):
-                all_H_Offset_magnitude.append(float(entry["HeisenbergAngle"]))
-            elif "HeisenbergOffset" in entry and isinstance(entry["HeisenbergOffset"], list):
-                print("here")
-                h_offset = entry["HeisenbergOffset"]
-                all_H_Offset_x.append(float(h_offset[0]))
-                all_H_Offset_y.append(float(h_offset[1]))
-                magnitude = np.sqrt(float(h_offset[0])**2 + float(h_offset[1])**2)
-                all_H_Offset_magnitude.append(np.arctan(magnitude / 7.5) * (180 / np.pi))
-
-        
+        # correct_selection_times = [entry["clickDuration"] for entry in data_item["selectionSequence"] if float(entry["isCorrect"]) > 0]
+        selection_times = [data_item["clickDuration"]]
+        selection_errors = [data_item["isCorrect"]]
+        H_selection_errors = [data_item["HeisenbergError"]]
+        H_magnitude = [data_item["HeisenbergAngle"]]
+        Effective_score = [data_item["EffectiveScore"]]
 
         all_selection_times.extend(selection_times)
         all_selection_errors.extend(selection_errors)
         all_H_selection_errors.extend(H_selection_errors)
-        all_correct_selection_times.extend(correct_selection_times)
+        all_H_Offset_magnitude.extend(H_magnitude)
+        all_Effective_score.extend(Effective_score)
 
     all_selection_times = np.array(all_selection_times)
     all_selection_errors = np.array(all_selection_errors)
     all_H_selection_errors = np.array(all_H_selection_errors)
+    all_H_Offset_magnitude = np.array(all_H_Offset_magnitude)
+    all_Effective_score = np.array(all_Effective_score)
     all_H_Offset_x = np.array(all_H_Offset_x)
     all_H_Offset_y = np.array(all_H_Offset_y)
-    all_H_Offset_magnitude = np.array(all_H_Offset_magnitude)
+    
 
     if len(all_selection_times) > 0:
         original_count = len(all_selection_times)
@@ -81,9 +72,9 @@ def extract_all_wanted_data(data):
             else:
                 print(f"结论: 数据不符合正态分布 (p={sw_p:.4f} ≤ 0.05)")
             print("")
-    all_correct_selection_times = all_selection_times[all_selection_errors > 0].tolist()
+    # all_correct_selection_times = all_selection_times[all_selection_errors > 0].tolist()
 
-    return len(all_correct_selection_times), all_selection_times, all_selection_errors, all_H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude
+    return all_selection_times, all_selection_errors, all_H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude, all_Effective_score
 
 
 def get_global_avg_and_std(selection_times):
@@ -120,18 +111,13 @@ def compute_global_HeisenbergOffset(heisenberg_offset):
     print("")
     return global_HeisenbergOffset, global_HeisenbergOffset_sem
 
-def compute_global_EffectiveScore(global_avg_selection_time, global_avg_error_rate, global_sem_selection_time, global_sem_error_rate):
-    effective_score = (1 / global_avg_selection_time) * (1 - global_avg_error_rate)
-    print("effective_score: ", effective_score)
-
-    d_score_d_time = -(1 - global_avg_error_rate) / (global_avg_selection_time ** 2)
-    d_score_d_error = -1 / global_avg_selection_time
-
-    sem_time_contribution = (d_score_d_time * global_sem_selection_time) ** 2
-    sem_error_contribution = (d_score_d_error * global_sem_error_rate) ** 2
-
-    sem_effective = np.sqrt(sem_time_contribution + sem_error_contribution)
-    return effective_score, sem_effective
+def compute_global_EffectiveScore(effetive_score):
+    global_EffectiveScore = np.mean(effetive_score)
+    print("global_EffectiveScore: ", global_EffectiveScore)
+    global_EffectiveScore_sem = np.std(effetive_score) / np.sqrt(len(effetive_score))
+    print("global_EffectiveScore_sem: ", global_EffectiveScore_sem)
+    print("")
+    return global_EffectiveScore, global_EffectiveScore_sem
 
 def compute_HeisenbergOffset_direction(all_H_Offset_x, all_H_Offset_y):
     count_right_top = 0
@@ -192,7 +178,7 @@ def main():
         if data is None:
             print("The data is None for ", full_name, " and ", partial_name)
 
-        click_count, all_selection_times, all_selection_errors, H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude = extract_all_wanted_data(data)
+        all_selection_times, all_selection_errors, H_selection_errors, all_H_Offset_x, all_H_Offset_y, all_H_Offset_magnitude, all_Effetive_score = extract_all_wanted_data(data)
         global_avg_selection_time, global_std_selection_time, global_sem_selection_time = get_global_avg_and_std(all_selection_times)
 
         global_error_rate, global_error_rate_sem = compute_global_error_rate(all_selection_errors)
@@ -201,7 +187,7 @@ def main():
 
         global_H_Offset_magnitude, global_H_Offset_sem = compute_global_HeisenbergOffset(all_H_Offset_magnitude)
 
-        global_Effective_Score, global_Effective_Score_sem = compute_global_EffectiveScore(global_avg_selection_time, global_error_rate, global_sem_selection_time, global_error_rate_sem)
+        global_Effective_Score, global_Effective_Score_sem = compute_global_EffectiveScore(all_Effetive_score)
 
         count_right_top, count_right_down, count_left_top, count_left_down, count_in_axis = compute_HeisenbergOffset_direction(all_H_Offset_x, all_H_Offset_y)
 
