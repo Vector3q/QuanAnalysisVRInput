@@ -29,6 +29,7 @@ def main():
     
     click_count = 0
     records_with_target = 0
+    records_with_same_history = 0
     total_error_count = 0
     heisenberg_error_count = 0
     total_VOTE_eror_count = 0
@@ -62,6 +63,21 @@ def main():
                     target_id = selection['targetPointID']
                     if target_id in intended_objects:
                         records_with_target += 1
+
+                    all_caches_same = True
+                    first_id = None
+                    for cache in selection['historyCaches']:
+                        if 'intendedObjectID' not in cache or cache['intendedObjectID'] == "null":
+                            all_caches_same = False
+                            break
+                        if first_id is None:
+                            first_id = cache['intendedObjectID']
+                        elif cache['intendedObjectID'] != first_id:
+                            all_caches_same = False
+                            break
+
+                    if all_caches_same:
+                        records_with_same_history += 1
 
                     obj_counter = Counter(intended_objects)
                     most_common_obj, count = obj_counter.most_common(1)[0] if intended_objects else (None, 0)
@@ -146,10 +162,10 @@ def main():
     print(f"{'='*60}")
     
     # 第一行：索引名
-    print(f"{'总点击':<5} | {'有目标记录':<7} | {'总错误数':<7} | {'海森堡错误':<7} | {'VOTE错误数':<5} ")
+    print(f"{'总点击':<5} | {'有目标记录':<7} | {'无转移选择':<6} | {'总错误数':<7} | {'海森堡错误':<7} | {'VOTE错误数':<5} ")
     
     # 第二行：数值
-    print(f"{click_count:<8} | {records_with_target:<1}({records_with_target/click_count:.2%}) | {total_error_count} ({total_error_count/click_count:.2%}) | {heisenberg_error_count} ({heisenberg_error_count/click_count:.2%}) | {total_VOTE_eror_count} ({total_VOTE_eror_count/click_count:.2%})")
+    print(f"{click_count:<8} | {records_with_target:<1}({records_with_target/click_count:.2%}) | {records_with_same_history}({records_with_same_history/click_count:.2%}) | {total_error_count} ({total_error_count/click_count:.2%}) | {heisenberg_error_count} ({heisenberg_error_count/click_count:.2%}) | {total_VOTE_eror_count} ({total_VOTE_eror_count/click_count:.2%})")
     print(f"{'='*60}")
     
 if __name__ == '__main__':
