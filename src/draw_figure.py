@@ -73,8 +73,8 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Time (Sec)', fontsize=8)
-    axis.set_xlabel('Target Size (cm)', fontsize=8)
+    axis.set_ylabel('Selection Time (Sec)', fontsize=10)
+    axis.set_xlabel('Target Size (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -90,19 +90,19 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_selection_time_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_selection_time_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_selection_time_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -141,8 +141,8 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Accuracy (%)', fontsize=8)
-    axis.set_xlabel('Target Size (cm)', fontsize=8)
+    axis.set_ylabel('Selection Error Rate (%)', fontsize=10)
+    axis.set_xlabel('Target Size (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -158,19 +158,19 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_selection_time_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_selection_time_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_selection_time_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -208,8 +208,8 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=8)
-    axis.set_xlabel('Target Size (cm)', fontsize=8)
+    axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=10)
+    axis.set_xlabel('Target Size (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,50)
 
@@ -226,19 +226,19 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_selection_time_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_selection_time_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_selection_time_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -271,8 +271,8 @@ def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, te
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('HeisenbergMagnitude (m)', fontsize=8)
-    axis.set_xlabel('Target Size (cm)', fontsize=8)
+    axis.set_ylabel('HeisenbergMagnitude (m)', fontsize=10)
+    axis.set_xlabel('Target Size (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -288,19 +288,19 @@ def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, te
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_H_offset_magnitude_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_H_offset_magnitude_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_H_offset_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_H_offset_magnitude_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_H_offset_magnitude_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_H_offset_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_H_offset_magnitude_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_H_offset_magnitude_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_H_offset_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -333,8 +333,8 @@ def draw_bar_plot_EffetiveScore_radius(tech_type1, tech_type2, tech_type3, tech_
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('EffectiveScore', fontsize=8)
-    axis.set_xlabel('Target Size (cm)', fontsize=8)
+    axis.set_ylabel('EffectiveScore', fontsize=10)
+    axis.set_xlabel('Target Size (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -350,19 +350,19 @@ def draw_bar_plot_EffetiveScore_radius(tech_type1, tech_type2, tech_type3, tech_
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_H_offset_magnitude_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_H_offset_magnitude_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_H_offset_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_H_offset_magnitude_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_H_offset_magnitude_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_H_offset_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_H_offset_magnitude_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_H_offset_magnitude_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_H_offset_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -395,8 +395,8 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Time (Sec)', fontsize=8)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=8)
+    axis.set_ylabel('Selection Time (Sec)', fontsize=10)
+    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,2.5)
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -412,19 +412,19 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_selection_time_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_selection_time_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_selection_time_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -459,8 +459,8 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Accuracy (%)', fontsize=8)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=8)
+    axis.set_ylabel('Selection Error Rate (%)', fontsize=10)
+    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -476,19 +476,19 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_selection_time_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_selection_time_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_selection_time_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -521,8 +521,8 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=8)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=8)
+    axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=10)
+    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,50)
 
@@ -539,19 +539,19 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_selection_time_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_selection_time_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_selection_time_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -584,8 +584,8 @@ def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, t
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('HeisenbergMagnitude (m)', fontsize=8)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=8)
+    axis.set_ylabel('HeisenbergMagnitude (m)', fontsize=10)
+    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -601,19 +601,19 @@ def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, t
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_H_offset_magnitude_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_H_offset_magnitude_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_H_offset_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_H_offset_magnitude_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_H_offset_magnitude_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_H_offset_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_H_offset_magnitude_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_H_offset_magnitude_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_H_offset_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -646,8 +646,8 @@ def draw_bar_plot_EffetiveScore_spacing(tech_type1, tech_type2, tech_type3, tech
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('EffectiveScore', fontsize=8)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=8)
+    axis.set_ylabel('EffectiveScore', fontsize=10)
+    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -663,19 +663,19 @@ def draw_bar_plot_EffetiveScore_spacing(tech_type1, tech_type2, tech_type3, tech
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.15, data_H_offset_magnitude_type1, width=0.15, label = tech_type1, 
+    axis.bar(x_axis - 0.2, data_H_offset_magnitude_type1, width=0.2, label = tech_type1, 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.15, label = tech_type2, 
+    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.2, label = tech_type2, 
             color = bar_colors_group1[1],  yerr = data_H_offset_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.15, data_H_offset_magnitude_type3, width=0.15, label = tech_type3, 
+    axis.bar(x_axis + 0.2, data_H_offset_magnitude_type3, width=0.2, label = tech_type3, 
             color = bar_colors_group1[2],  yerr = data_H_offset_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.3, data_H_offset_magnitude_type4, width=0.15, label = tech_type4, 
+    axis.bar(x_axis + 0.4, data_H_offset_magnitude_type4, width=0.2, label = tech_type4, 
             color = bar_colors_group1[3],  yerr = data_H_offset_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels)
+    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
