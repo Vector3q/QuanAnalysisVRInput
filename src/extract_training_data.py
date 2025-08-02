@@ -67,7 +67,7 @@ def main():
                             is_correct = int(intended == selection['targetPointID'])
                             records.append({
                                 'user': data['username'],
-                                'relative_position': idx/lens,
+                                'relative_position': idx/(lens-1),
                                 'is_correct': is_correct
                             })
                         

@@ -44,15 +44,15 @@ def main():
     
     plt.figure(figsize=(8, 5))
     plt.plot(x_plot, y_plot, label='P(correct | relative_position)', color='blue')
-    plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
+    # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
     plt.xlabel('Relative Position in HistoryCache')
     plt.ylabel('P(Intended == Target)')
     plt.title('Voting Weight Function Across Multiple Sessions')
     plt.legend()
     plt.grid(True)
+    plt.ylim(0.4, 1)
     plt.tight_layout()
     plt.show()
-
 
 if __name__ == '__main__':
     main()
