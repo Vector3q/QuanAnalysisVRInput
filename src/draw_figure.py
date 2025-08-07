@@ -49,24 +49,22 @@ def get_data_spacing(tech_type1, tech_type2, tech_type3, tech_type4):
 
     return data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12
 
+
 def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_type4):
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_radius(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    xaxis_labels = ['radius = 7', 'radius = 14', 'radius = 21']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [data1['global_avg_selection_time'], data5['global_avg_selection_time'], data9['global_avg_selection_time']]
-    data_selection_sem_type1 = [data1['global_sem_selection_time'], data5['global_sem_selection_time'], data9['global_sem_selection_time']]
+    data_selection_time_type1 = [data1['global_avg_selection_time'], data2['global_avg_selection_time'], data3['global_avg_selection_time'], data4['global_avg_selection_time']]
+    data_selection_sem_type1 = [data1['global_sem_selection_time'], data2['global_sem_selection_time'], data3['global_sem_selection_time'], data4['global_sem_selection_time']]
 
-    data_selection_time_type2 = [data2['global_avg_selection_time'], data6['global_avg_selection_time'], data10['global_avg_selection_time']]
-    data_selection_sem_type2 = [data2['global_sem_selection_time'], data6['global_sem_selection_time'], data10['global_sem_selection_time']]
+    data_selection_time_type2 = [data5['global_avg_selection_time'], data6['global_avg_selection_time'], data7['global_avg_selection_time'], data8['global_avg_selection_time']]
+    data_selection_sem_type2 = [data5['global_sem_selection_time'], data6['global_sem_selection_time'], data7['global_sem_selection_time'], data8['global_sem_selection_time']]
 
-    data_selection_time_type3 = [data3['global_avg_selection_time'], data7['global_avg_selection_time'], data11['global_avg_selection_time']]
-    data_selection_sem_type3 = [data3['global_sem_selection_time'], data7['global_sem_selection_time'], data11['global_sem_selection_time']]
-
-    data_selection_time_type4 = [data4['global_avg_selection_time'], data8['global_avg_selection_time'], data12['global_avg_selection_time']]
-    data_selection_sem_type4 = [data4['global_sem_selection_time'], data8['global_sem_selection_time'], data12['global_sem_selection_time']]
+    data_selection_time_type3 = [data9['global_avg_selection_time'], data10['global_avg_selection_time'], data11['global_avg_selection_time'], data12['global_avg_selection_time']]
+    data_selection_sem_type3 = [data9['global_sem_selection_time'], data10['global_sem_selection_time'], data11['global_sem_selection_time'], data12['global_sem_selection_time']]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
@@ -74,7 +72,7 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
     axis.set_ylabel('Selection Time (Sec)', fontsize=10)
-    axis.set_xlabel('Target Size (cm)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -90,18 +88,18 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=co_shift, label = "Medium (radius = 14cm)", 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_selection_time_type3, width=co_shift, label = "Large (radius = 21cm)", 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -117,32 +115,26 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     title = 'Selection Time for ' + tech_type1 + ', ' + tech_type2 + ', ' + tech_type3 + ' and ' + tech_type4
     ylabel = 'Selection Time (s)'
 
-    xaxis_labels = ['radius = 7', 'radius = 14', 'radius = 21']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [100 - data1['global_error_rate']*100, 100 - data5['global_error_rate']*100, 100 - data9['global_error_rate']*100]
-    data_selection_sem_type1 = [data1['global_error_rate_sem']*100, data5['global_error_rate_sem']*100, data9['global_error_rate_sem']*100]
+    data_selection_time_type1 = [100 - data1['global_error_rate']*100, 100 - data2['global_error_rate']*100, 100 - data3['global_error_rate']*100, 100 - data4['global_error_rate']*100]
+    data_selection_sem_type1 = [data1['global_error_rate_sem']*100, data2['global_error_rate_sem']*100, data3['global_error_rate_sem']*100, data4['global_error_rate_sem']*100]
 
-    data_selection_time_type2 = [100 - data2['global_error_rate']*100, 100 - data6['global_error_rate']*100, 100 - data10['global_error_rate']*100]
+    data_selection_time_type2 = [100 - data5['global_error_rate']*100, 100 - data6['global_error_rate']*100, 100 - data7['global_error_rate']*100, 100 - data8['global_error_rate']*100]
+    data_selection_sem_type2 = [data5['global_error_rate_sem']*100, data6['global_error_rate_sem']*100, data7['global_error_rate_sem']*100, data8['global_error_rate_sem']*100]
 
-    data_selection_sem_type2 = [data2['global_error_rate_sem']*100, data6['global_error_rate_sem']*100, data10['global_error_rate_sem']*100]
-
-    data_selection_time_type3 = [100 - data3['global_error_rate']*100, 100 - data7['global_error_rate']*100, 100 - data11['global_error_rate']*100]
-
-    data_selection_sem_type3 = [data3['global_error_rate_sem']*100, data7['global_error_rate_sem']*100, data11['global_error_rate_sem']*100]
-
-    data_selection_time_type4 = [100 - data4['global_error_rate']*100, 100 - data8['global_error_rate']*100, 100 - data12['global_error_rate']*100]
-
-    data_selection_sem_type4 = [data4['global_error_rate_sem']*100, data8['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
+    data_selection_time_type3 = [100 - data9['global_error_rate']*100, 100 - data10['global_error_rate']*100, 100 - data11['global_error_rate']*100, 100 - data12['global_error_rate']*100]
+    data_selection_sem_type3 = [data9['global_error_rate_sem']*100, data10['global_error_rate_sem']*100, data11['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Error Rate (%)', fontsize=10)
-    axis.set_xlabel('Target Size (cm)', fontsize=10)
+    axis.set_ylabel('OverallError (%)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -158,18 +150,18 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=co_shift, label = "Medium (radius = 14cm)", 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_selection_time_type3, width=co_shift, label = "Large (radius = 21cm)", 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -183,25 +175,18 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_radius(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    title = 'Selection Time for ' + tech_type1 + ', ' + tech_type2 + ', ' + tech_type3 + ' and ' + tech_type4
-    ylabel = 'Selection Time (s)'
-
-    xaxis_labels = ['radius = 7', 'radius = 14', 'radius = 21']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [data1['global_H_error_rate']*100, data5['global_H_error_rate']*100, data9['global_H_error_rate']*100]
-    data_selection_sem_type1 = [data1['global_H_error_rate_sem']*100, data5['global_H_error_rate_sem']*100, data9['global_H_error_rate_sem']*100]
+    data_selection_time_type1 = [data1['global_H_error_rate']*100, data2['global_H_error_rate']*100, data3['global_H_error_rate']*100, data4['global_H_error_rate']*100]
+    data_selection_sem_type1 = [data1['global_H_error_rate_sem']*100, data2['global_H_error_rate_sem']*100, data3['global_H_error_rate_sem']*100, data4['global_H_error_rate_sem']*100]
 
-    data_selection_time_type2 = [data2['global_H_error_rate']*100, data6['global_H_error_rate']*100, data10['global_H_error_rate']*100]
-    data_selection_sem_type2 = [data2['global_H_error_rate_sem']*100, data6['global_H_error_rate_sem']*100, data10['global_H_error_rate_sem']*100]
+    data_selection_time_type2 = [data5['global_H_error_rate']*100, data6['global_H_error_rate']*100, data7['global_H_error_rate']*100, data8['global_H_error_rate']*100]
+    data_selection_sem_type2 = [data5['global_H_error_rate_sem']*100, data6['global_H_error_rate_sem']*100, data7['global_H_error_rate_sem']*100, data8['global_H_error_rate_sem']*100]
 
-    data_selection_time_type3 = [data3['global_H_error_rate']*100, data7['global_H_error_rate']*100, data11['global_H_error_rate']*100]
-    data_selection_sem_type3 = [data3['global_H_error_rate_sem']*100, data7['global_H_error_rate_sem']*100, data11['global_H_error_rate_sem']*100]
-
-
-    data_selection_time_type4 = [data4['global_H_error_rate']*100, data8['global_H_error_rate']*100, data12['global_H_error_rate']*100]
-    data_selection_sem_type4 = [data4['global_H_error_rate_sem']*100, data8['global_H_error_rate_sem']*100, data12['global_H_error_rate_sem']*100]
+    data_selection_time_type3 = [data9['global_H_error_rate']*100, data10['global_H_error_rate']*100, data11['global_H_error_rate']*100, data12['global_H_error_rate']*100]
+    data_selection_sem_type3 = [data9['global_H_error_rate_sem']*100, data10['global_H_error_rate_sem']*100, data11['global_H_error_rate_sem']*100, data12['global_H_error_rate_sem']*100]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
@@ -209,7 +194,7 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
     axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=10)
-    axis.set_xlabel('Target Size (cm)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,50)
 
@@ -226,18 +211,18 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=co_shift, label = "Medium (radius = 14cm)", 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_selection_time_type3, width=co_shift, label = "Large (radius = 21cm)", 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -250,29 +235,26 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
 def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, tech_type4):
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_radius(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    xaxis_labels = ['radius = 7', 'radius = 14', 'radius = 21']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_H_offset_magnitude_type1 = [data1['global_H_offset_magnitude'], data5['global_H_offset_magnitude'], data9['global_H_offset_magnitude']]
-    data_H_offset_sem_type1 = [data1['global_H_offset_sem'], data5['global_H_offset_sem'], data9['global_H_offset_sem']]
+    data_H_offset_magnitude_type1 = [data1['global_H_offset_magnitude'], data2['global_H_offset_magnitude'], data3['global_H_offset_magnitude'],data4['global_H_offset_magnitude']]
+    data_H_offset_sem_type1 = [data1['global_H_offset_sem'], data2['global_H_offset_sem'], data3['global_H_offset_sem'],data4['global_H_offset_sem']]
 
-    data_H_offset_magnitude_type2 = [data2['global_H_offset_magnitude'], data6['global_H_offset_magnitude'], data10['global_H_offset_magnitude']]
-    data_H_offset_sem_type2 = [data2['global_H_offset_sem'], data6['global_H_offset_sem'], data10['global_H_offset_sem']]
+    data_H_offset_magnitude_type2 = [data5['global_H_offset_magnitude'], data6['global_H_offset_magnitude'], data7['global_H_offset_magnitude'],data8['global_H_offset_magnitude']]
+    data_H_offset_sem_type2 = [data5['global_H_offset_sem'], data6['global_H_offset_sem'], data7['global_H_offset_sem'],data8['global_H_offset_sem']]
 
-    data_H_offset_magnitude_type3 = [data3['global_H_offset_magnitude'], data7['global_H_offset_magnitude'], data11['global_H_offset_magnitude']]
-    data_H_offset_sem_type3 = [data3['global_H_offset_sem'], data7['global_H_offset_sem'], data11['global_H_offset_sem']]
-
-    data_H_offset_magnitude_type4 = [data4['global_H_offset_magnitude'], data8['global_H_offset_magnitude'], data12['global_H_offset_magnitude']]
-    data_H_offset_sem_type4 = [data4['global_H_offset_sem'], data8['global_H_offset_sem'], data12['global_H_offset_sem']]
+    data_H_offset_magnitude_type3 = [data9['global_H_offset_magnitude'], data10['global_H_offset_magnitude'], data11['global_H_offset_magnitude'],data12['global_H_offset_magnitude']]
+    data_H_offset_sem_type3 = [data9['global_H_offset_sem'], data10['global_H_offset_sem'], data11['global_H_offset_sem'],data12['global_H_offset_sem']]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('HeisenbergMagnitude (m)', fontsize=10)
-    axis.set_xlabel('Target Size (cm)', fontsize=10)
+    axis.set_ylabel('HeisenbergMagnitude (degrees)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -288,18 +270,18 @@ def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, te
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_H_offset_magnitude_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_H_offset_magnitude_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_H_offset_magnitude_type2, width=co_shift, label = "Medium (radius = 14cm)", 
             color = bar_colors_group1[1],  yerr = data_H_offset_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_H_offset_magnitude_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_H_offset_magnitude_type3, width=co_shift, label = "Large (radius = 21cm)", 
             color = bar_colors_group1[2],  yerr = data_H_offset_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_H_offset_magnitude_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_H_offset_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -374,21 +356,18 @@ def draw_bar_plot_EffetiveScore_radius(tech_type1, tech_type2, tech_type3, tech_
 def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech_type4):
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_spacing(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    xaxis_labels = ['spacing = 30', 'spacing = 50', 'spacing = 70']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [data1['global_avg_selection_time'], data5['global_avg_selection_time'], data9['global_avg_selection_time']]
-    data_selection_sem_type1 = [data1['global_sem_selection_time'], data5['global_sem_selection_time'], data9['global_sem_selection_time']]
+    data_selection_time_type1 = [data1['global_avg_selection_time'], data2['global_avg_selection_time'], data3['global_avg_selection_time'], data4['global_avg_selection_time']]
+    data_selection_sem_type1 = [data1['global_sem_selection_time'], data2['global_sem_selection_time'], data3['global_sem_selection_time'], data4['global_sem_selection_time']]
 
-    data_selection_time_type2 = [data2['global_avg_selection_time'], data6['global_avg_selection_time'], data10['global_avg_selection_time']]
-    data_selection_sem_type2 = [data2['global_sem_selection_time'], data6['global_sem_selection_time'], data10['global_sem_selection_time']]
+    data_selection_time_type2 = [data5['global_avg_selection_time'], data6['global_avg_selection_time'], data7['global_avg_selection_time'], data8['global_avg_selection_time']]
+    data_selection_sem_type2 = [data5['global_sem_selection_time'], data6['global_sem_selection_time'], data7['global_sem_selection_time'], data8['global_sem_selection_time']]
 
-    data_selection_time_type3 = [data3['global_avg_selection_time'], data7['global_avg_selection_time'], data11['global_avg_selection_time']]
-    data_selection_sem_type3 = [data3['global_sem_selection_time'], data7['global_sem_selection_time'], data11['global_sem_selection_time']]
-
-    data_selection_time_type4 = [data4['global_avg_selection_time'], data8['global_avg_selection_time'], data12['global_avg_selection_time']]
-    data_selection_sem_type4 = [data4['global_sem_selection_time'], data8['global_sem_selection_time'], data12['global_sem_selection_time']]
+    data_selection_time_type3 = [data9['global_avg_selection_time'], data10['global_avg_selection_time'], data11['global_avg_selection_time'], data12['global_avg_selection_time']]
+    data_selection_sem_type3 = [data9['global_sem_selection_time'], data10['global_sem_selection_time'], data11['global_sem_selection_time'], data12['global_sem_selection_time']]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
@@ -396,9 +375,9 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
     axis.set_ylabel('Selection Time (Sec)', fontsize=10)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
-    axis.set_ylim(0,2.5)
+
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
     if tech_type1 == 'BareHandIntenSelect':
         tech_type1 = 'Score-based Hand Tracking'
@@ -412,55 +391,50 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=co_shift, label = "Mid (spacing = 50cm)", 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_selection_time_type3, width=co_shift, label = "Far (spacing = 70cm)", 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
     axis.spines['top'].set_visible(False);
-    # axis.legend(loc='upper right', bbox_to_anchor=(1.03, 1.02))
+    axis.legend(loc='upper right', bbox_to_anchor=(1.03, 1.02))
 
     return
 
 def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type4):
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_spacing(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    xaxis_labels = ['spacing = 30', 'spacing = 50', 'spacing = 70']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [100 - data1['global_error_rate']*100, 100 - data5['global_error_rate']*100, 100 - data9['global_error_rate']*100]
-    data_selection_sem_type1 = [data1['global_error_rate_sem']*100, data5['global_error_rate_sem']*100, data9['global_error_rate_sem']*100]
+    data_selection_time_type1 = [100 - data1['global_error_rate']*100, 100 - data2['global_error_rate']*100, 100 - data3['global_error_rate']*100, 100 - data4['global_error_rate']*100]
+    data_selection_sem_type1 = [data1['global_error_rate_sem']*100, data2['global_error_rate_sem']*100, data3['global_error_rate_sem']*100, data4['global_error_rate_sem']*100]
 
-    data_selection_time_type2 = [100 - data2['global_error_rate']*100, 100 - data6['global_error_rate']*100, 100 - data10['global_error_rate']*100]
-    data_selection_sem_type2 = [data2['global_error_rate_sem']*100, data6['global_error_rate_sem']*100, data10['global_error_rate_sem']*100]
+    data_selection_time_type2 = [100 - data5['global_error_rate']*100, 100 - data6['global_error_rate']*100, 100 - data7['global_error_rate']*100, 100 - data8['global_error_rate']*100]
+    data_selection_sem_type2 = [data5['global_error_rate_sem']*100, data6['global_error_rate_sem']*100, data7['global_error_rate_sem']*100, data8['global_error_rate_sem']*100]
 
-    data_selection_time_type3 = [100 - data3['global_error_rate']*100, 100 - data7['global_error_rate']*100, 100 - data11['global_error_rate']*100]
-    data_selection_sem_type3 = [data3['global_error_rate_sem']*100, data7['global_error_rate_sem']*100, data11['global_error_rate_sem']*100]
-
-
-    data_selection_time_type4 = [100 - data4['global_error_rate']*100, 100 - data8['global_error_rate']*100, 100 - data12['global_error_rate']*100]
-
-    data_selection_sem_type4 = [data4['global_error_rate_sem']*100, data8['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
+    data_selection_time_type3 = [100 - data9['global_error_rate']*100, 100 - data10['global_error_rate']*100, 100 - data11['global_error_rate']*100, 100 - data12['global_error_rate']*100]
+    data_selection_sem_type3 = [data9['global_error_rate_sem']*100, data10['global_error_rate_sem']*100, data11['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Error Rate (%)', fontsize=10)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
+    axis.set_ylabel('OverallError (%)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -476,18 +450,18 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=co_shift, label = "Mid (spacing = 50cm)", 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_selection_time_type3, width=co_shift, label = "Far (spacing = 70cm)", 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -500,21 +474,18 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
 def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type3, tech_type4):
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_spacing(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    xaxis_labels = ['spacing = 30', 'spacing = 50', 'spacing = 70']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_selection_time_type1 = [data1['global_H_error_rate']*100, data5['global_H_error_rate']*100, data9['global_H_error_rate']*100]
-    data_selection_sem_type1 = [data1['global_H_error_rate_sem']*100, data5['global_H_error_rate_sem']*100, data9['global_H_error_rate_sem']*100]
+    data_selection_time_type1 = [data1['global_H_error_rate']*100, data2['global_H_error_rate']*100, data3['global_H_error_rate']*100, data4['global_H_error_rate']*100]
+    data_selection_sem_type1 = [data1['global_H_error_rate_sem']*100, data2['global_H_error_rate_sem']*100, data3['global_H_error_rate_sem']*100, data4['global_H_error_rate_sem']*100]
 
-    data_selection_time_type2 = [data2['global_H_error_rate']*100, data6['global_H_error_rate']*100, data10['global_H_error_rate']*100]
-    data_selection_sem_type2 = [data2['global_H_error_rate_sem']*100, data6['global_H_error_rate_sem']*100, data10['global_H_error_rate_sem']*100]
+    data_selection_time_type2 = [data5['global_H_error_rate']*100, data6['global_H_error_rate']*100, data7['global_H_error_rate']*100, data8['global_H_error_rate']*100]
+    data_selection_sem_type2 = [data5['global_H_error_rate_sem']*100, data6['global_H_error_rate_sem']*100, data7['global_H_error_rate_sem']*100, data8['global_H_error_rate_sem']*100]
 
-    data_selection_time_type3 = [data3['global_H_error_rate']*100, data7['global_H_error_rate']*100, data11['global_H_error_rate']*100]
-    data_selection_sem_type3 = [data3['global_H_error_rate_sem']*100, data7['global_H_error_rate_sem']*100, data11['global_H_error_rate_sem']*100]
-
-    data_selection_time_type4 = [data4['global_H_error_rate']*100, data8['global_H_error_rate']*100, data12['global_H_error_rate']*100]
-    data_selection_sem_type4 = [data4['global_H_error_rate_sem']*100, data8['global_H_error_rate_sem']*100, data12['global_H_error_rate_sem']*100]
+    data_selection_time_type3 = [data9['global_H_error_rate']*100, data10['global_H_error_rate']*100, data11['global_H_error_rate']*100, data12['global_H_error_rate']*100]
+    data_selection_sem_type3 = [data9['global_H_error_rate_sem']*100, data10['global_H_error_rate_sem']*100, data11['global_H_error_rate_sem']*100, data12['global_H_error_rate_sem']*100]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
@@ -522,7 +493,7 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
     axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=10)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,50)
 
@@ -539,18 +510,18 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_selection_time_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_selection_time_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_selection_time_type2, width=co_shift, label = "Mid (spacing = 50cm)", 
             color = bar_colors_group1[1],  yerr = data_selection_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_selection_time_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_selection_time_type3, width=co_shift, label = "Far (spacing = 70cm)", 
             color = bar_colors_group1[2],  yerr = data_selection_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_selection_time_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_selection_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -563,29 +534,26 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
 def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, tech_type4):
     data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12 = get_data_spacing(tech_type1, tech_type2, tech_type3, tech_type4)
 
-    xaxis_labels = ['spacing = 30', 'spacing = 50', 'spacing = 70']
+    xaxis_labels = ['DH', 'SH', 'DC', 'SC']
     plt.style.use('ieee')
     plt.rcParams["font.family"] = "sans-serif"
 
-    data_H_offset_magnitude_type1 = [data1['global_H_offset_magnitude'], data5['global_H_offset_magnitude'], data9['global_H_offset_magnitude']]
-    data_H_offset_sem_type1 = [data1['global_H_offset_sem'], data5['global_H_offset_sem'], data9['global_H_offset_sem']]
+    data_H_offset_magnitude_type1 = [data1['global_H_offset_magnitude'], data2['global_H_offset_magnitude'], data3['global_H_offset_magnitude'],data4['global_H_offset_magnitude']]
+    data_H_offset_sem_type1 = [data1['global_H_offset_sem'], data2['global_H_offset_sem'], data3['global_H_offset_sem'],data4['global_H_offset_sem']]
 
-    data_H_offset_magnitude_type2 = [data2['global_H_offset_magnitude'], data6['global_H_offset_magnitude'], data10['global_H_offset_magnitude']]
-    data_H_offset_sem_type2 = [data2['global_H_offset_sem'], data6['global_H_offset_sem'], data10['global_H_offset_sem']]
+    data_H_offset_magnitude_type2 = [data5['global_H_offset_magnitude'], data6['global_H_offset_magnitude'], data7['global_H_offset_magnitude'],data8['global_H_offset_magnitude']]
+    data_H_offset_sem_type2 = [data5['global_H_offset_sem'], data6['global_H_offset_sem'], data7['global_H_offset_sem'],data8['global_H_offset_sem']]
 
-    data_H_offset_magnitude_type3 = [data3['global_H_offset_magnitude'], data7['global_H_offset_magnitude'], data11['global_H_offset_magnitude']]
-    data_H_offset_sem_type3 = [data3['global_H_offset_sem'], data7['global_H_offset_sem'], data11['global_H_offset_sem']]
-
-    data_H_offset_magnitude_type4 = [data4['global_H_offset_magnitude'], data8['global_H_offset_magnitude'], data12['global_H_offset_magnitude']]
-    data_H_offset_sem_type4 = [data4['global_H_offset_sem'], data8['global_H_offset_sem'], data12['global_H_offset_sem']]
+    data_H_offset_magnitude_type3 = [data9['global_H_offset_magnitude'], data10['global_H_offset_magnitude'], data11['global_H_offset_magnitude'],data12['global_H_offset_magnitude']]
+    data_H_offset_sem_type3 = [data9['global_H_offset_sem'], data10['global_H_offset_sem'], data11['global_H_offset_sem'],data12['global_H_offset_sem']]
 
     figure, axis = plt.subplots(1, 1, figsize=(5, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('HeisenbergMagnitude (m)', fontsize=10)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
+    axis.set_ylabel('HeisenbergMagnitude (degrees)', fontsize=10)
+    axis.set_xlabel('Input Technique', fontsize=10)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -601,18 +569,18 @@ def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, t
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    axis.bar(x_axis - 0.2, data_H_offset_magnitude_type1, width=0.2, label = tech_type1, 
+    co_shift = 0.25
+
+    axis.bar(x_axis - co_shift, data_H_offset_magnitude_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
-    axis.bar(x_axis, data_H_offset_magnitude_type2, width=0.2, label = tech_type2, 
+    axis.bar(x_axis, data_H_offset_magnitude_type2, width=co_shift, label = "Mid (spacing = 50cm)", 
             color = bar_colors_group1[1],  yerr = data_H_offset_sem_type2, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[0])
-    axis.bar(x_axis + 0.2, data_H_offset_magnitude_type3, width=0.2, label = tech_type3, 
+    axis.bar(x_axis + co_shift, data_H_offset_magnitude_type3, width=co_shift, label = "Far (spacing = 70cm)", 
             color = bar_colors_group1[2],  yerr = data_H_offset_sem_type3, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[1])
-    axis.bar(x_axis + 0.4, data_H_offset_magnitude_type4, width=0.2, label = tech_type4, 
-            color = bar_colors_group1[3],  yerr = data_H_offset_sem_type4, error_kw= {'elinewidth':1}, ecolor='black', capsize=3, hatch=hatch_patterns[2])
 
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
-    axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
+    axis.set_xticks(np.arange(len(xaxis_labels)))
     axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
@@ -685,28 +653,28 @@ def draw_bar_plot_EffetiveScore_spacing(tech_type1, tech_type2, tech_type3, tech
     return
 
 def main():
-    draw_bar_plot_selectiontime_radius('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_selectiontime_radius('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/selection_time_radius.png', bbox_inches='tight')
-    draw_bar_plot_accuracy_radius('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_accuracy_radius('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/accuracy_radius.png', bbox_inches='tight')
-    draw_bar_plot_Heisenberg_errorrate_radius('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_Heisenberg_errorrate_radius('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/HeisenbergErrorRate_radius.png', bbox_inches='tight')
-    draw_bar_plot_HOffsetMagnitude_radius('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_HOffsetMagnitude_radius('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/HeisenbergMagnitude_radius.png', bbox_inches='tight')
-    draw_bar_plot_EffetiveScore_radius('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
-    plt.savefig(f'./output_image/EffectiveScore_radius.png', bbox_inches='tight')
+    # draw_bar_plot_EffetiveScore_radius('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    # plt.savefig(f'./output_image/EffectiveScore_radius.png', bbox_inches='tight')
 
 
-    draw_bar_plot_selectiontime_spacing('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_selectiontime_spacing('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/selection_time_spacing.png', bbox_inches='tight')
-    draw_bar_plot_accuracy_spacing('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_accuracy_spacing('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/accuracy_spacing.png', bbox_inches='tight')
-    draw_bar_plot_Heisenberg_errorrate_spacing('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_Heisenberg_errorrate_spacing('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/HeisenbergErrorRate_spacing.png', bbox_inches='tight')
-    draw_bar_plot_HOffsetMagnitude_spacing('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    draw_bar_plot_HOffsetMagnitude_spacing('BareHandTracking', 'BareHandIntenSelect', 'ControllerTracking','ControllerIntenSelect')
     plt.savefig(f'./output_image/HeisenbergMagnitude_spacing.png', bbox_inches='tight')
-    draw_bar_plot_EffetiveScore_spacing('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
-    plt.savefig(f'./output_image/EffectiveScore_spacing.png', bbox_inches='tight')
+    # draw_bar_plot_EffetiveScore_spacing('BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking')
+    # plt.savefig(f'./output_image/EffectiveScore_spacing.png', bbox_inches='tight')
 
 if __name__ == '__main__':
     
