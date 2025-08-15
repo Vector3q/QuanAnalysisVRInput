@@ -12,6 +12,7 @@ mpl.rcParams['hatch.linewidth'] = 0.2
 bar_colors_group1 = ['#FED976', '#FEB24C', '#9EC9E2', '#5F97D2']
 bar_colors_group2 = ['#5F97D2', '#FFBE7A', '#2A65A1']
 hatch_patterns = ['xxx', 'ooo', '...', '\oo', '+++', '+o', 'o', 'O', '.', '*']
+figure_fontsize = 15
 
 def get_data_radius(tech_type1, tech_type2, tech_type3, tech_type4):
     data1 = read_from_numpy('./output_numpy/' + tech_type1 + '_radius_007_data.npy')
@@ -66,14 +67,15 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     data_selection_time_type3 = [data9['global_avg_selection_time'], data10['global_avg_selection_time'], data11['global_avg_selection_time'], data12['global_avg_selection_time']]
     data_selection_sem_type3 = [data9['global_sem_selection_time'], data10['global_sem_selection_time'], data11['global_sem_selection_time'], data12['global_sem_selection_time']]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Time (Sec)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('Selection Time (Sec)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
+    axis.set_ylim(0,2.5)
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
     if tech_type1 == 'BareHandIntenSelect':
@@ -88,7 +90,7 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -100,12 +102,13 @@ def draw_bar_plot_selectiontime_radius(tech_type1, tech_type2, tech_type3, tech_
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
     axis.spines['top'].set_visible(False);
-    axis.legend(loc='upper right', bbox_to_anchor=(1.03, 1.02))
+    axis.legend(loc='upper right',fontsize=figure_fontsize , bbox_to_anchor=(1.03, 1.02))
 
     return
 
@@ -128,13 +131,13 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     data_selection_time_type3 = [100 - data9['global_error_rate']*100, 100 - data10['global_error_rate']*100, 100 - data11['global_error_rate']*100, 100 - data12['global_error_rate']*100]
     data_selection_sem_type3 = [data9['global_error_rate_sem']*100, data10['global_error_rate_sem']*100, data11['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('OverallError (%)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('OverallError (%)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -150,7 +153,7 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -162,7 +165,8 @@ def draw_bar_plot_accuracy_radius(tech_type1, tech_type2, tech_type3, tech_type4
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -188,13 +192,13 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     data_selection_time_type3 = [data9['global_H_error_rate']*100, data10['global_H_error_rate']*100, data11['global_H_error_rate']*100, data12['global_H_error_rate']*100]
     data_selection_sem_type3 = [data9['global_H_error_rate_sem']*100, data10['global_H_error_rate_sem']*100, data11['global_H_error_rate_sem']*100, data12['global_H_error_rate_sem']*100]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('HeisenbergError (%)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,50)
 
@@ -211,7 +215,7 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -223,7 +227,8 @@ def draw_bar_plot_Heisenberg_errorrate_radius(tech_type1, tech_type2, tech_type3
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -248,13 +253,13 @@ def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, te
     data_H_offset_magnitude_type3 = [data9['global_H_offset_magnitude'], data10['global_H_offset_magnitude'], data11['global_H_offset_magnitude'],data12['global_H_offset_magnitude']]
     data_H_offset_sem_type3 = [data9['global_H_offset_sem'], data10['global_H_offset_sem'], data11['global_H_offset_sem'],data12['global_H_offset_sem']]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('HeisenbergMagnitude (degrees)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('HeisenbergMagnitude (deg)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -270,7 +275,7 @@ def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, te
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_H_offset_magnitude_type1, width=co_shift, label = "Small (radius = 7cm)", 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -282,7 +287,8 @@ def draw_bar_plot_HOffsetMagnitude_radius(tech_type1, tech_type2, tech_type3, te
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -310,13 +316,13 @@ def draw_bar_plot_EffetiveScore_radius(tech_type1, tech_type2, tech_type3, tech_
     data_H_offset_magnitude_type4 = [data4['global_avg_EffectiveScore'], data8['global_avg_EffectiveScore'], data12['global_avg_EffectiveScore']]
     data_H_offset_sem_type4 = [data4['global_sem_EffectiveScore'], data8['global_sem_EffectiveScore'], data12['global_sem_EffectiveScore']]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('EffectiveScore', fontsize=10)
-    axis.set_xlabel('Target Size (cm)', fontsize=10)
+    axis.set_ylabel('EffectiveScore', fontsize=figure_fontsize)
+    axis.set_xlabel('Target Size (cm)', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -344,7 +350,8 @@ def draw_bar_plot_EffetiveScore_radius(tech_type1, tech_type2, tech_type3, tech_
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -369,14 +376,15 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     data_selection_time_type3 = [data9['global_avg_selection_time'], data10['global_avg_selection_time'], data11['global_avg_selection_time'], data12['global_avg_selection_time']]
     data_selection_sem_type3 = [data9['global_sem_selection_time'], data10['global_sem_selection_time'], data11['global_sem_selection_time'], data12['global_sem_selection_time']]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Selection Time (Sec)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('Selection Time (Sec)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
+    axis.set_ylim(0,2.5)
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
     if tech_type1 == 'BareHandIntenSelect':
@@ -391,7 +399,7 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -403,12 +411,13 @@ def draw_bar_plot_selectiontime_spacing(tech_type1, tech_type2, tech_type3, tech
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
     axis.spines['top'].set_visible(False);
-    axis.legend(loc='upper right', bbox_to_anchor=(1.03, 1.02))
+    axis.legend(loc='upper right', fontsize=figure_fontsize, bbox_to_anchor=(1.03, 1.02))
 
     return
 
@@ -428,14 +437,15 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     data_selection_time_type3 = [100 - data9['global_error_rate']*100, 100 - data10['global_error_rate']*100, 100 - data11['global_error_rate']*100, 100 - data12['global_error_rate']*100]
     data_selection_sem_type3 = [data9['global_error_rate_sem']*100, data10['global_error_rate_sem']*100, data11['global_error_rate_sem']*100, data12['global_error_rate_sem']*100]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('OverallError (%)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('OverallError (%)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
+    axis.set_ylim(0,60)
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
     if tech_type1 == 'BareHandIntenSelect':
@@ -450,7 +460,7 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -462,7 +472,8 @@ def draw_bar_plot_accuracy_spacing(tech_type1, tech_type2, tech_type3, tech_type
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -487,13 +498,13 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     data_selection_time_type3 = [data9['global_H_error_rate']*100, data10['global_H_error_rate']*100, data11['global_H_error_rate']*100, data12['global_H_error_rate']*100]
     data_selection_sem_type3 = [data9['global_H_error_rate_sem']*100, data10['global_H_error_rate_sem']*100, data11['global_H_error_rate_sem']*100, data12['global_H_error_rate_sem']*100]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('Heisenberg Error Rate (%)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('HeisenbergError (%)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
     axis.set_ylim(0,50)
 
@@ -510,7 +521,7 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_selection_time_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_selection_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -522,7 +533,8 @@ def draw_bar_plot_Heisenberg_errorrate_spacing(tech_type1, tech_type2, tech_type
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -547,13 +559,13 @@ def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, t
     data_H_offset_magnitude_type3 = [data9['global_H_offset_magnitude'], data10['global_H_offset_magnitude'], data11['global_H_offset_magnitude'],data12['global_H_offset_magnitude']]
     data_H_offset_sem_type3 = [data9['global_H_offset_sem'], data10['global_H_offset_sem'], data11['global_H_offset_sem'],data12['global_H_offset_sem']]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('HeisenbergMagnitude (degrees)', fontsize=10)
-    axis.set_xlabel('Input Technique', fontsize=10)
+    axis.set_ylabel('HeisenbergMagnitude (deg)', fontsize=figure_fontsize)
+    axis.set_xlabel('Input Technique', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -569,7 +581,7 @@ def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, t
     if tech_type4 == 'ControllerTracking':
         tech_type4 = 'Direct Controller Tracking'
 
-    co_shift = 0.25
+    co_shift = 0.2
 
     axis.bar(x_axis - co_shift, data_H_offset_magnitude_type1, width=co_shift, label = "Near (spacing = 30cm)", 
             color = bar_colors_group1[0], yerr = data_H_offset_sem_type1 , error_kw= {'elinewidth':1}, ecolor='black', capsize=3)
@@ -581,7 +593,8 @@ def draw_bar_plot_HOffsetMagnitude_spacing(tech_type1, tech_type2, tech_type3, t
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels)))
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
@@ -609,13 +622,13 @@ def draw_bar_plot_EffetiveScore_spacing(tech_type1, tech_type2, tech_type3, tech
     data_H_offset_magnitude_type4 = [data4['global_avg_EffectiveScore'], data8['global_avg_EffectiveScore'], data12['global_avg_EffectiveScore']]
     data_H_offset_sem_type4 = [data4['global_sem_EffectiveScore'], data8['global_sem_EffectiveScore'], data12['global_sem_EffectiveScore']]
 
-    figure, axis = plt.subplots(1, 1, figsize=(5, 4))
+    figure, axis = plt.subplots(1, 1, figsize=(8, 4))
     figure.set_dpi(800);
     figure.tight_layout(pad=4.0) 
     #figure.tight_layout(h_pad=4.0, w_pad=3.0)
     figure.suptitle('', x=0.5)
-    axis.set_ylabel('EffectiveScore', fontsize=10)
-    axis.set_xlabel('Target Spacing (cm)', fontsize=10)
+    axis.set_ylabel('EffectiveScore', fontsize=figure_fontsize)
+    axis.set_xlabel('Target Spacing (cm)', fontsize=figure_fontsize)
     x_axis = np.arange(len(xaxis_labels))
 
     # 'BareHandIntenSelect', 'ControllerIntenSelect', 'BareHandTracking','ControllerTracking'
@@ -643,7 +656,8 @@ def draw_bar_plot_EffetiveScore_spacing(tech_type1, tech_type2, tech_type3, tech
     #axis.set_ylabel('Selection Time (Sec)', fontsize=8);
     axis.tick_params(bottom = False, left = False);
     axis.set_xticks(np.arange(len(xaxis_labels))+0.1)
-    axis.set_xticklabels(xaxis_labels, fontsize=10, ha='center')
+    axis.set_xticklabels(xaxis_labels, fontsize=figure_fontsize, ha='center')
+    axis.tick_params(axis='y', labelsize=figure_fontsize)
     axis.set_axisbelow(True)
     axis.yaxis.grid(visible=True, linestyle='--', linewidth=0.5);
     axis.spines['right'].set_visible(False);
