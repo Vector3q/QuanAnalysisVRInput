@@ -24,7 +24,7 @@ def main():
     full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
-    fp_range = range(1, 8)
+    fp_range = range(1, 17)
         
     data_folders = [
         os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 

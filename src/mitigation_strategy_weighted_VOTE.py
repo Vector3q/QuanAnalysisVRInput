@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 import numpy as np
-
+import math
 from collections import defaultdict, Counter
 
 def save_poly_func(file, coeffs):
@@ -63,11 +63,11 @@ def main():
     plt.ylabel('Accuracy', fontsize=15)
     plt.legend(loc='lower right')
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
-    plt.ylim(0.4, 1.05)
+    plt.ylim(0.3, 1.05)
     plt.tick_params(axis='both', which='both', length=0)
     plt.tight_layout()
     plt.savefig(f'./output_image/{full_name}accuracy_plot.png', dpi=300, bbox_inches='tight')
-    plt.show()
+    # plt.show()
 
     coeffs_file = "./train_coeffs/" + full_name + "_weighted_VOTE_coeffs.npy"
     coeffs = np.load(coeffs_file)
@@ -88,7 +88,7 @@ def main():
     
     print(f"max poly func: {max_value:.4f}, correspond to: {max_x:.4f}")
     power = 20.0
-    fp_range = range(8, 14)
+    fp_range = range(18, 24)
     data_folders = [
         os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
         for i in fp_range
@@ -98,7 +98,6 @@ def main():
     total_VOTE_eror_count = 0
     total_Befor_error_count = 0
     for data_folder in data_folders:
-        # print(f"\nAnalyzing file folder: {data_folder}")
 
         for filename in os.listdir(data_folder):
             if filename.endswith('.json'):
@@ -139,12 +138,15 @@ def main():
                             object_id = cache['intendedObjectID']
                             
                             weight = weight_func(relative_position)
-                            
                             weight = max(0, weight)
 
-                            transformed_weight = weight ** power
-                            
+                            k = 20.0       # 陡峭程度，可调
+                            x0 = 0.93      # 中心点，可调
+                            transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
                             weighted_votes[object_id] += transformed_weight
+                            # transformed_weight = weight ** power
+                            
+                            # weighted_votes[object_id] += transformed_weight
                     
                     if closest_cache is not None:
                             intended_object = closest_cache.get('intendedObjectID')
@@ -154,14 +156,11 @@ def main():
                     if weighted_votes:
                         sorted_objects = sorted(weighted_votes.items(), key=lambda x: x[1], reverse=True)
 
-                        # 获取第一个物体
                         predicted_object = sorted_objects[0][0] if sorted_objects else None
 
-                        # 如果第一个物体是null，尝试使用第二个物体
                         if predicted_object is None or predicted_object == "null":
                             if len(sorted_objects) > 1:
                                 predicted_object = sorted_objects[1][0]
-                            # 如果只有一个物体且是null，则保留null
 
                         target_id = selection['targetPointID']
                         is_correct = 1 if predicted_object == target_id else 0
