@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 import numpy as np
 import math
+import utils
 from collections import defaultdict, Counter
 
 def save_poly_func(file, coeffs):
@@ -73,6 +74,14 @@ def main():
     coeffs = np.load(coeffs_file)
     weight_func = np.poly1d(coeffs)
 
+    a, b = 0, 1
+    n = 5000
+    xs = np.linspace(a, b, n)
+    ys = weight_func(xs)
+    x_q = np.quantile(ys, 3/4)
+
+    print("3/4 y value =", x_q)
+
     derivative = weight_func.deriv()
     critical_points = derivative.roots
     critical_values = weight_func(critical_points)
@@ -88,7 +97,7 @@ def main():
     
     print(f"max poly func: {max_value:.4f}, correspond to: {max_x:.4f}")
     power = 20.0
-    fp_range = range(18, 24)
+    fp_range = utils.fp_test
     data_folders = [
         os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
         for i in fp_range
@@ -140,8 +149,8 @@ def main():
                             weight = weight_func(relative_position)
                             weight = max(0, weight)
 
-                            k = 20.0       # 陡峭程度，可调
-                            x0 = 0.93      # 中心点，可调
+                            k = 15.0       # 陡峭程度，可调
+                            x0 = x_q      # 中心点，可调
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
                             weighted_votes[object_id] += transformed_weight
                             # transformed_weight = weight ** power
@@ -179,7 +188,7 @@ def main():
 
 
     print(f"Error rate of vote:  ({total_VOTE_eror_count / click_count:.2%})")
-    print(f"Error rate of before vote:  ({total_Befor_error_count / click_count:.2%})")
+    print(f"Error rate of before click:  ({total_Befor_error_count / click_count:.2%})")
     print(f"Error rate of weighted vote:  ({1-(weighted_vote_count / click_count):.2%})")
 if __name__ == '__main__':
     main()

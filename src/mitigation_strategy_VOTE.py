@@ -1,6 +1,8 @@
 import os
 import argparse
 import json
+import utils
+
 
 from collections import defaultdict, Counter
 
@@ -20,7 +22,7 @@ def main():
     full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
-    fp_range = range(17, 24) 
+    fp_range = utils.fp_test
         
     data_folders = [
         os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
