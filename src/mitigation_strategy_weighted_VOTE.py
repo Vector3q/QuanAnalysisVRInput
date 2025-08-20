@@ -60,8 +60,8 @@ def main():
     plt.figure(figsize=(5, 4))
     plt.plot(x_plot, y_plot, label='P(accuracy | relative time)', color='blue')
     # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
-    plt.xlabel('Relative Time', fontsize=15)
-    plt.ylabel('Accuracy', fontsize=15)
+    plt.xlabel('Relative Time', fontsize=16)
+    plt.ylabel('Accuracy', fontsize=16)
     plt.legend(loc='lower right')
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
     plt.ylim(0.3, 1.05)
@@ -75,7 +75,7 @@ def main():
     weight_func = np.poly1d(coeffs)
 
     a, b = 0, 1
-    n = 5000
+    n = 500
     xs = np.linspace(a, b, n)
     ys = weight_func(xs)
     x_q = np.quantile(ys, 3/4)
