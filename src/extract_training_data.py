@@ -26,13 +26,15 @@ def main():
     full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
-    fp_range = utils.fp_train
+    fp_range = utils.fp_all
 
         
     data_folders = [
         os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
         for i in fp_range
     ]
+    print(f"data_len: {len(data_folders)}")
+
     train_data = []
     filtered_selections = []
     records = []

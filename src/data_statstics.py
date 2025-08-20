@@ -128,9 +128,10 @@ def convert_json_to_anova_format(input_dir, output_csv):
             data = load_json_data(file_path)
             if not data:
                 continue
-
+            
             # 提取关键信息并添加到总数据列表
             for entry in data:
+                
                 # 基础参数
                 base_info = {
                     'technique': entry.get('inputtechnique', 'unknown'),
@@ -140,38 +141,35 @@ def convert_json_to_anova_format(input_dir, output_csv):
                     'username': entry.get('username', 'unknown')
                 }
 
-                # 遍历每个选择事件
-                for selection in entry.get('selectionSequence', []):
-                    observation = {
-                        **base_info,
-                        'click_duration': selection.get('clickDuration', 0),
-                        'is_correct': selection.get('isCorrect', 0),
-                        'heisenberg_error': selection.get('HeisenbergError', 0),
-                        'heisenberg_angle': selection.get('HeisenbergAngle', 0)
+                observation = {
+                    **base_info,
+                    'click_duration': entry.get('clickDuration', 0),
+                    'is_correct': entry.get('isCorrect', 0),
+                    'heisenberg_error': entry.get('HeisenbergError', 0),
+                    'heisenberg_angle': entry.get('HeisenbergAngle', 0)
                     }
-                    all_data.append(observation)
+                all_data.append(observation)
 
+                    
         except Exception as e:
             print(f"处理文件 {filename} 时出错: {str(e)}")
             continue
 
     # 转换为DataFrame并保存
     df = pd.DataFrame(all_data)
-
     def filter_outliers(group):
         mean = group['click_duration'].mean()
         std = group['click_duration'].std()
         upper_bound = mean + 3 * std
         mask = (
-            (group['click_duration'] >= 0.1) & 
+            (group['click_duration'] >= 0.05) & 
             (group['click_duration'] <= upper_bound) & 
-            (group['heisenberg_angle'] >= 0.01)
+            (group['heisenberg_angle'] >= 0.02)
         )
         return group[mask]
 
-
-
     filtered_df = df.groupby(['technique', 'radius', 'spacing']).apply(filter_outliers).reset_index(drop=True)
+    
     normality_results = []
     def perform_normality_test(group):
         condition = (
@@ -212,24 +210,32 @@ def convert_json_to_anova_format(input_dir, output_csv):
     return filtered_df
 
 def main():
-    input_json = './output_json/'
+    input_json = './output_stats/'
     output_csv = './output_csv/' + "csv_files.csv"
     
     convert_json_to_anova_format(input_json, output_csv)
     
     df = pd.read_csv(output_csv)
 
+    
+
     target_radius = 0.21
     target_spacing = 0.3
+    # BareHandIntenSelect BareHandTracking ControllerIntenSelect ControllerTracking
+    target_tech = "ControllerTracking"
 
     output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
     output_spacing_csv = './output_csv/' + "csv_files_spacing"+ "_03"+".csv"
+    output_tech_csv = './output_csv/' + "csv_files_tech"+ "_ControllerTracking"+".csv"
 
     df_filtered = df[df['radius'] == target_radius].copy()
     df_filtered.to_csv(output_radius_csv, index=False)
 
     df_filtered_spacing = df[df['spacing'] == target_spacing].copy()
     df_filtered_spacing.to_csv(output_spacing_csv, index=False)
+
+    df_filtered_tech = df[df['technique'] == target_tech].copy()
+    df_filtered_tech.to_csv(output_tech_csv, index=False)
 
     df = df_filtered
 

@@ -1,5 +1,7 @@
 import os
 
+fp_all = list(range(1,25))
+
 # fp_train = list(range(1,19))
 # fp_test = list(range(20,25))
 
