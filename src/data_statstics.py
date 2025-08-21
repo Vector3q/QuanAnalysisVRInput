@@ -217,16 +217,14 @@ def main():
     
     df = pd.read_csv(output_csv)
 
-    
-
     target_radius = 0.21
     target_spacing = 0.3
     # BareHandIntenSelect BareHandTracking ControllerIntenSelect ControllerTracking
-    target_tech = "ControllerTracking"
+    target_tech = "BareHandIntenSelect"
 
     output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
     output_spacing_csv = './output_csv/' + "csv_files_spacing"+ "_03"+".csv"
-    output_tech_csv = './output_csv/' + "csv_files_tech"+ "_"+"ControllerTracking"+".csv"
+    output_tech_csv = './output_csv/' + "csv_files_tech"+ "_"+"BareHandIntenSelect"+".csv"
 
     df_filtered = df[df['radius'] == target_radius].copy()
     df_filtered.to_csv(output_radius_csv, index=False)
@@ -237,68 +235,20 @@ def main():
     df_filtered_tech = df[df['technique'] == target_tech].copy()
     df_filtered_tech.to_csv(output_tech_csv, index=False)
 
-    df = df_filtered
+    df = df_filtered_tech
+    df_agg = df.groupby(['username', 'spacing'])['is_correct'].mean().reset_index()
 
-    
+    print(df_agg)
 
-    df_agg = df.groupby(['username', 'technique', 'spacing'])['click_duration'].mean().reset_index()
-
-    aovrm = AnovaRM(data=df_agg, depvar='click_duration', subject='username',
-                    within=['technique', 'spacing']) 
-    fit = aovrm.fit()
-
-    
-
-    print(fit)
-
-    posthoc_ttest = pg.pairwise_tests(dv='click_duration',      # 因变量
-                                   within='technique',         # 重复测量因子
-                                   subject='username',         # 被试ID
-                                   data=df_agg,
-                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
-    print(posthoc_ttest.to_string())  
-
-    df_agg = df.groupby(['username', 'technique', 'spacing'])['is_correct'].mean().reset_index()
 
     aovrm = AnovaRM(data=df_agg, depvar='is_correct', subject='username',
-                    within=['technique', 'spacing']) 
+                    within=['spacing']) 
     fit = aovrm.fit()
 
     print(fit)
 
     posthoc_ttest = pg.pairwise_tests(dv='is_correct',      # 因变量
-                                   within='technique',         # 重复测量因子
-                                   subject='username',         # 被试ID
-                                   data=df_agg,
-                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
-    print(posthoc_ttest.to_string())  
-
-    df_agg = df.groupby(['username', 'technique', 'spacing'])['heisenberg_error'].mean().reset_index()
-
-    aovrm = AnovaRM(data=df_agg, depvar='heisenberg_error', subject='username',
-                    within=['technique', 'spacing']) 
-    fit = aovrm.fit()
-
-    print(fit)
-
-    posthoc_ttest = pg.pairwise_tests(dv='heisenberg_error',      # 因变量
-                                   within='technique',         # 重复测量因子
-                                   subject='username',         # 被试ID
-                                   data=df_agg,
-                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
-    print(posthoc_ttest.to_string())  
-
-
-    df_agg = df.groupby(['username', 'technique', 'spacing'])['heisenberg_angle'].mean().reset_index()
-
-    aovrm = AnovaRM(data=df_agg, depvar='heisenberg_angle', subject='username',
-                    within=['technique', 'spacing']) 
-    fit = aovrm.fit()
-
-    print(fit)
-
-    posthoc_ttest = pg.pairwise_tests(dv='heisenberg_angle',      # 因变量
-                                   within='technique',         # 重复测量因子
+                                   within='spacing',         # 重复测量因子
                                    subject='username',         # 被试ID
                                    data=df_agg,
                                    padjust='bonf')             # 多重比较校正方法，例如 bonferroni
