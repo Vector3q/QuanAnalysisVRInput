@@ -4,20 +4,6 @@
         "userAge": 27,
         "usergender": "male",
         "inputtechnique": "ControllerIntenSelect",
-        "radius": 0.14,
-        "distance": 0.75,
-        "spacing": 0.3,
-        "clickDuration": 0.831807486,
-        "isCorrect": 1.0,
-        "HeisenbergError": 0.0,
-        "HeisenbergAngle": 0.16243328886532848,
-        "EffectiveScore": 1.202201250686989
-    },
-    {
-        "username": "FP1",
-        "userAge": 27,
-        "usergender": "male",
-        "inputtechnique": "ControllerIntenSelect",
         "radius": 0.21,
         "distance": 0.75,
         "spacing": 0.3,
@@ -2994,5 +2980,47 @@
         "HeisenbergError": 0.25,
         "HeisenbergAngle": 0.8380771626324269,
         "EffectiveScore": 0.8442621726627988
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.7848206478333335,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.21130042349333444,
+        "EffectiveScore": 1.2741764666369513
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.5554262485,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.30287087805662405,
+        "EffectiveScore": 1.8004190523955765
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.07,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.7755908385,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.22680934219425744,
+        "EffectiveScore": 1.2893396238846884
     }
 ]

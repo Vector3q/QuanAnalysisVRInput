@@ -26,7 +26,7 @@ def main():
     full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
-    fp_range = utils.fp_all
+    fp_range = utils.fp_train
 
         
     data_folders = [

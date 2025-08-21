@@ -4,20 +4,6 @@
         "userAge": 27,
         "usergender": "male",
         "inputtechnique": "ControllerIntenSelect",
-        "radius": 0.14,
-        "distance": 0.75,
-        "spacing": 0.7,
-        "clickDuration": 0.9304412721249999,
-        "isCorrect": 1.0,
-        "HeisenbergError": 0.0,
-        "HeisenbergAngle": 0.17604055052398096,
-        "EffectiveScore": 1.0747588590047574
-    },
-    {
-        "username": "FP1",
-        "userAge": 27,
-        "usergender": "male",
-        "inputtechnique": "ControllerIntenSelect",
         "radius": 0.07,
         "distance": 0.75,
         "spacing": 0.7,
@@ -2994,5 +2980,47 @@
         "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.6021522764070373,
         "EffectiveScore": 1.1014399577442988
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.07,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.8870454865000003,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4462221311280912,
+        "EffectiveScore": 1.1273379045596437
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.21,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.5836472603333333,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5444478426720274,
+        "EffectiveScore": 1.7133636495250213
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.14,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.5819208871666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.5944660391355737,
+        "EffectiveScore": 1.7184466515180992
     }
 ]

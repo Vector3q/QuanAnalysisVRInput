@@ -2980,5 +2980,47 @@
         "HeisenbergError": 0.25,
         "HeisenbergAngle": 0.8380771626324269,
         "EffectiveScore": 0.8442621726627988
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.07,
+        "distance": 0.75,
+        "spacing": 0.5,
+        "clickDuration": 0.6436303876666667,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.31752530186792954,
+        "EffectiveScore": 1.553686741897425
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.07,
+        "distance": 0.75,
+        "spacing": 0.7,
+        "clickDuration": 0.8870454865000003,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.4462221311280912,
+        "EffectiveScore": 1.1273379045596437
+    },
+    {
+        "username": "FP9",
+        "userAge": 27,
+        "usergender": "male",
+        "inputtechnique": "ControllerIntenSelect",
+        "radius": 0.07,
+        "distance": 0.75,
+        "spacing": 0.3,
+        "clickDuration": 0.7755908385,
+        "isCorrect": 1.0,
+        "HeisenbergError": 0.0,
+        "HeisenbergAngle": 0.22680934219425744,
+        "EffectiveScore": 1.2893396238846884
     }
 ]
