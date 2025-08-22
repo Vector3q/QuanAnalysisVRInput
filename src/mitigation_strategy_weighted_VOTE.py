@@ -58,6 +58,8 @@ def main():
     print("x=0.2: " + str(poly_func(0.2)))
     
     plt.figure(figsize=(5, 4))
+
+    
     plt.plot(x_plot, y_plot, label='P(accuracy | relative time)', color='blue')
     # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
     plt.xlabel('Relative Time', fontsize=20)
