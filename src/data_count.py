@@ -38,16 +38,8 @@ try:
                             data = json.load(f)
                             click_count += len(data['selectionSequence'])
 
-                        
-
-
                     stats[subject][tech_full] = json_count
                     print(f'被试 {subject}, 条件 {tech_full}: {json_count} 个JSON文件')
-
-    # 将统计结果保存为JSON
-    with open('json_file_counts.json', 'w') as f:
-        json.dump(stats, f, indent=4, ensure_ascii=False)
-        print(f'统计结果已保存到 json_file_counts.json')
 
 except Exception as e:
     print(f'发生错误: {e}')

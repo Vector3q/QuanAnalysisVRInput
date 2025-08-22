@@ -13,6 +13,14 @@ fp_indi = [10]
 
 # 3 8 10 15 16 18 20 21 23 
 
+def get_json_by_tech(root_path, tech):
+    json_files = []
+    for root, dirs, files in os.walk(root_path):
+        for file in files:
+            if file.endswith('.json'):
+                json_files.append(os.path.join(root, file))
+    return json_files
+
 def get_all_json_files(root_path):
     json_files = []
     for root, dirs, files in os.walk(root_path):

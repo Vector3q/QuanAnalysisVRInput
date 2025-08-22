@@ -51,7 +51,7 @@ def extract_all_wanted_data(data):
         lower_bound = mean - 3 * std
         upper_bound = mean + 3 * std
         print(f"lower_bound: {lower_bound}")
-        mask = (all_selection_times >= 0.1) & (all_selection_times <= upper_bound) & (all_H_Offset_magnitude >= 0.01)
+        mask = (all_selection_times >= 0.05) & (all_selection_times <= upper_bound) & (all_H_Offset_magnitude >= 0.01)
 
         all_selection_times = all_selection_times[mask]
         all_selection_errors = all_selection_errors[mask]
