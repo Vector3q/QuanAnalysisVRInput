@@ -13,17 +13,42 @@ FOLDER_ABBREVIATIONS = {
 ABBREV_TO_FULL = {v: k for k, v in FOLDER_ABBREVIATIONS.items()}
 
 parser = argparse.ArgumentParser(description='analyze the distribution of endPoint')
-parser.add_argument('--folder', type=str, required=True, help='folder to be analyzed')
+parser.add_argument('--tech', type=str, required=True, help='folder to be analyzed')
 parser.add_argument('--radius', type=float, required=True, default=0, help='target radius')
+parser.add_argument('--spacing', type=float, required=True, default=0, help='target spacing')
 
 args = parser.parse_args()
 target_radius = args.radius
+target_spacing = args.spacing
 
-full_name = ABBREV_TO_FULL.get(args.folder, args.folder)
+full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
 abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
 data_folders = [ 
-    f'../data\Heisenberg\P2\{full_name}/Study1'
+    f'../data\Heisenberg\FP1\{full_name}/Study1',
+    f'../data\Heisenberg\FP2\{full_name}/Study1',
+    f'../data\Heisenberg\FP3\{full_name}/Study1',
+    f'../data\Heisenberg\FP4\{full_name}/Study1',
+    f'../data\Heisenberg\FP5\{full_name}/Study1',
+    f'../data\Heisenberg\FP6\{full_name}/Study1',
+    f'../data\Heisenberg\FP7\{full_name}/Study1',
+    f'../data\Heisenberg\FP8\{full_name}/Study1',
+    f'../data\Heisenberg\FP9\{full_name}/Study1',
+    f'../data\Heisenberg\FP10\{full_name}/Study1',
+    f'../data\Heisenberg\FP11\{full_name}/Study1',
+    f'../data\Heisenberg\FP12\{full_name}/Study1',
+    f'../data\Heisenberg\FP13\{full_name}/Study1',
+    f'../data\Heisenberg\FP14\{full_name}/Study1',
+    f'../data\Heisenberg\FP15\{full_name}/Study1',
+    f'../data\Heisenberg\FP16\{full_name}/Study1',
+    f'../data\Heisenberg\FP17\{full_name}/Study1',
+    f'../data\Heisenberg\FP18\{full_name}/Study1',
+    f'../data\Heisenberg\FP19\{full_name}/Study1',
+    f'../data\Heisenberg\FP20\{full_name}/Study1',
+    f'../data\Heisenberg\FP21\{full_name}/Study1',
+    f'../data\Heisenberg\FP22\{full_name}/Study1',
+    f'../data\Heisenberg\FP23\{full_name}/Study1',
+    f'../data\Heisenberg\FP24\{full_name}/Study1',
 ]
 
 # '../data/Heisenberg/P1/BareHandIntenSelect/Study1_ISO_Test_Varied_Distance',
@@ -43,11 +68,17 @@ for data_folder in data_folders:
 
             if target_radius != 0 and data['radius'] != target_radius:
                 continue;
+            if target_spacing != 0 and data['spacing'] != target_spacing:
+                continue;
                 
             print(f"\n-------    Experiment Data in {filename}   -------\n")
             for i, selection in enumerate(data['selectionSequence'], 1):
                 
                 point = selection['endPointInEnd']
+
+                if(abs(point[0]) < 0.01 and abs(point[1]) < 0.01):
+                    continue;
+
                 x_coords.append(point[0])
                 y_coords.append(point[1])
 
@@ -58,23 +89,37 @@ target_distance = 0.75
 number_of_targets = 13
 angle_step = 360 / number_of_targets
 
+for i in range(1,6):
+    for j in range(1,6):
+        x = (j - 3) * (target_spacing)
+        y = (6 - i) * (target_spacing)
 
-for i in range(number_of_targets):
-    angle = i * angle_step
-    x = target_distance * math.cos(math.radians(angle))
-    y = target_distance * math.sin(math.radians(angle)) + 0.75
+
+
+        plt.scatter(x, y, c='black', marker='.', s=100, label='Target Center' if i == 0 else "")
+
+        if target_radius != 0:
+            circle = plt.Circle((x, y), target_radius, color='black', fill=False, label='Target Radius' if i == 0 else "")
+            plt.gca().add_patch(circle)
+
+# for i in range(number_of_targets):
+#     angle = i * angle_step
+#     x = target_distance * math.cos(math.radians(angle))
+#     y = target_distance * math.sin(math.radians(angle)) + 0.75
     
-    plt.scatter(x, y, c='black', marker='.', s=100, label='Target Center' if i == 0 else "")
+#     plt.scatter(x, y, c='black', marker='.', s=100, label='Target Center' if i == 0 else "")
     
-    if target_radius != 0:
-        circle = plt.Circle((x, y), target_radius, color='black', fill=False, label='Target Radius' if i == 0 else "")
-        plt.gca().add_patch(circle)
+#     if target_radius != 0:
+#         circle = plt.Circle((x, y), target_radius, color='black', fill=False, label='Target Radius' if i == 0 else "")
+#         plt.gca().add_patch(circle)
 
 plt.title(f'Distribution of endPoint in {full_name}', fontsize=14)
 plt.xlabel('X Coordinate', fontsize=12)
 plt.ylabel('Y Coordinate', fontsize=12)
 
 plt.grid(True, alpha = 0.1)
+plt.xlim(-1.8, 1.8)  
+plt.ylim(-0.3, 3.3) 
 
 plt.tight_layout()
 plt.show()
