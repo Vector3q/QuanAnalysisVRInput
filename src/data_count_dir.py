@@ -12,18 +12,25 @@ topright = 0
 bottomleft = 0
 bottomright = 0
 
+
+bug_count = 0
+
 def extract_json_data(input_path, technique):
-    global allcount, topleft, topright, bottomleft, bottomright
+    global allcount, topleft, topright, bottomleft, bottomright, bug_count
 
 
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     if 'selectionSequence' in data:
+        
+        
+
         entries = data['selectionSequence']
         tech = data['inputtechnique']
 
         for entry in entries:
+            
             entry['HeisenbergError'] = 0
             entry['HeisenbergOffset'] = [0.0, 0.0, 0.0]
             last_frame = entry['historyCaches'][-1] if entry['historyCaches'] else None
@@ -162,6 +169,9 @@ def extract_json_data(input_path, technique):
                     bottomright += 1
                 elif entry['HeisenbergOffset'][0] < 0 and entry['HeisenbergOffset'][1] < 0:
                     bottomleft += 1
+
+                if(entry['isCorrect'] == 0 and entry['selectedPointID'] == entry['targetPointID']):
+                    bug_count += 1
 
 
 
@@ -308,6 +318,8 @@ def main():
     print(f"topleft: {topleft}, percentage: {topleft/allcount}" )
     print(f"bottomright: {bottomright}, percentage: {bottomright/allcount}" )
     print(f"bottomleft: {bottomleft}, percentage: {bottomleft/allcount}" )
+
+    print(f"bug_count: {bug_count}" )
     
     print("the technology type is: ", full_name)
     # print("len of the readin data for spacing: ", len(data_spacing_03), len(data_spacing_05), len(data_spacing_07))

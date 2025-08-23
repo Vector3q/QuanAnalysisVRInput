@@ -55,10 +55,9 @@ data_folders = [
 
 x_coords = []
 y_coords = []
-
+colors = []
+bar_colors_group1 = ['#FED976', '#FEB24C', '#9EC9E2', '#5F97D2']
 for data_folder in data_folders:
-    print(f"\nAnalyzing file folder: {data_folder}")
-
     for filename in os.listdir(data_folder):
         if filename.endswith('.json'):
             json_path = os.path.join(data_folder, filename)
@@ -71,19 +70,39 @@ for data_folder in data_folders:
             if target_spacing != 0 and data['spacing'] != target_spacing:
                 continue;
                 
-            print(f"\n-------    Experiment Data in {filename}   -------\n")
             for i, selection in enumerate(data['selectionSequence'], 1):
                 
                 point = selection['endPointInEnd']
 
                 if(abs(point[0]) < 0.01 and abs(point[1]) < 0.01):
                     continue;
-
                 x_coords.append(point[0])
                 y_coords.append(point[1])
 
+print(f"records_count: {len(x_coords)}")
+
+
 plt.figure(figsize=(6, 6))
 plt.scatter(x_coords, y_coords, c='green', marker='o', alpha=0.3)
+
+import numpy as np
+x_ticks = plt.xticks()[0]
+x_ticks = [-1,0,1]
+x_tick_labels = [-3.6, 0.0, 3.6]
+plt.xticks(x_ticks, x_tick_labels)
+
+
+y_ticks = plt.yticks()[0]
+y_ticks = [0,1,2,3,4,5,6]
+y_tick_labels = [-7.1, -3.6, 0.0, 3.6, 7.1, 10.6, 14.0]
+plt.yticks(y_ticks, y_tick_labels)
+plt.tick_params(axis='both', which='major', labelsize=16)
+
+# if(args.tech == "DC"):
+#     plt.tick_params(axis='both', which='major', labelsize=16)
+# else:
+#     plt.tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
+#     plt.tick_params(axis='x', which='major', labelsize=16)
 
 target_distance = 0.75
 number_of_targets = 13
@@ -113,13 +132,12 @@ for i in range(1,6):
 #         circle = plt.Circle((x, y), target_radius, color='black', fill=False, label='Target Radius' if i == 0 else "")
 #         plt.gca().add_patch(circle)
 
-plt.title(f'Distribution of endPoint in {full_name}', fontsize=14)
-plt.xlabel('X Coordinate', fontsize=12)
-plt.ylabel('Y Coordinate', fontsize=12)
+plt.xlabel('X Angle (Deg)', fontsize=20)
+plt.ylabel('Y Angle (Deg)', fontsize=20)
 
 plt.grid(True, alpha = 0.1)
-plt.xlim(-1.8, 1.8)  
-plt.ylim(-0.3, 3.3) 
+plt.xlim(-2, 2)  
+plt.ylim(0.2, 4.2) 
 
 plt.tight_layout()
-plt.show()
+plt.savefig(f'./output_image/endpoint_{full_name}.png', dpi=300, bbox_inches='tight')
