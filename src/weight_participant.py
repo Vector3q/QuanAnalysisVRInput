@@ -31,6 +31,9 @@ def main():
 
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('--tech', type=str, default='DC', help='the technique of the json files')
+
+
+    # DC 1, SC 10 DH 10 SH 8
     parser.add_argument('--par', type=int, default='1', help='the chosen participant')
     args = parser.parse_args()
     full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
@@ -110,16 +113,16 @@ def main():
     y_plot = poly_func(x_plot)
 
     print("x=0.2: " + str(poly_func(0.2)))
-    
     plt.figure(figsize=(5, 4))
-    plt.plot(x_plot, y_plot, label='P(accuracy | relative time)', color='blue')
+    
+    plt.plot(x_plot, y_plot, label=f'P(accuracy of       | relative time)', color='blue')
     # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
-    plt.xlabel('Relative Time', fontsize=16)
-    plt.ylabel('Accuracy', fontsize=16)
-    plt.legend(loc='lower right')
+    plt.xlabel('Relative Time', fontsize=20)
+    plt.ylabel('Accuracy', fontsize=20)
+    plt.legend(loc='lower right', fontsize=14)
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
     plt.ylim(0.3, 1.05)
-    plt.tick_params(axis='both', which='both', length=0)
+    plt.tick_params(axis='both', which='both', length=0,labelsize=14)
     plt.tight_layout()
     plt.savefig(f'./output_image/ind_{full_name}accuracy_plot.png', dpi=300, bbox_inches='tight')
     plt.show()

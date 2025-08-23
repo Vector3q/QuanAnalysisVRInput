@@ -21,7 +21,6 @@ def extract_all_wanted_data(data):
     all_H_Offset_magnitude = []
 
     for data_item in data:
-        # correct_selection_times = [entry["clickDuration"] for entry in data_item["selectionSequence"] if float(entry["isCorrect"]) > 0]
         selection_times = [data_item["clickDuration"]]
         selection_errors = [data_item["isCorrect"]]
         H_selection_errors = [data_item["HeisenbergError"]]

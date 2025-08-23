@@ -59,12 +59,15 @@ def main():
     
     plt.figure(figsize=(5, 4))
 
-    
-    plt.plot(x_plot, y_plot, label='P(accuracy | relative time)', color='blue')
+    if args.tech == "DC":
+        plt.plot(x_plot, y_plot, label='P(accuracy | relative time)', color='blue')
+    else:
+        plt.plot(x_plot, y_plot, color='blue')
     # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
     plt.xlabel('Relative Time', fontsize=20)
     plt.ylabel('Accuracy', fontsize=20)
-    plt.legend(loc='lower right', fontsize=14)
+    if args.tech == "DC":
+        plt.legend(loc='lower right', fontsize=14)
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
     plt.ylim(0.3, 1.05)
     plt.tick_params(axis='both', which='both', length=0, labelsize=14)
