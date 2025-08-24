@@ -27,7 +27,7 @@ def main():
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
     fp_range = utils.fp_train
-
+    selection_records = 0
         
     data_folders = [
         os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
@@ -47,7 +47,8 @@ def main():
                 
                 with open(json_path, 'r') as f:
                     data = json.load(f)
-
+                    
+                selection_records += len(data['selectionSequence'])
                 for selection in data['selectionSequence']:
                     
                     if selection['clickDuration'] < 0.05:
@@ -96,6 +97,7 @@ def main():
     for user, row in pivot.iterrows():
         line = user.ljust(8) + " | " + " | ".join([f"{row[pos]:.2f}".ljust(7) for pos in row.index])
         print(line)
+    print(f"selection_records: {selection_records}")
 
 if __name__ == '__main__':
     main()

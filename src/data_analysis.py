@@ -6,6 +6,8 @@ from scipy import stats
 import pandas as pd
 
 from data_preprocess import load_json_data, save_data_to_json
+h_error_all_count = 0
+error_all_count = 0
 def read_from_numpy(file_path):
     data = np.load(file_path, allow_pickle=True)
     return data.item()
@@ -59,7 +61,6 @@ def extract_all_wanted_data(data):
 
         filtered_count = original_count - len(all_selection_times)
         print(f"过滤掉的数据点数量: {filtered_count}")
-        print(f"--------------------------------------------------------------------------------------")
         print(f"过滤前: {original_count} 个, 过滤后: {len(all_selection_times)} 个")
         
         if len(all_H_Offset_magnitude) >= 3:
@@ -148,6 +149,7 @@ def compute_HeisenbergOffset_direction(all_H_Offset_x, all_H_Offset_y):
 def save_to_numpy(data, file_path):
     np.save(file_path, data) 
 
+
 def main():
     FOLDER_ABBREVIATIONS = {
         'ControllerTracking': 'DC',
@@ -167,10 +169,13 @@ def main():
     radius_range = ['radius_007', 'radius_014', 'radius_021']
     spacing_range = ['spacing_03', 'spacing_05', 'spacing_07']
 
+
+
     def analyze_data(partial_name):
+        global h_error_all_count, error_all_count
         data_file_path = './output_json/' + full_name + "_" + partial_name + "_data.json"
         data = load_json_data(data_file_path)
-
+        print(f"--------------------------------------------------------------------------------------")
         print(f'tech: {full_name}, partial_name: {partial_name}')
 
 
@@ -181,8 +186,14 @@ def main():
         global_avg_selection_time, global_std_selection_time, global_sem_selection_time = get_global_avg_and_std(all_selection_times)
 
         global_error_rate, global_error_rate_sem = compute_global_error_rate(all_selection_errors)
-
+        
         global_H_error_rate, global_H_error_rate_sem = compute_global_H_error_rate(H_selection_errors)
+        _all_selection_errors = np.array(all_selection_errors)
+        _all_selection_errors = 1 - _all_selection_errors
+        h_error_all_count += np.sum(H_selection_errors)
+        error_all_count += np.sum(_all_selection_errors)
+        print(f"tech: {full_name}, partial_name: {partial_name} heisenberg percentage: {(global_H_error_rate/(1-global_error_rate)):.2%}")
+        print()
 
         global_H_Offset_magnitude, global_H_Offset_sem = compute_global_HeisenbergOffset(all_H_Offset_magnitude)
 
@@ -213,9 +224,11 @@ def main():
 
     for r in radius_range:
         analyze_data(r)
-
+    print(f"*******************************************************************************************")
+    print(f"global heisenberg percentage: {(h_error_all_count/(error_all_count)):.2%}")
     for s in spacing_range:
         analyze_data(s)
+
 
 if __name__ == '__main__':
     main()
