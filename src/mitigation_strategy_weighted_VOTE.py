@@ -122,12 +122,17 @@ def main():
                 with open(json_path, 'r') as f:
                     data = json.load(f)
 
+                selection_sequence = data['selectionSequence']
+                total_selections = len(selection_sequence)
+                start_index = int(total_selections * 0.2)
+                selection_sequence = selection_sequence[start_index:]  
+
                 radius = data['radius']
                 spacing = data['spacing']
 
                 tech = data['inputtechnique']
 
-                for selection in data['selectionSequence']:
+                for selection in selection_sequence:
                     
                     if selection['clickDuration'] < 0.05:
                         continue

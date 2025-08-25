@@ -39,7 +39,6 @@ def main():
     filtered_selections = []
     records = []
     for data_folder in data_folders:
-        # print(f"\nAnalyzing file folder: {data_folder}")
 
         for filename in os.listdir(data_folder):
             if filename.endswith('.json'):
@@ -47,6 +46,7 @@ def main():
                 
                 with open(json_path, 'r') as f:
                     data = json.load(f)
+
                     
                 selection_records += len(data['selectionSequence'])
                 for selection in data['selectionSequence']:
