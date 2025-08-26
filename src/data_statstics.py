@@ -219,7 +219,7 @@ def main():
     target_radius = 0.21
     target_spacing = 0.3
     # BareHandIntenSelect BareHandTracking ControllerIntenSelect ControllerTracking
-    target_tech = "BareHandIntenSelect"
+    target_tech = "ControllerTracking"
 
     output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
     output_spacing_csv = './output_csv/' + "csv_files_spacing"+ "_03"+".csv"
