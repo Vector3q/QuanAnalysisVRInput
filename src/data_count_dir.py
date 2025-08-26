@@ -12,6 +12,14 @@ topright = 0
 bottomleft = 0
 bottomright = 0
 
+TECHNIQUES = {
+    'ControllerTracking': 'DC',
+    'ControllerIntenSelect': 'SC',
+    'BareHandTracking': 'DH',
+    'BareHandIntenSelect': 'SH'
+}
+
+stats = defaultdict(lambda: defaultdict(int))
 
 bug_count = 0
 

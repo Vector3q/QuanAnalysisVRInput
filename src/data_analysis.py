@@ -188,6 +188,7 @@ def main():
         global_error_rate, global_error_rate_sem = compute_global_error_rate(all_selection_errors)
         
         global_H_error_rate, global_H_error_rate_sem = compute_global_H_error_rate(H_selection_errors)
+        
         _all_selection_errors = np.array(all_selection_errors)
         _all_selection_errors = 1 - _all_selection_errors
         h_error_all_count += np.sum(H_selection_errors)

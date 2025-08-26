@@ -36,7 +36,7 @@ def main():
     heisenberg_error_count = 0
     total_VOTE_eror_count = 0
     tech_name = full_name
-
+    
     for data_folder in data_folders:
         # print(f"\nAnalyzing file folder: {data_folder}")
 
