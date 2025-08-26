@@ -7,7 +7,6 @@ import pandas as pd
 import pingouin as pg
 from statsmodels.stats.anova import AnovaRM
 import os
-import art
 
 
 
@@ -224,7 +223,7 @@ def main():
 
     output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
     output_spacing_csv = './output_csv/' + "csv_files_spacing"+ "_03"+".csv"
-    output_tech_csv = './output_csv/' + "csv_files_tech"+ "_"+"BareHandIntenSelect"+".csv"
+    output_tech_csv = './output_csv/' + "csv_files_tech"+ "_"+"ControllerTracking"+".csv"
 
     df_filtered = df[df['radius'] == target_radius].copy()
     df_filtered.to_csv(output_radius_csv, index=False)

@@ -127,12 +127,23 @@ def update_json_data(data, object_names_and_positions):
                         # 如果未选中，则根据最近原则找到落点对应的ID
                         seq['selectedPointID'] = "null" 
 
+                    # for idx, cache in enumerate(selection['historyCaches']):
+                    #         intended = cache['intendedObjectID']
+                    #         is_correct = int(intended == selection['targetPointID'])
+                    #         records.append({
+                    #             'user': data['username'],
+                    #             'relative_position': idx/(lens-1),
+                    #             'is_correct': is_correct
+                    #         })
+
                     if 'historyCaches' in seq:
-                        for cache in seq['historyCaches']:
+                        cache_len = len(seq['historyCaches'])
+                        for idx, cache in enumerate(seq['historyCaches']):
                             if 'endPoint' in cache and len(cache['endPoint']) >= 2:
                                 intended_point = (cache['endPoint'][0], cache['endPoint'][1])
                                 candidate_object = find_closest_object_id(intended_point, object_names_and_positions)
                                 cache['cloestObjectID'] = candidate_object
+                                cache['relativeTime'] = idx/(cache_len-1)
                                 candidate_object_pos = object_names_and_positions.get(candidate_object)
                                 distance_to_candidate = calculate_distance(intended_point, candidate_object_pos)
                                 cache['cloestDistance'] = distance_to_candidate
@@ -152,10 +163,12 @@ def update_json_data(data, object_names_and_positions):
 
                 # 更新 historyCaches 里的 intendedObjectID
                 if 'historyCaches' in seq:
-                    for cache in seq['historyCaches']:
+                    cache_len = len(seq['historyCaches'])
+                    for idx, cache in enumerate(seq['historyCaches']):
                         if 'endPoint' in cache and len(cache['endPoint']) >= 2:
                             intended_point = (cache['endPoint'][0], cache['endPoint'][1])
                             cache['intendedObjectID'] = find_closest_object_id(intended_point, object_names_and_positions)
+                            cache['relativeTime'] = idx/(cache_len-1)
     return data
 
 def main():

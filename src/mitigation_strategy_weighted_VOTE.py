@@ -87,7 +87,7 @@ def main():
     ys = weight_func(xs)
     x_q = np.quantile(ys, 3/4)
 
-    print("3/4 y value =", x_q)
+    print("4/5 y value =", x_q)
 
     derivative = weight_func.deriv()
     critical_points = derivative.roots
@@ -114,17 +114,14 @@ def main():
     total_VOTE_eror_count = 0
     total_Befor_error_count = 0
     for data_folder in data_folders:
-
         for filename in os.listdir(data_folder):
             if filename.endswith('.json'):
                 json_path = os.path.join(data_folder, filename)
-                
                 with open(json_path, 'r') as f:
                     data = json.load(f)
-
                 selection_sequence = data['selectionSequence']
                 total_selections = len(selection_sequence)
-                start_index = int(total_selections * 0)
+                start_index = int(total_selections * 0.1)
                 selection_sequence = selection_sequence[start_index:]  
 
                 radius = data['radius']
@@ -144,8 +141,6 @@ def main():
                     min_diff = float('inf')
                     history_caches = selection.get('historyCaches', [])
 
-
-
                     for idx, cache in enumerate(selection['historyCaches']):
                         relative_position = idx / (len(selection['historyCaches']) - 1) if len(selection['historyCaches']) > 1 else 0.5
                         if relative_position is not None:
@@ -164,6 +159,13 @@ def main():
                             k = 15.0       # 陡峭程度，可调
                             x0 = x_q      # 中心点，可调
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
+
+                            if full_name == "BareHandIntenSelect" and relative_position > 0.4:
+                                transformed_weight = 0
+
+                            if full_name == "ControllerIntenSelect" and relative_position < 0.6:
+                                transformed_weight = 0
+
                             weighted_votes[object_id] += transformed_weight
                             # transformed_weight = weight ** power
                             
@@ -185,9 +187,12 @@ def main():
 
                         target_id = selection['targetPointID']
                         is_correct = 1 if predicted_object == target_id else 0
+                        selection['WVOTE'] = is_correct
+                        selection['WVOTE_predicted'] = predicted_object
 
                         if is_correct == 1:
                             weighted_vote_count += 1
+                            
                     else:
                         print('没有有效的投票数据')
 
@@ -197,6 +202,9 @@ def main():
                     most_common_obj, count = obj_counter.most_common(1)[0] if intended_objects else (None, 0)
                     if selection['targetPointID'] != most_common_obj:
                         total_VOTE_eror_count += 1
+                
+                with open(json_path, 'w') as out_f:
+                    json.dump(data, out_f, indent=2)
 
 
     print(f"Error rate of vote:  ({total_VOTE_eror_count / click_count:.2%})")

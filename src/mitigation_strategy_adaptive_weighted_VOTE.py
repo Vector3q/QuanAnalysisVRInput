@@ -97,7 +97,7 @@ def main():
         if os.path.exists(adaptive_func_file):
             adaptive_coeffs = np.load(adaptive_func_file)
             adaptive_func = np.poly1d(adaptive_coeffs)
-            alpha = 1
+            alpha = 0.3
 
             interpolated_func = lambda x, fp=fp_value: alpha * adaptive_func(x) + (1 - alpha) * weight_func(x)
             adaptive_weight_funcs[fp_value] = interpolated_func
@@ -139,7 +139,7 @@ def main():
                     data = json.load(f)
                 selection_sequence = data['selectionSequence']
                 total_selections = len(selection_sequence)
-                start_index = int(total_selections * 0.2)
+                start_index = int(total_selections * 0.1)
                 selection_sequence = selection_sequence[start_index:]
 
                 for selection in selection_sequence:
@@ -179,6 +179,9 @@ def main():
                             k = 15.0   
                             x0 = x_q     
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
+
+                            if full_name == "BareHandIntenSelect" and relative_position > 0.4:
+                                transformed_weight = 0
                             weighted_votes[object_id] += transformed_weight
                             # transformed_weight = weight ** power
                             # weighted_votes[object_id] += transformed_weight
