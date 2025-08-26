@@ -273,8 +273,8 @@ def main():
     full_name = ABBREV_TO_FULL.get(args.tech, args.tech)
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
-    data_spacing_03, data_spacing_05, data_spacing_07 = load_jsons_s(f'../data\Heisenberg', full_name)
-    data_radius_007, data_radius_014, data_radius_021 = load_jsons_r(f'../data\Heisenberg', full_name)
+    data_spacing_03, data_spacing_05, data_spacing_07 = load_jsons_s(f'../data\Heisenberg_updated', full_name)
+    data_radius_007, data_radius_014, data_radius_021 = load_jsons_r(f'../data\Heisenberg_updated', full_name)
 
     print("the technology type is: ", full_name)
     print("len of the readin data for spacing: ", len(data_spacing_03), len(data_spacing_05), len(data_spacing_07))

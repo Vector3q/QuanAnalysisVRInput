@@ -12,14 +12,6 @@ topright = 0
 bottomleft = 0
 bottomright = 0
 
-TECHNIQUES = {
-    'ControllerTracking': 'DC',
-    'ControllerIntenSelect': 'SC',
-    'BareHandTracking': 'DH',
-    'BareHandIntenSelect': 'SH'
-}
-
-stats = defaultdict(lambda: defaultdict(int))
 
 bug_count = 0
 
@@ -180,6 +172,7 @@ def extract_json_data(input_path, technique):
 
                 if(entry['isCorrect'] == 0 and entry['selectedPointID'] == entry['targetPointID']):
                     bug_count += 1
+                    print(f"path: {input_path}")
 
 
 
@@ -319,7 +312,8 @@ def main():
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
 
     # data_spacing_03, data_spacing_05, data_spacing_07 = load_jsons_s(f'../data\Heisenberg', full_name)
-    data_radius_007, data_radius_014, data_radius_021 = load_jsons_r(f'../data\Heisenberg', full_name)
+    # data_radius_007, data_radius_014, data_radius_021 = load_jsons_r(f'../data\Heisenberg_updated', full_name)
+    data_radius_007, data_radius_014, data_radius_021 = load_jsons_r(f'../data\Heisenberg_updated', full_name)
 
     print("allcount: ", allcount)
     print(f"topright: {topright}, percentage: {topright/allcount}" )
