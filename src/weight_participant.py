@@ -40,7 +40,7 @@ def main():
     
     abbrev_name = FOLDER_ABBREVIATIONS.get(full_name, full_name)
     data_folders = [
-        os.path.join('..', 'data', 'Heisenberg', f'FP{args.par}', full_name, 'Study1') 
+        os.path.join('..', 'data', 'Heisenberg_updated', f'FP{args.par}', full_name, 'Study1') 
     ]
 
     filtered_selections = []

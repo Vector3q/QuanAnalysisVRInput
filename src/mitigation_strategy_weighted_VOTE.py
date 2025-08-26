@@ -106,7 +106,7 @@ def main():
     power = 20.0
     fp_range = utils.fp_test
     data_folders = [
-        os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
+        os.path.join('..', 'data', 'Heisenberg_updated', f'FP{i}', full_name, 'Study1') 
         for i in fp_range
     ]
     click_count = 0
@@ -124,7 +124,7 @@ def main():
 
                 selection_sequence = data['selectionSequence']
                 total_selections = len(selection_sequence)
-                start_index = int(total_selections * 0.2)
+                start_index = int(total_selections * 0)
                 selection_sequence = selection_sequence[start_index:]  
 
                 radius = data['radius']

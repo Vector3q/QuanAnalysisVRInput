@@ -50,7 +50,7 @@ def main():
     data_folders = []
     fp_values = []
     for i in fp_range:
-        data_folders.append(os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1'))
+        data_folders.append(os.path.join('..', 'data', 'Heisenberg_updated', f'FP{i}', full_name, 'Study1'))
         fp_values.append(i)
         
     print(f"data_len: {len(data_folders)}")

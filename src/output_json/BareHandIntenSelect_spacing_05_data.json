@@ -23,7 +23,7 @@
         "spacing": 0.5,
         "clickDuration": 1.1577257849166667,
         "isCorrect": 0.6666666666666666,
-        "HeisenbergError": 0.3333333333333333,
+        "HeisenbergError": 0.25,
         "HeisenbergAngle": 1.599174454540566,
         "EffectiveScore": 0.5758415985480132
     },
@@ -37,7 +37,7 @@
         "spacing": 0.5,
         "clickDuration": 1.3553922755555559,
         "isCorrect": 0.8888888888888888,
-        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.7628672306989177,
         "EffectiveScore": 0.6558166996521698
     },
@@ -51,7 +51,7 @@
         "spacing": 0.5,
         "clickDuration": 3.9025571853,
         "isCorrect": 0.8,
-        "HeisenbergError": 0.1,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 1.0837460507230663,
         "EffectiveScore": 0.20499379304764803
     },
@@ -65,7 +65,7 @@
         "spacing": 0.5,
         "clickDuration": 1.463491235,
         "isCorrect": 0.6666666666666666,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.16666666666666666,
         "HeisenbergAngle": 0.6734949475295927,
         "EffectiveScore": 0.4555317112416233
     },
@@ -93,7 +93,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6239808666153843,
         "isCorrect": 0.6153846153846154,
-        "HeisenbergError": 0.23076923076923078,
+        "HeisenbergError": 0.15384615384615385,
         "HeisenbergAngle": 2.14866870203389,
         "EffectiveScore": 0.37893587790056155
     },
@@ -107,7 +107,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6954535033333333,
         "isCorrect": 0.5333333333333333,
-        "HeisenbergError": 0.4666666666666667,
+        "HeisenbergError": 0.2,
         "HeisenbergAngle": 0.7032638212123227,
         "EffectiveScore": 0.31456677065149674
     },
@@ -219,7 +219,7 @@
         "spacing": 0.5,
         "clickDuration": 1.1316885253,
         "isCorrect": 0.6,
-        "HeisenbergError": 0.2,
+        "HeisenbergError": 0.1,
         "HeisenbergAngle": 1.146349880374341,
         "EffectiveScore": 0.5301812173459527
     },
@@ -387,7 +387,7 @@
         "spacing": 0.5,
         "clickDuration": 2.41335188175,
         "isCorrect": 0.5,
-        "HeisenbergError": 0.4166666666666667,
+        "HeisenbergError": 0.3333333333333333,
         "HeisenbergAngle": 1.024970561447665,
         "EffectiveScore": 0.20718072809068924
     },
@@ -429,7 +429,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6445649854285715,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.4085089099332331,
         "EffectiveScore": 0.5211973164559908
     },
@@ -471,7 +471,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6862670720000001,
         "isCorrect": 0.6,
-        "HeisenbergError": 0.3,
+        "HeisenbergError": 0.2,
         "HeisenbergAngle": 0.6614702870525201,
         "EffectiveScore": 0.35581552291617063
     },
@@ -513,7 +513,7 @@
         "spacing": 0.5,
         "clickDuration": 1.46569709,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.125,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 1.2683357510226898,
         "EffectiveScore": 0.5117019097035937
     },
@@ -541,7 +541,7 @@
         "spacing": 0.5,
         "clickDuration": 1.7933375085714285,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.4128497519303641,
         "EffectiveScore": 0.47795958822366713
     },
@@ -569,7 +569,7 @@
         "spacing": 0.5,
         "clickDuration": 1.27069033425,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.4521074042585049,
         "EffectiveScore": 0.5902303494286614
     },
@@ -639,7 +639,7 @@
         "spacing": 0.5,
         "clickDuration": 1.2964096051818181,
         "isCorrect": 0.5454545454545454,
-        "HeisenbergError": 0.45454545454545453,
+        "HeisenbergError": 0.36363636363636365,
         "HeisenbergAngle": 0.8670655393622897,
         "EffectiveScore": 0.4207424438035129
     },
@@ -709,7 +709,7 @@
         "spacing": 0.5,
         "clickDuration": 1.2826010734285713,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.6242002228168986,
         "EffectiveScore": 0.6682848431208581
     },
@@ -821,7 +821,7 @@
         "spacing": 0.5,
         "clickDuration": 1.4703237731428571,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.5617576688767384,
         "EffectiveScore": 0.5829619793949811
     },
@@ -891,7 +891,7 @@
         "spacing": 0.5,
         "clickDuration": 2.47559890975,
         "isCorrect": 0.5,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.08333333333333333,
         "HeisenbergAngle": 0.8584133689946126,
         "EffectiveScore": 0.20197132824335137
     },
@@ -905,7 +905,7 @@
         "spacing": 0.5,
         "clickDuration": 2.5886398762500002,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.8580445493777598,
         "EffectiveScore": 0.2897274382895151
     },
@@ -919,7 +919,7 @@
         "spacing": 0.5,
         "clickDuration": 1.5082954464166667,
         "isCorrect": 0.5,
-        "HeisenbergError": 0.16666666666666666,
+        "HeisenbergError": 0.08333333333333333,
         "HeisenbergAngle": 0.5287116463490215,
         "EffectiveScore": 0.3315000394570408
     },
@@ -947,7 +947,7 @@
         "spacing": 0.5,
         "clickDuration": 1.5228051839166665,
         "isCorrect": 0.5,
-        "HeisenbergError": 0.3333333333333333,
+        "HeisenbergError": 0.25,
         "HeisenbergAngle": 0.5407608565964752,
         "EffectiveScore": 0.3283414091840666
     },
@@ -1003,7 +1003,7 @@
         "spacing": 0.5,
         "clickDuration": 1.733347534,
         "isCorrect": 0.6666666666666666,
-        "HeisenbergError": 0.3333333333333333,
+        "HeisenbergError": 0.2222222222222222,
         "HeisenbergAngle": 0.6893298723378789,
         "EffectiveScore": 0.38461223360569685
     },
@@ -1045,7 +1045,7 @@
         "spacing": 0.5,
         "clickDuration": 1.99647113875,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.3480368831692988,
         "EffectiveScore": 0.37566283100369713
     },
@@ -1157,7 +1157,7 @@
         "spacing": 0.5,
         "clickDuration": 1.45502135,
         "isCorrect": 0.6,
-        "HeisenbergError": 0.3,
+        "HeisenbergError": 0.2,
         "HeisenbergAngle": 0.8957519858831079,
         "EffectiveScore": 0.4123650831652745
     },
@@ -1241,7 +1241,7 @@
         "spacing": 0.5,
         "clickDuration": 1.4584107335454546,
         "isCorrect": 0.5454545454545454,
-        "HeisenbergError": 0.36363636363636365,
+        "HeisenbergError": 0.2727272727272727,
         "HeisenbergAngle": 1.6099766398345239,
         "EffectiveScore": 0.3740061238636963
     },
@@ -1311,7 +1311,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6468430204545454,
         "isCorrect": 0.5454545454545454,
-        "HeisenbergError": 0.2727272727272727,
+        "HeisenbergError": 0.18181818181818182,
         "HeisenbergAngle": 1.396265905963518,
         "EffectiveScore": 0.3312122276863974
     },
@@ -1339,7 +1339,7 @@
         "spacing": 0.5,
         "clickDuration": 1.358629084,
         "isCorrect": 0.6,
-        "HeisenbergError": 0.4,
+        "HeisenbergError": 0.3,
         "HeisenbergAngle": 0.7915351044710561,
         "EffectiveScore": 0.4416216368882031
     },
@@ -1395,7 +1395,7 @@
         "spacing": 0.5,
         "clickDuration": 1.5339621764545455,
         "isCorrect": 0.7272727272727273,
-        "HeisenbergError": 0.2727272727272727,
+        "HeisenbergError": 0.18181818181818182,
         "HeisenbergAngle": 0.892356906436142,
         "EffectiveScore": 0.47411385915243126
     },
@@ -1437,7 +1437,7 @@
         "spacing": 0.5,
         "clickDuration": 3.072833313272727,
         "isCorrect": 0.7272727272727273,
-        "HeisenbergError": 0.18181818181818182,
+        "HeisenbergError": 0.09090909090909091,
         "HeisenbergAngle": 0.7285239900206321,
         "EffectiveScore": 0.23667822271106012
     },
@@ -1465,7 +1465,7 @@
         "spacing": 0.5,
         "clickDuration": 1.5747471655555556,
         "isCorrect": 0.8888888888888888,
-        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.6992881516431069,
         "EffectiveScore": 0.5644645110856875
     },
@@ -1493,7 +1493,7 @@
         "spacing": 0.5,
         "clickDuration": 2.0360319377777776,
         "isCorrect": 0.8888888888888888,
-        "HeisenbergError": 0.1111111111111111,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.42090806554135507,
         "EffectiveScore": 0.43657904986454416
     },
@@ -1619,7 +1619,7 @@
         "spacing": 0.5,
         "clickDuration": 2.5501846922499998,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.24190438052457114,
         "EffectiveScore": 0.2940963461506324
     },
@@ -1647,7 +1647,7 @@
         "spacing": 0.5,
         "clickDuration": 2.4294966514285714,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.1968449823154397,
         "EffectiveScore": 0.3528067662241261
     },
@@ -1689,7 +1689,7 @@
         "spacing": 0.5,
         "clickDuration": 1.422289704285714,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.34694271771284246,
         "EffectiveScore": 0.6026499766960779
     },
@@ -1773,7 +1773,7 @@
         "spacing": 0.5,
         "clickDuration": 2.049186971111111,
         "isCorrect": 0.6666666666666666,
-        "HeisenbergError": 0.2222222222222222,
+        "HeisenbergError": 0.1111111111111111,
         "HeisenbergAngle": 0.9827744953634538,
         "EffectiveScore": 0.32533227863789627
     },
@@ -1885,7 +1885,7 @@
         "spacing": 0.5,
         "clickDuration": 1.4087618928749999,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.4192238633168835,
         "EffectiveScore": 0.5323823733401822
     },
@@ -1969,7 +1969,7 @@
         "spacing": 0.5,
         "clickDuration": 1.0261543228571428,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 0.9557497827750063,
         "EffectiveScore": 0.8352962493558439
     },
@@ -1997,7 +1997,7 @@
         "spacing": 0.5,
         "clickDuration": 0.9996534718571429,
         "isCorrect": 0.8571428571428571,
-        "HeisenbergError": 0.14285714285714285,
+        "HeisenbergError": 0.0,
         "HeisenbergAngle": 1.2568509008358606,
         "EffectiveScore": 0.8574399842282032
     },
@@ -2025,7 +2025,7 @@
         "spacing": 0.5,
         "clickDuration": 1.4421546194999997,
         "isCorrect": 0.375,
-        "HeisenbergError": 0.3125,
+        "HeisenbergError": 0.25,
         "HeisenbergAngle": 0.9850614951699718,
         "EffectiveScore": 0.2600275968536674
     },
@@ -2039,7 +2039,7 @@
         "spacing": 0.5,
         "clickDuration": 2.9524711787499998,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.8263274254665373,
         "EffectiveScore": 0.2540244949376714
     },
@@ -2081,7 +2081,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6247969253333332,
         "isCorrect": 0.6666666666666666,
-        "HeisenbergError": 0.3333333333333333,
+        "HeisenbergError": 0.2222222222222222,
         "HeisenbergAngle": 0.8152167447060725,
         "EffectiveScore": 0.4103076860081437
     },
@@ -2095,7 +2095,7 @@
         "spacing": 0.5,
         "clickDuration": 1.6148385183846157,
         "isCorrect": 0.46153846153846156,
-        "HeisenbergError": 0.46153846153846156,
+        "HeisenbergError": 0.3076923076923077,
         "HeisenbergAngle": 1.3320014507523465,
         "EffectiveScore": 0.2858109069631037
     },
@@ -2193,7 +2193,7 @@
         "spacing": 0.5,
         "clickDuration": 1.8875896086250004,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.791111401567598,
         "EffectiveScore": 0.39733213012670243
     },
@@ -2277,7 +2277,7 @@
         "spacing": 0.5,
         "clickDuration": 1.2544740181111114,
         "isCorrect": 0.6666666666666666,
-        "HeisenbergError": 0.3333333333333333,
+        "HeisenbergError": 0.2222222222222222,
         "HeisenbergAngle": 0.6054193922268577,
         "EffectiveScore": 0.5314312269858574
     },
@@ -2417,7 +2417,7 @@
         "spacing": 0.5,
         "clickDuration": 2.1766307418750004,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.25,
+        "HeisenbergError": 0.125,
         "HeisenbergAngle": 0.24198007745428865,
         "EffectiveScore": 0.34456923977556825
     },
@@ -2487,7 +2487,7 @@
         "spacing": 0.5,
         "clickDuration": 1.5377929898999998,
         "isCorrect": 0.6,
-        "HeisenbergError": 0.3,
+        "HeisenbergError": 0.1,
         "HeisenbergAngle": 0.7086763229005215,
         "EffectiveScore": 0.39016955073973714
     },
@@ -2641,7 +2641,7 @@
         "spacing": 0.5,
         "clickDuration": 2.078484875875,
         "isCorrect": 0.75,
-        "HeisenbergError": 0.125,
+        "HeisenbergError": 0.25,
         "HeisenbergAngle": 0.5097860301688217,
         "EffectiveScore": 0.3608397678064726
     },
@@ -2683,7 +2683,7 @@
         "spacing": 0.5,
         "clickDuration": 1.1316688484,
         "isCorrect": 0.4,
-        "HeisenbergError": 0.2,
+        "HeisenbergError": 0.13333333333333333,
         "HeisenbergAngle": 0.961995165880183,
         "EffectiveScore": 0.3534602905837132
     },

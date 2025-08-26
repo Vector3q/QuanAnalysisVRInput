@@ -30,7 +30,7 @@ def main():
     selection_records = 0
         
     data_folders = [
-        os.path.join('..', 'data', 'Heisenberg', f'FP{i}', full_name, 'Study1') 
+        os.path.join('..', 'data', 'Heisenberg_updated', f'FP{i}', full_name, 'Study1') 
         for i in fp_range
     ]
     print(f"data_len: {len(data_folders)}")
