@@ -72,6 +72,7 @@ def main():
         plt.legend(loc='lower right', fontsize=14)
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
     plt.ylim(0.3, 1.05)
+    plt.xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0], ['-1.0', '-0.8', '-0.6', '-0.4', '-0.2', '0.0'])
     plt.tick_params(axis='both', which='both', length=0, labelsize=14)
     plt.tight_layout()
     plt.savefig(f'./output_image/{full_name}accuracy_plot.png', dpi=300, bbox_inches='tight')
@@ -97,12 +98,10 @@ def main():
         if os.path.exists(adaptive_func_file):
             adaptive_coeffs = np.load(adaptive_func_file)
             adaptive_func = np.poly1d(adaptive_coeffs)
-            alpha = 0.3
+            alpha = 0
 
             interpolated_func = lambda x, fp=fp_value: alpha * adaptive_func(x) + (1 - alpha) * weight_func(x)
             adaptive_weight_funcs[fp_value] = interpolated_func
-            print(f"adaptive_func: {adaptive_func}")
-            print(f"weight_func: {weight_func}")
         else:
             adaptive_weight_funcs[fp_value] = weight_func
 
@@ -180,7 +179,10 @@ def main():
                             x0 = x_q     
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
 
-                            if full_name == "BareHandIntenSelect" and relative_position > 0.4:
+                            if full_name == "BareHandIntenSelect" and relative_position > utils.SH_thre:
+                                transformed_weight = 0
+
+                            if full_name == "ControllerIntenSelect" and relative_position < 0.7:
                                 transformed_weight = 0
                             weighted_votes[object_id] += transformed_weight
                             # transformed_weight = weight ** power
@@ -215,8 +217,10 @@ def main():
                     if selection['targetPointID'] != most_common_obj:
                         total_VOTE_eror_count += 1
 
-    print(f"Error rate of vote:  ({total_VOTE_eror_count / click_count:.2%})")
+    print(f"total click count: {click_count}")
+    
     print(f"Error rate of before click:  ({total_Befor_error_count / click_count:.2%})")
+    print(f"Error rate of vote:  ({total_VOTE_eror_count / click_count:.2%})")
     print(f"Error rate of weighted vote:  ({1-(weighted_vote_count / click_count):.2%})")
 
 if __name__ == '__main__':

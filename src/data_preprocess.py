@@ -23,6 +23,7 @@ def extract_json_data(input_path):
             if tech == "ControllerIntenSelect" or tech == "ControllerTracking":
                 intention_index = len(entry['historyCaches']) - 1
                 while intention_index >= 0:
+                    # if entry['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0 and entry['historyCaches'][intention_index]['intendedObjectID'] != "null":
                     if entry['historyCaches'][intention_index].get('confirmationValue', 0.0) == 0 and entry['historyCaches'][intention_index]['intendedObjectID'] != "null":
                         break
                     intention_index -= 1

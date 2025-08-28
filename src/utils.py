@@ -2,6 +2,8 @@ import os
 
 # fp_all = list(range(1,25))
 
+SH_thre = 0.4
+
 fp_train = list(range(1,20))
 fp_test = list(range(20,25))
 # fp_test = [24]

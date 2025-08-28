@@ -60,7 +60,7 @@ def main():
     plt.figure(figsize=(5, 4))
 
     if args.tech == "DC":
-        plt.plot(x_plot, y_plot, label='P(accuracy | relative time)', color='blue')
+        plt.plot(x_plot, y_plot, label='Accuracy of intention', color='blue')
     else:
         plt.plot(x_plot, y_plot, color='blue')
     # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
@@ -70,6 +70,7 @@ def main():
         plt.legend(loc='lower right', fontsize=14)
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
     plt.ylim(0.3, 1.05)
+    plt.xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0], ['-1.0', '-0.8', '-0.6', '-0.4', '-0.2', '0.0'])
     plt.tick_params(axis='both', which='both', length=0, labelsize=14)
     plt.tight_layout()
     plt.savefig(f'./output_image/{full_name}accuracy_plot.png', dpi=300, bbox_inches='tight')
@@ -149,7 +150,6 @@ def main():
                                 min_diff = diff
                                 closest_cache = cache
                         
-
                         if 'intendedObjectID' in cache:
                             object_id = cache['intendedObjectID']
                             
@@ -160,10 +160,10 @@ def main():
                             x0 = x_q      # 中心点，可调
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
 
-                            if full_name == "BareHandIntenSelect" and relative_position > 0.4:
+                            if full_name == "BareHandIntenSelect" and relative_position > utils.SH_thre:
                                 transformed_weight = 0
 
-                            if full_name == "ControllerIntenSelect" and relative_position < 0.6:
+                            if full_name == "ControllerIntenSelect" and relative_position < 0.7:
                                 transformed_weight = 0
 
                             weighted_votes[object_id] += transformed_weight
@@ -206,9 +206,10 @@ def main():
                 with open(json_path, 'w') as out_f:
                     json.dump(data, out_f, indent=2)
 
-
-    print(f"Error rate of vote:  ({total_VOTE_eror_count / click_count:.2%})")
+    print(f"total click count: {click_count}")
+    
     print(f"Error rate of before click:  ({total_Befor_error_count / click_count:.2%})")
+    print(f"Error rate of vote:  ({total_VOTE_eror_count / click_count:.2%})")
     print(f"Error rate of weighted vote:  ({1-(weighted_vote_count / click_count):.2%})")
 if __name__ == '__main__':
     main()
