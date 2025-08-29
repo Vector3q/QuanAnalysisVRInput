@@ -98,7 +98,7 @@ def main():
         if os.path.exists(adaptive_func_file):
             adaptive_coeffs = np.load(adaptive_func_file)
             adaptive_func = np.poly1d(adaptive_coeffs)
-            alpha = 0
+            alpha = 1
 
             interpolated_func = lambda x, fp=fp_value: alpha * adaptive_func(x) + (1 - alpha) * weight_func(x)
             adaptive_weight_funcs[fp_value] = interpolated_func
@@ -138,7 +138,7 @@ def main():
                     data = json.load(f)
                 selection_sequence = data['selectionSequence']
                 total_selections = len(selection_sequence)
-                start_index = int(total_selections * 0.1)
+                start_index = int(total_selections * 0.2)
                 selection_sequence = selection_sequence[start_index:]
 
                 for selection in selection_sequence:
