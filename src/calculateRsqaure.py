@@ -8,7 +8,7 @@ import numpy as np
 import math
 import utils
 from collections import defaultdict, Counter
-
+from sklearn.metrics import r2_score
 def save_poly_func(file, coeffs):
     np.save(file, coeffs)
 
@@ -65,8 +65,8 @@ def main():
     else:
         plt.plot(x_plot, y_plot, color='blue')
     # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
-    plt.xlabel('Relative Time (normalized from -0.4s to 0s)', fontsize=20)
-    plt.ylabel('Accuracy of Intention', fontsize=20)
+    plt.xlabel('Relative Time', fontsize=20)
+    plt.ylabel('Accuracy', fontsize=20)
     if args.tech == "DC":
         plt.legend(loc='lower right', fontsize=14)
     plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
