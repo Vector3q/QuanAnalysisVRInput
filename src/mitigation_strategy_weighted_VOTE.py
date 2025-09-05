@@ -61,23 +61,12 @@ def main():
     plt.figure(figsize=(5, 4))
 
     if args.tech == "DC":
-        plt.plot(x_plot, y_plot, label='Accuracy of intention', color='blue')
+        plt.plot(x_plot, y_plot, label='Overall intention', color='blue')
     else:
         plt.plot(x_plot, y_plot, color='blue')
-    # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
-    plt.xlabel('Relative Time (normalized from -0.4s to 0s)', fontsize=20)
-    plt.ylabel('Accuracy of Intention', fontsize=20)
-    if args.tech == "DC":
-        plt.legend(loc='lower right', fontsize=14)
-    plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
-    plt.ylim(0.3, 1.05)
-    plt.xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0], ['-1.0', '-0.8', '-0.6', '-0.4', '-0.2', '0.0'])
-    plt.tick_params(axis='both', which='both', length=0, labelsize=14)
-    plt.tight_layout()
-    plt.savefig(f'./output_image/{full_name}accuracy_plot.png', dpi=300, bbox_inches='tight')
-    # plt.show()
 
-    print(f"plt saved to {f'./output_image/{full_name}accuracy_plot.png'}")
+    
+
 
     coeffs_file = "./train_coeffs/" + full_name + "_weighted_VOTE_coeffs.npy"
     coeffs = np.load(coeffs_file)
@@ -105,6 +94,25 @@ def main():
         max_x = x_min if max_index == len(critical_points) else x_max
     
     print(f"max poly func: {max_value:.4f}, correspond to: {max_x:.4f}")
+
+
+    # plt.scatter(df['relative_position'], df['is_correct'], alpha=0.1, label='Raw data points')
+    plt.xlabel('Relative Time (normalized from -0.4s to 0s)', fontsize=20)
+    plt.ylabel('Accuracy of Intention', fontsize=20)
+    plt.plot([max_x, max_x], [0, max_value],
+         color='gray', linestyle='--', linewidth=1)
+    plt.scatter(max_x, max_value, color='gray', s=15, zorder=5)
+    if args.tech == "DC":
+        plt.legend(loc='lower right', fontsize=14)
+    plt.grid(axis='y', linestyle='--', linewidth=0.5, alpha=1)
+    plt.ylim(0.3, 1.05)
+    plt.xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0], ['-1.0', '-0.8', '-0.6', '-0.4', '-0.2', '0.0'])
+    plt.tick_params(axis='both', which='both', length=0, labelsize=14)
+    plt.tight_layout()
+    plt.savefig(f'./output_image/{full_name}accuracy_plot.png', dpi=300, bbox_inches='tight')
+    # plt.show()
+
+    print(f"plt saved to {f'./output_image/{full_name}accuracy_plot.png'}")
     power = 20.0
     fp_range = utils.fp_test
     data_folders = [
