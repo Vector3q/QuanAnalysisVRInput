@@ -13,7 +13,7 @@ TECHNIQUES = {
 
 stats = defaultdict(lambda: defaultdict(int))
 
-click_count = 0
+click_count = defaultdict(lambda: defaultdict(int))
 
 try:
     # 获取所有被试文件夹 (FP开头的文件夹)
@@ -33,10 +33,10 @@ try:
                         if filename.endswith('.json'):
                             json_count += 1
 
-                        json_path = os.path.join(tech_path, filename)
-                        with open(json_path, 'r') as f:
-                            data = json.load(f)
-                            click_count += len(data['selectionSequence'])
+                            json_path = os.path.join(tech_path, filename)
+                            with open(json_path, 'r') as f:
+                                data = json.load(f)
+                                click_count[subject][tech_full] += len(data['selectionSequence'])
 
                     stats[subject][tech_full] = json_count
                     print(f'被试 {subject}, 条件 {tech_full}: {json_count} 个JSON文件')
@@ -51,4 +51,16 @@ for subject in stats:
     total = sum(stats[subject].values())
     print(f'被试 {subject}: 总计 {total} 个JSON文件')
 
-print(f'click_count: {click_count}')
+# 按技术汇总点击次数
+tech_click_total = defaultdict(int)
+for subject in click_count:
+    for tech, count in click_count[subject].items():
+        tech_click_total[tech] += count
+
+print('\n按技术统计点击次数:')
+for tech, total in tech_click_total.items():
+    print(f'{tech}: {total} 次点击')
+
+# 总点击次数
+total_all = sum(tech_click_total.values())
+print(f'\n总计点击次数: {total_all}')
