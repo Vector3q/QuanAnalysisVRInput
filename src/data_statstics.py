@@ -222,6 +222,8 @@ def main():
 
     target_techs_C = ["ControllerTracking", "ControllerIntenSelect"]
     target_techs_H = ["BareHandTracking", "BareHandIntenSelect"]
+    target_techs_S = ["ControllerIntenSelect", "BareHandIntenSelect"]
+    target_techs_D = ["ControllerTracking", "BareHandTracking"]
     target_tech = "ControllerTracking"
 
     output_radius_csv = './output_csv/' + "csv_files_radius"+ "_021"+".csv"
@@ -230,6 +232,8 @@ def main():
 
     output_tech_csv_H = './output_csv/' + "csv_files_tech"+ "_"+"HTracking"+".csv"
     output_tech_csv_C = './output_csv/' + "csv_files_tech"+ "_"+"CTracking"+".csv"
+    output_tech_csv_S = './output_csv/' + "csv_files_tech"+ "_"+"STracking"+".csv"
+    output_tech_csv_D = './output_csv/' + "csv_files_tech"+ "_"+"DTracking"+".csv"
 
     df_filtered = df[df['radius'] == target_radius].copy()
     df_filtered.to_csv(output_radius_csv, index=False)
@@ -242,6 +246,12 @@ def main():
 
     df_filtered_H = df[df['technique'].isin(target_techs_H)].copy()
     df_filtered_H.to_csv(output_tech_csv_H, index=False)
+
+    df_filtered_S = df[df['technique'].isin(target_techs_S)].copy()
+    df_filtered_S.to_csv(output_tech_csv_S, index=False)
+
+    df_filtered_D = df[df['technique'].isin(target_techs_D)].copy()
+    df_filtered_D.to_csv(output_tech_csv_D, index=False)
 
     df_filtered_tech = df[df['technique'] == target_tech].copy()
     df_filtered_tech.to_csv(output_tech_csv, index=False)
