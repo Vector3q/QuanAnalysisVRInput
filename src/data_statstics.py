@@ -268,11 +268,11 @@ def main():
 
     print(fit)
 
-    posthoc_ttest = pg.pairwise_tests(dv='is_correct',      # 因变量
-                                   within='spacing',         # 重复测量因子
-                                   subject='username',         # 被试ID
+    posthoc_ttest = pg.pairwise_tests(dv='is_correct',    
+                                   within='spacing',        
+                                   subject='username',        
                                    data=df_agg,
-                                   padjust='bonf')             # 多重比较校正方法，例如 bonferroni
+                                   padjust='bonf')            
     print(posthoc_ttest.to_string())  
 
 

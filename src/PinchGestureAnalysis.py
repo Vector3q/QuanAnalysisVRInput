@@ -18,7 +18,7 @@ plt.figure(figsize=(8, 5), dpi=100)
 for i, selection in enumerate(data['selectionSequence'], 1):
     print(f"\nselection {i}:")
     print(f"click duration: {selection['clickDuration']}s")
-    print(f"is correct: {'是' if selection['isCorrect'] else '否'}")
+    print(f"is correct: {'yes' if selection['isCorrect'] else 'no'}")
     print(f"selected ID: {selection['selectedPointID']}")
     print(f"target ID: {selection['targetPointID']}")
 

@@ -157,8 +157,8 @@ def main():
                             weight = weight_func(relative_position)
                             weight = max(0, weight)
 
-                            k = 15.0       # 陡峭程度，可调
-                            x0 = x_q      # 中心点，可调
+                            k = 5.0       # slope, adjustable
+                            x0 = x_q      # center, adjustable
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
 
                             if full_name == "BareHandIntenSelect" and relative_position > utils.SH_thre:
@@ -195,7 +195,7 @@ def main():
                             weighted_vote_count += 1
                             
                     else:
-                        print('没有有效的投票数据')
+                        print('no valid voting data for this selection')
 
                     intended_objects = [cache['intendedObjectID'] for cache in selection['historyCaches'] 
                     if 'intendedObjectID' in cache and cache['intendedObjectID'] != "null"]

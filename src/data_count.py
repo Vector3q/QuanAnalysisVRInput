@@ -16,18 +16,15 @@ stats = defaultdict(lambda: defaultdict(int))
 click_count = defaultdict(lambda: defaultdict(int))
 
 try:
-    # 获取所有被试文件夹 (FP开头的文件夹)
     for item in os.listdir(DATA_ROOT):
         item_path = os.path.join(DATA_ROOT, item)
         if os.path.isdir(item_path) and item.startswith('FP'):
             subject = item
             
-            # 检查每种技术类型
             for tech_full, tech_abbrev in TECHNIQUES.items():
                 tech_path = os.path.join(item_path, tech_full, 'Study1')
                 
                 if os.path.exists(tech_path):
-                    # 计算该文件夹下的json文件数量
                     json_count = 0
                     for filename in os.listdir(tech_path):
                         if filename.endswith('.json'):
@@ -39,28 +36,24 @@ try:
                                 click_count[subject][tech_full] += len(data['selectionSequence'])
 
                     stats[subject][tech_full] = json_count
-                    print(f'被试 {subject}, 条件 {tech_full}: {json_count} 个JSON文件')
+                    print(f'subject: {subject}, condition: {tech_full}: {json_count} json file')
 
 except Exception as e:
-    print(f'发生错误: {e}')
-    print('请确保数据文件夹路径正确，并且具有访问权限。')
+    print(f'error: {e}')
+    print('ensure the correct path of the data folder.')
 
-# 打印统计摘要
-print('\n统计摘要:')
 for subject in stats:
     total = sum(stats[subject].values())
-    print(f'被试 {subject}: 总计 {total} 个JSON文件')
+    print(f'subject: {subject}: total {total} json file')
 
-# 按技术汇总点击次数
 tech_click_total = defaultdict(int)
 for subject in click_count:
     for tech, count in click_count[subject].items():
         tech_click_total[tech] += count
 
-print('\n按技术统计点击次数:')
 for tech, total in tech_click_total.items():
-    print(f'{tech}: {total} 次点击')
+    print(f'condition: {tech}: {total} click')
 
 # 总点击次数
 total_all = sum(tech_click_total.values())
-print(f'\n总计点击次数: {total_all}')
+print(f'\ntotal click: {total_all}')

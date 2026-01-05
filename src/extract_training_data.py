@@ -82,7 +82,7 @@ def main():
     train_data_path = os.path.join( 'train_data', full_name + '_train_data.json')
     with open(train_data_path, 'w') as f:
         json.dump(records, f, indent=2)
-    print(f"过滤后的数据已保存到: {train_data_path}")
+    print(f"filtered data saved to: {train_data_path}")
 
     df = pd.DataFrame(records)
     bins = np.arange(0, 1.1, 0.1)
