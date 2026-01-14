@@ -105,10 +105,6 @@ def main():
         else:
             adaptive_weight_funcs[fp_value] = weight_func
 
-    
-
-    
-
     derivative = weight_func.deriv()
     critical_points = derivative.roots
     critical_values = weight_func(critical_points)
@@ -178,11 +174,15 @@ def main():
                             k = 15.0   
                             x0 = x_q     
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
+                            
+                            #  and relative_position > utils.SH_thre
 
-                            if full_name == "BareHandIntenSelect" and relative_position > utils.SH_thre:
+                            if full_name == "BareHandIntenSelect":
                                 transformed_weight = 0
 
-                            if full_name == "ControllerIntenSelect" and relative_position < 0.7:
+                            #  and relative_position < 0.7
+
+                            if full_name == "ControllerIntenSelect":
                                 transformed_weight = 0
                             weighted_votes[object_id] += transformed_weight
                             # transformed_weight = weight ** power

@@ -168,11 +168,15 @@ def main():
                             k = 5.0       
                             x0 = x_q   
                             transformed_weight = 1 / (1 + math.exp(-k * (weight - x0)))
+                            
+                            #  and relative_position > utils.SH_thre
 
-                            if full_name == "BareHandIntenSelect" and relative_position > utils.SH_thre:
+                            if full_name == "BareHandIntenSelect":
                                 transformed_weight = 0
 
-                            if full_name == "ControllerIntenSelect" and relative_position < 0.7:
+                            #  and relative_position < 0.7
+
+                            if full_name == "ControllerIntenSelect":
                                 transformed_weight = 0
 
                             weighted_votes[object_id] += transformed_weight
